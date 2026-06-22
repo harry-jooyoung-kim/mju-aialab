@@ -1252,7 +1252,7 @@ function home() {
       <img class="tile-media" src="assets/placeholder.jpg" alt="">
     </section>
     <section class="tile light" style="padding:32px 24px 60px">
-      <p style="font-size:14px;font-weight:600;color:var(--ink);letter-spacing:-.224px;margin-bottom:24px;margin-top:0">${t('contact.collaborators')}</p>
+      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
       ${collabLogoStrip()}
     </section>`;
 }
