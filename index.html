@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" id="html-root">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI & Applications Lab | Myongji University</title>
+  <meta name="description" content="AI & Applications Lab at Myongji University. Game AI, Olfactory AI, and Applied AI research." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="global-nav" aria-label="Global navigation">
+    <div class="nav-left"></div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#/home" class="brand-nav" aria-label="AIALab home">
+        <img src="assets/logo_icon.png" class="brand-logo" alt="AIALab" />
+      </a>
+      <a href="#/research" data-i18n="nav.research">Research</a>
+      <a href="#/projects" data-i18n="nav.projects">Projects</a>
+      <a href="#/people" data-i18n="nav.people">People</a>
+      <a href="#/publications" data-i18n="nav.publications">Publications</a>
+      <a href="#/gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#/contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">한국어</button>
+      <button class="nav-icon" id="openSearch" aria-label="Open search">⌕</button>
+      <button class="hamburger" id="toggleMenu" aria-label="Toggle menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="sub-nav-frosted" id="subNav">
+    <a class="sub-title" href="#/home" data-i18n="labName">AI & Applications Lab</a>
+    <nav class="sub-links">
+      <a href="#/projects/game-ai" data-i18n="subNav.gameAI">Game AI</a>
+      <a href="#/projects/olfactory-ai" data-i18n="subNav.olfactoryAI">Olfactory AI</a>
+      <a href="#/projects/applied-ai" data-i18n="subNav.appliedAI">Applied AI</a>
+      <a href="#/join" class="pill-small" data-i18n="subNav.join">Join</a>
+    </nav>
+  </div>
+
+  <main id="app" class="app-shell" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <section>
+        <h3 data-i18n="labName">AI & Applications Lab</h3>
+        <p data-i18n="footer.labDesc">Department of Convergence Software, Myongji University. We develop and evaluate AI systems for real-world applications.</p>
+      </section>
+      <section>
+        <h3 data-i18n="footer.research">Research</h3>
+        <a href="#/projects/game-ai" data-i18n="footer.links.gameAI">Game &amp; Interactive AI</a>
+        <a href="#/projects/olfactory-ai" data-i18n="footer.links.olfactoryAI">Olfactory AI</a>
+        <a href="#/projects/applied-ai" data-i18n="footer.links.appliedAI">Applied AI</a>
+      </section>
+      <section>
+        <h3 data-i18n="footer.resources">Resources</h3>
+        <a href="#/publications" data-i18n="footer.links.publications">Publications</a>
+        <a href="#/gallery" data-i18n="footer.links.gallery">Gallery</a>
+        <a href="#/join" data-i18n="footer.links.join">Prospective Students</a>
+        <a href="#/contact" data-i18n="footer.links.contact">Contact</a>
+      </section>
+      <section>
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <p data-i18n="footer.address">Myongji University, Seoul, Republic of Korea</p>
+        <p><a href="mailto:harrykim@mju.ac.kr">harrykim@mju.ac.kr</a></p>
+      </section>
+    </div>
+    <p class="legal">© <span id="year"></span> AI &amp; Applications Lab.</p>
+  </footer>
+
+  <dialog class="search-dialog" id="searchDialog">
+    <form method="dialog" class="search-panel">
+      <button class="close" aria-label="Close search">×</button>
+      <label for="siteSearch" data-i18n="search.label">Search the lab site</label>
+      <input id="siteSearch" type="search" data-i18n-placeholder="search.placeholder" placeholder="Search projects, papers, people..." autocomplete="off" />
+      <div id="searchResults" class="search-results"></div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
