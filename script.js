@@ -141,125 +141,1001 @@ function L(obj) {
 
 /* ── Data ───────────────────────────────────────────────── */
 const data = {
-  research: [
+  "research": [
     {
-      slug: 'game-ai',
-      title: { en: 'Game & Interactive AI', ko: '게임 & 인터랙티브 AI' },
-      short: { en: 'Agents that play, inspect, and evaluate interactive content.', ko: '인터랙티브 콘텐츠를 플레이하고 검사하고 평가하는 AI 에이전트.' },
-      image: 'assets/placeholder.jpg', theme: 'dark',
-      tags: ['agent', 'game rating', 'multimodal'],
-      status: { en: 'Large-scale funded project', ko: '대형 연구과제' },
-      body: {
-        en: ['We develop AI agents and multimodal pipelines for automatic gameplay, behavior logging, and game rating classification. The goal is to turn complex interactive media into measurable evidence for safer, more scalable content review.', 'This research combines gameplay agents, visual-language understanding, LLM evaluators, and structured logs so that decisions are explainable rather than only predictive.'],
-        ko: ['자동 게임플레이, 행동 로깅, 게임 등급 분류를 위한 AI 에이전트와 멀티모달 파이프라인을 개발합니다.', '게임플레이 에이전트, 비전-언어 이해, LLM 평가기, 구조화 로그를 결합하여 설명 가능한 결정을 만듭니다.']
+      "slug": "game-ai",
+      "title": {
+        "en": "Game & Interactive AI",
+        "ko": "게임 & 인터랙티브 AI"
+      },
+      "short": {
+        "en": "Agents that play, inspect, and evaluate interactive content.",
+        "ko": "인터랙티브 콘텐츠를 플레이하고 검사하고 평가하는 AI 에이전트."
+      },
+      "image": "assets/placeholder.jpg",
+      "theme": "dark",
+      "tags": [
+        "agent",
+        "game rating",
+        "multimodal"
+      ],
+      "status": {
+        "en": "Large-scale funded project",
+        "ko": "대형 연구과제"
+      },
+      "body": {
+        "en": [
+          "We develop AI agents and multimodal pipelines for automatic gameplay, behavior logging, and game rating classification. The goal is to turn complex interactive media into measurable evidence for safer, more scalable content review.",
+          "This research combines gameplay agents, visual-language understanding, LLM evaluators, and structured logs so that decisions are explainable rather than only predictive."
+        ],
+        "ko": [
+          "자동 게임플레이, 행동 로깅, 게임 등급 분류를 위한 AI 에이전트와 멀티모달 파이프라인을 개발합니다.",
+          "게임플레이 에이전트, 비전-언어 이해, LLM 평가기, 구조화 로그를 결합하여 설명 가능한 결정을 만듭니다."
+        ]
       }
     },
     {
-      slug: 'olfactory-ai',
-      title: { en: 'Olfactory AI', ko: '후각 AI' },
-      short: { en: 'AI systems that generate, evaluate, and physically render scents.', ko: '향기를 생성하고 평가하고 물리적으로 렌더링하는 AI 시스템.' },
-      image: 'assets/placeholder.jpg', theme: 'light',
-      tags: ['text-to-scent', 'perception', 'scent speaker'],
-      status: { en: 'Core lab identity project', ko: '핵심 연구실 프로젝트' },
-      body: {
-        en: ['Olfactory AI studies how language, media, context, and human states can be translated into manufacturable scent recipes and physical olfactory experiences.', 'Our current work spans text-to-scent generation, scent perception studies, structured-output safety, and scent rendering devices.'],
-        ko: ['언어, 미디어, 맥락, 인간 상태가 어떻게 제조 가능한 향기 레시피와 물리적 후각 경험으로 변환될 수 있는지 연구합니다.', '현재 연구는 텍스트-향기 생성, 향기 지각 연구, 구조화 출력 안전성, 향기 렌더링 디바이스를 포괄합니다.']
+      "slug": "olfactory-ai",
+      "title": {
+        "en": "Olfactory AI",
+        "ko": "후각 AI"
+      },
+      "short": {
+        "en": "AI systems that generate, evaluate, and physically render scents.",
+        "ko": "향기를 생성하고 평가하고 물리적으로 렌더링하는 AI 시스템."
+      },
+      "image": "assets/placeholder.jpg",
+      "theme": "light",
+      "tags": [
+        "text-to-scent",
+        "perception",
+        "scent speaker"
+      ],
+      "status": {
+        "en": "Core lab identity project",
+        "ko": "핵심 연구실 프로젝트"
+      },
+      "body": {
+        "en": [
+          "Olfactory AI studies how language, media, context, and human states can be translated into manufacturable scent recipes and physical olfactory experiences.",
+          "Our current work spans text-to-scent generation, scent perception studies, structured-output safety, and scent rendering devices."
+        ],
+        "ko": [
+          "언어, 미디어, 맥락, 인간 상태가 어떻게 제조 가능한 향기 레시피와 물리적 후각 경험으로 변환될 수 있는지 연구합니다.",
+          "현재 연구는 텍스트-향기 생성, 향기 지각 연구, 구조화 출력 안전성, 향기 렌더링 디바이스를 포괄합니다."
+        ]
       }
     },
     {
-      slug: 'applied-ai',
-      title: { en: 'Applied AI', ko: '응용 AI' },
-      short: { en: 'Biometric intelligence, LLM evaluation, e-sports analytics, and emerging applied AI.', ko: '생체인식, LLM 평가, e스포츠 분석, 그리고 다양한 응용 AI 연구.' },
-      image: 'assets/placeholder.jpg', theme: 'dark',
-      tags: ['biometrics', 'LLM evaluation', 'e-sports', 'XAI'],
-      status: { en: 'Applied sensing & evaluation program', ko: '응용 감지 및 평가 프로그램' },
-      body: {
-        en: ['We build compact and explainable models for face, vein, ECG, and other biometric signals, emphasizing deployability and robustness under real-world constraints.', 'This pillar also includes e-sports analytics, LLM evaluation, applied generative AI demonstrations, and student-led projects in any emerging domain where AI evaluation and sensing converge.'],
-        ko: ['얼굴, 정맥, 심전도 등 생체 신호를 위한 경량 설명 가능 모델을 개발합니다.', '이 분야는 e스포츠 분석, LLM 평가, 응용 생성형 AI, 학생 주도 프로젝트를 포괄합니다.']
+      "slug": "applied-ai",
+      "title": {
+        "en": "Applied AI",
+        "ko": "응용 AI"
+      },
+      "short": {
+        "en": "Biometric intelligence, LLM evaluation, e-sports analytics, and emerging applied AI.",
+        "ko": "생체인식, LLM 평가, e스포츠 분석, 그리고 다양한 응용 AI 연구."
+      },
+      "image": "assets/placeholder.jpg",
+      "theme": "dark",
+      "tags": [
+        "biometrics",
+        "LLM evaluation",
+        "e-sports",
+        "XAI"
+      ],
+      "status": {
+        "en": "Applied sensing & evaluation program",
+        "ko": "응용 감지 및 평가 프로그램"
+      },
+      "body": {
+        "en": [
+          "We build compact and explainable models for face, vein, ECG, and other biometric signals, emphasizing deployability and robustness under real-world constraints.",
+          "This pillar also includes e-sports analytics, LLM evaluation, applied generative AI demonstrations, and student-led projects in any emerging domain where AI evaluation and sensing converge."
+        ],
+        "ko": [
+          "얼굴, 정맥, 심전도 등 생체 신호를 위한 경량 설명 가능 모델을 개발합니다.",
+          "이 분야는 e스포츠 분석, LLM 평가, 응용 생성형 AI, 학생 주도 프로젝트를 포괄합니다."
+        ]
       }
     }
   ],
-
-  projects: [
-    { slug:'game-rating-agent', title:{en:'Automatic Gameplay and Rating AI',ko:'자동 게임플레이 및 등급 분류 AI'}, area:'game-ai', type:{en:'Funded Project',ko:'연구과제'}, stage:{en:'Active',ko:'진행 중'}, desc:{en:'Large-scale development of agents and multimodal evaluators for game rating classification.',ko:'게임 등급 분류를 위한 에이전트 및 멀티모달 평가기 대규모 개발.'}, image:'assets/placeholder.jpg', goals:{en:['Build agents that navigate game environments','Extract multimodal evidence from gameplay','Classify content and explain rating decisions'],ko:['게임 환경을 탐색하는 에이전트 개발','게임플레이에서 멀티모달 증거 추출','콘텐츠 분류 및 등급 결정 설명']}, outputs:{en:['Agent baseline','Gameplay log schema','Rating-classification pipeline'],ko:['에이전트 기준 모델','게임플레이 로그 스키마','등급 분류 파이프라인']} },
-    { slug:'text-to-scent', title:{en:'Text-to-Scent Generation and Evaluation',ko:'텍스트-향기 생성 및 평가'}, area:'olfactory-ai', type:{en:'Core Research',ko:'핵심 연구'}, stage:{en:'Active',ko:'진행 중'}, desc:{en:'Manufacturable scent recipe generation from natural language, followed by human perceptual evaluation.',ko:'자연어에서 제조 가능한 향기 레시피 생성 및 인간 지각 평가.'}, image:'assets/placeholder.jpg', goals:{en:['Generate valid scent recipes from text','Measure semantic alignment in human perception','Build reusable evaluation protocols'],ko:['텍스트에서 유효한 향기 레시피 생성','인간 지각에서 의미 정렬 측정','재사용 가능한 평가 프로토콜 구축']}, outputs:{en:['100 manufactured perfumes','1,000 perceptual evaluations','CHI perception manuscript'],ko:['100개 제조 향수','1,000개 지각 평가','CHI 지각 논문']} },
-    { slug:'scent-speaker', title:{en:'AI Olfactory Renderer / Scent Speaker',ko:'AI 후각 렌더러 / 향기 스피커'}, area:'olfactory-ai', type:{en:'Device Research',ko:'디바이스 연구'}, stage:{en:'Prototype',ko:'프로토타입'}, desc:{en:'A physical output device that renders generated scent recipes as real-time olfactory media.',ko:'생성된 향기 레시피를 실시간 후각 미디어로 렌더링하는 물리적 출력 디바이스.'}, image:'assets/placeholder.jpg', goals:{en:['Represent recipes with cartridge blends','Control emission and evaporation','Evaluate rendering consistency'],ko:['카트리지 블렌드로 레시피 표현','방출 및 증발 제어','렌더링 일관성 평가']}, outputs:{en:['Renderer architecture','Calibration protocol','Interactive demo'],ko:['렌더러 아키텍처','교정 프로토콜','인터랙티브 데모']} },
-    { slug:'scentbias', title:{en:'SCENTBIAS: Structured-output Safety',ko:'SCENTBIAS: 구조화 출력 안전성'}, area:'applied-ai', type:{en:'Benchmark',ko:'벤치마크'}, stage:{en:'Submitted',ko:'제출됨'}, desc:{en:'Evaluation suite for demographic differentiation and stereotype-related failures in text-to-scent generation.',ko:'텍스트-향기 생성에서 인구통계학적 차별화 및 고정관념 관련 실패 평가.'}, image:'assets/placeholder.jpg', goals:{en:['Detect demographic conditioning','Measure safety bypass','Separate distributional differentiation'],ko:['인구통계학적 조건화 감지','안전성 우회 측정','분포적 차별화 분리']}, outputs:{en:['Five-protocol suite','Trap-word diagnostic','Mitigation analysis'],ko:['5개 프로토콜 모음','함정 단어 진단','완화 분석']} },
-    { slug:'biometric-ondevice', title:{en:'Efficient Biometric Recognition',ko:'효율적 생체인식'}, area:'applied-ai', type:{en:'Applied AI',ko:'응용 AI'}, stage:{en:'Active',ko:'진행 중'}, desc:{en:'Compression, quantization, and explainability for biometric models under deployment constraints.',ko:'배포 제약 조건에서 생체인식 모델의 압축, 양자화, 설명 가능성.'}, image:'assets/placeholder.jpg', goals:{en:['Reduce model size without performance loss','Evaluate INT8 and FP16 deployment','Explain decisions with region-wise attribution'],ko:['성능 손실 없이 모델 크기 감소','INT8 및 FP16 배포 평가','영역별 귀속으로 결정 설명']}, outputs:{en:['On-device baseline','Quantization report','Journal manuscript'],ko:['온디바이스 기준 모델','양자화 보고서','저널 논문']} },
-    { slug:'student-scent-apps', title:{en:'Multimodal Scent Applications',ko:'멀티모달 향기 응용'}, area:'olfactory-ai', type:{en:'Student Projects',ko:'학생 프로젝트'}, stage:{en:'Exploratory',ko:'탐색 중'}, desc:{en:'Undergraduate research projects connecting scent with fashion, music, diary, and ambient media.',ko:'향기를 패션, 음악, 일기, 주변 미디어와 연결하는 학부 연구.'}, image:'assets/placeholder.jpg', goals:{en:['Build lightweight demos','Collect reusable data','Feed promising ideas into graduate projects'],ko:['경량 데모 개발','재사용 가능한 데이터 수집','대학원 프로젝트로 아이디어 연결']}, outputs:{en:['Fashion-to-scent demo','Music-to-scent mapping','Gallery-ready prototypes'],ko:['패션-향기 데모','음악-향기 매핑','갤러리 전시 프로토타입']} }
-  ],
-
-  people: [
+  "projects": [
     {
-      slug:'professor', category:'pi',
-      name:{en:'Jooyoung Kim',ko:'김주영'},
-      role:{en:'Principal Investigator · Assistant Professor',ko:'연구책임자 · 조교수'},
-      focus:{en:'Applied AI, multimodal generation, olfactory AI, game AI, biometric recognition, LLM evaluation',ko:'응용 AI, 멀티모달 생성, 후각 AI, 게임 AI, 생체인식, LLM 평가'},
-      bio:{en:'Assistant Professor in the Department of Convergence Software at Myongji University (since Sep 2024). Selected for NRF 우수신진연구(씨앗연구) program (2025). Published "아는 만큼 보이는 생성형 AI" (Jul 2025). Leads the AI & Applications Lab.', ko:'명지대학교 융합소프트웨어학부 조교수 (2024년 9월~). NRF 우수신진연구(씨앗연구) 선정 (2025). 저서 "아는 만큼 보이는 생성형 AI" 출판 (2025년 7월). AI & 응용연구실 책임교수.'},
-      image:'assets/profile.jpg'
+      "slug": "game-rating-agent",
+      "title": {
+        "en": "Automatic Gameplay and Rating AI",
+        "ko": "자동 게임플레이 및 등급 분류 AI"
+      },
+      "area": "game-ai",
+      "type": {
+        "en": "Funded Project",
+        "ko": "연구과제"
+      },
+      "stage": {
+        "en": "Active",
+        "ko": "진행 중"
+      },
+      "desc": {
+        "en": "Large-scale development of agents and multimodal evaluators for game rating classification.",
+        "ko": "게임 등급 분류를 위한 에이전트 및 멀티모달 평가기 대규모 개발."
+      },
+      "image": "assets/placeholder.jpg",
+      "goals": {
+        "en": [
+          "Build agents that navigate game environments",
+          "Extract multimodal evidence from gameplay",
+          "Classify content and explain rating decisions"
+        ],
+        "ko": [
+          "게임 환경을 탐색하는 에이전트 개발",
+          "게임플레이에서 멀티모달 증거 추출",
+          "콘텐츠 분류 및 등급 결정 설명"
+        ]
+      },
+      "outputs": {
+        "en": [
+          "Agent baseline",
+          "Gameplay log schema",
+          "Rating-classification pipeline"
+        ],
+        "ko": [
+          "에이전트 기준 모델",
+          "게임플레이 로그 스키마",
+          "등급 분류 파이프라인"
+        ]
+      }
     },
-    { slug:'seungju-lee', category:'phd', name:{en:'Seungju Lee',ko:'이승주'}, role:{en:'Ph.D. Candidate (2026.03 ~)',ko:'박사 과정 (2026.03 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'sanghoon-lee', category:'phd', name:{en:'Sanghoon Lee',ko:'이상훈'}, role:{en:'Ph.D. Candidate (2026.03 ~)',ko:'박사 과정 (2026.03 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'junsoo-jang', category:'intern', name:{en:'Junsoo Jang',ko:'장준수'}, role:{en:'Research Intern (2025.01 ~)',ko:'연구 인턴 (2025.01 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'jeemin-kim', category:'intern', name:{en:'Jeemin Kim',ko:'김지민'}, role:{en:'Research Intern (2025.04 ~)',ko:'연구 인턴 (2025.04 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'kyeongmin-kim', category:'intern', name:{en:'Kyeongmin Kim',ko:'김경민'}, role:{en:'Research Intern (2025.04 ~)',ko:'연구 인턴 (2025.04 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'minseon-jo', category:'intern', name:{en:'MinSeon Jo',ko:'조민선'}, role:{en:'Research Intern (2025.11 ~)',ko:'연구 인턴 (2025.11 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'yoojeong-kim', category:'intern', name:{en:'Yoojeong Kim',ko:'김유정'}, role:{en:'Research Intern (2025.12 ~)',ko:'연구 인턴 (2025.12 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'seunggyu-han', category:'intern', name:{en:'SeungGyu Han',ko:'한승규'}, role:{en:'Research Intern (2025.12 ~)',ko:'연구 인턴 (2025.12 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'minwook-kim', category:'intern', name:{en:'Minwook Kim',ko:'김민욱'}, role:{en:'Research Intern (2025.12 ~)',ko:'연구 인턴 (2025.12 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'sukwoo-jung', category:'intern', name:{en:'SukWoo Jung',ko:'정석우'}, role:{en:'Research Intern (2025.12 ~)',ko:'연구 인턴 (2025.12 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'taekdong-kim', category:'intern', name:{en:'Taekdong Kim',ko:'김택동'}, role:{en:'Research Intern (2026.01 ~)',ko:'연구 인턴 (2026.01 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'jihoon-shin', category:'intern', name:{en:'Jihoon Shin',ko:'신지훈'}, role:{en:'Research Intern (2026.03 ~)',ko:'연구 인턴 (2026.03 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'seonga-lee', category:'intern', name:{en:'Seonga Lee',ko:'이성아'}, role:{en:'Research Intern (2026.03 ~)',ko:'연구 인턴 (2026.03 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { slug:'minseo-kim', category:'intern', name:{en:'Minseo Kim',ko:'김민서'}, role:{en:'Research Intern (2026.03 ~)',ko:'연구 인턴 (2026.03 ~)'}, focus:{en:'',ko:''}, bio:{en:'',ko:''}, image:'assets/profile.jpg' }
+    {
+      "slug": "text-to-scent",
+      "title": {
+        "en": "Text-to-Scent Generation and Evaluation",
+        "ko": "텍스트-향기 생성 및 평가"
+      },
+      "area": "olfactory-ai",
+      "type": {
+        "en": "Core Research",
+        "ko": "핵심 연구"
+      },
+      "stage": {
+        "en": "Active",
+        "ko": "진행 중"
+      },
+      "desc": {
+        "en": "Manufacturable scent recipe generation from natural language, followed by human perceptual evaluation.",
+        "ko": "자연어에서 제조 가능한 향기 레시피 생성 및 인간 지각 평가."
+      },
+      "image": "assets/placeholder.jpg",
+      "goals": {
+        "en": [
+          "Generate valid scent recipes from text",
+          "Measure semantic alignment in human perception",
+          "Build reusable evaluation protocols"
+        ],
+        "ko": [
+          "텍스트에서 유효한 향기 레시피 생성",
+          "인간 지각에서 의미 정렬 측정",
+          "재사용 가능한 평가 프로토콜 구축"
+        ]
+      },
+      "outputs": {
+        "en": [
+          "100 manufactured perfumes",
+          "1,000 perceptual evaluations",
+          "CHI perception manuscript"
+        ],
+        "ko": [
+          "100개 제조 향수",
+          "1,000개 지각 평가",
+          "CHI 지각 논문"
+        ]
+      }
+    },
+    {
+      "slug": "scent-speaker",
+      "title": {
+        "en": "AI Olfactory Renderer / Scent Speaker",
+        "ko": "AI 후각 렌더러 / 향기 스피커"
+      },
+      "area": "olfactory-ai",
+      "type": {
+        "en": "Device Research",
+        "ko": "디바이스 연구"
+      },
+      "stage": {
+        "en": "Prototype",
+        "ko": "프로토타입"
+      },
+      "desc": {
+        "en": "A physical output device that renders generated scent recipes as real-time olfactory media.",
+        "ko": "생성된 향기 레시피를 실시간 후각 미디어로 렌더링하는 물리적 출력 디바이스."
+      },
+      "image": "assets/placeholder.jpg",
+      "goals": {
+        "en": [
+          "Represent recipes with cartridge blends",
+          "Control emission and evaporation",
+          "Evaluate rendering consistency"
+        ],
+        "ko": [
+          "카트리지 블렌드로 레시피 표현",
+          "방출 및 증발 제어",
+          "렌더링 일관성 평가"
+        ]
+      },
+      "outputs": {
+        "en": [
+          "Renderer architecture",
+          "Calibration protocol",
+          "Interactive demo"
+        ],
+        "ko": [
+          "렌더러 아키텍처",
+          "교정 프로토콜",
+          "인터랙티브 데모"
+        ]
+      }
+    },
+    {
+      "slug": "scentbias",
+      "title": {
+        "en": "SCENTBIAS: Structured-output Safety",
+        "ko": "SCENTBIAS: 구조화 출력 안전성"
+      },
+      "area": "applied-ai",
+      "type": {
+        "en": "Benchmark",
+        "ko": "벤치마크"
+      },
+      "stage": {
+        "en": "Submitted",
+        "ko": "제출됨"
+      },
+      "desc": {
+        "en": "Evaluation suite for demographic differentiation and stereotype-related failures in text-to-scent generation.",
+        "ko": "텍스트-향기 생성에서 인구통계학적 차별화 및 고정관념 관련 실패 평가."
+      },
+      "image": "assets/placeholder.jpg",
+      "goals": {
+        "en": [
+          "Detect demographic conditioning",
+          "Measure safety bypass",
+          "Separate distributional differentiation"
+        ],
+        "ko": [
+          "인구통계학적 조건화 감지",
+          "안전성 우회 측정",
+          "분포적 차별화 분리"
+        ]
+      },
+      "outputs": {
+        "en": [
+          "Five-protocol suite",
+          "Trap-word diagnostic",
+          "Mitigation analysis"
+        ],
+        "ko": [
+          "5개 프로토콜 모음",
+          "함정 단어 진단",
+          "완화 분석"
+        ]
+      }
+    },
+    {
+      "slug": "biometric-ondevice",
+      "title": {
+        "en": "Efficient Biometric Recognition",
+        "ko": "효율적 생체인식"
+      },
+      "area": "applied-ai",
+      "type": {
+        "en": "Applied AI",
+        "ko": "응용 AI"
+      },
+      "stage": {
+        "en": "Active",
+        "ko": "진행 중"
+      },
+      "desc": {
+        "en": "Compression, quantization, and explainability for biometric models under deployment constraints.",
+        "ko": "배포 제약 조건에서 생체인식 모델의 압축, 양자화, 설명 가능성."
+      },
+      "image": "assets/placeholder.jpg",
+      "goals": {
+        "en": [
+          "Reduce model size without performance loss",
+          "Evaluate INT8 and FP16 deployment",
+          "Explain decisions with region-wise attribution"
+        ],
+        "ko": [
+          "성능 손실 없이 모델 크기 감소",
+          "INT8 및 FP16 배포 평가",
+          "영역별 귀속으로 결정 설명"
+        ]
+      },
+      "outputs": {
+        "en": [
+          "On-device baseline",
+          "Quantization report",
+          "Journal manuscript"
+        ],
+        "ko": [
+          "온디바이스 기준 모델",
+          "양자화 보고서",
+          "저널 논문"
+        ]
+      }
+    },
+    {
+      "slug": "student-scent-apps",
+      "title": {
+        "en": "Multimodal Scent Applications",
+        "ko": "멀티모달 향기 응용"
+      },
+      "area": "olfactory-ai",
+      "type": {
+        "en": "Student Projects",
+        "ko": "학생 프로젝트"
+      },
+      "stage": {
+        "en": "Exploratory",
+        "ko": "탐색 중"
+      },
+      "desc": {
+        "en": "Undergraduate research projects connecting scent with fashion, music, diary, and ambient media.",
+        "ko": "향기를 패션, 음악, 일기, 주변 미디어와 연결하는 학부 연구."
+      },
+      "image": "assets/placeholder.jpg",
+      "goals": {
+        "en": [
+          "Build lightweight demos",
+          "Collect reusable data",
+          "Feed promising ideas into graduate projects"
+        ],
+        "ko": [
+          "경량 데모 개발",
+          "재사용 가능한 데이터 수집",
+          "대학원 프로젝트로 아이디어 연결"
+        ]
+      },
+      "outputs": {
+        "en": [
+          "Fashion-to-scent demo",
+          "Music-to-scent mapping",
+          "Gallery-ready prototypes"
+        ],
+        "ko": [
+          "패션-향기 데모",
+          "음악-향기 매핑",
+          "갤러리 전시 프로토타입"
+        ]
+      }
+    }
   ],
-
-  alumni: [
-    { name:{en:'Sumin Seo',ko:'서수민'}, role:{en:'Research Intern',ko:'연구 인턴'}, year:'2024.12 ~ 2025.06', affiliation:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { name:{en:'Yeonwoo Choo',ko:'추연우'}, role:{en:'Research Intern',ko:'연구 인턴'}, year:'2025.01 ~ 2026.02', affiliation:{en:'',ko:''}, image:'assets/profile.jpg' },
-    { name:{en:'Gyuri Kim',ko:'김규리'}, role:{en:'Research Intern',ko:'연구 인턴'}, year:'2025.06 ~ 2026.02', affiliation:{en:'',ko:''}, image:'assets/profile.jpg' }
+  "people": [
+    {
+      "slug": "professor",
+      "category": "pi",
+      "name": {
+        "en": "Jooyoung Kim",
+        "ko": "김주영"
+      },
+      "role": {
+        "en": "Principal Investigator · Assistant Professor",
+        "ko": "연구책임자 · 조교수"
+      },
+      "focus": {
+        "en": "Applied AI, multimodal generation, olfactory AI, game AI, biometric recognition, LLM evaluation",
+        "ko": "응용 AI, 멀티모달 생성, 후각 AI, 게임 AI, 생체인식, LLM 평가"
+      },
+      "bio": {
+        "en": "Assistant Professor in the Department of Convergence Software at Myongji University (since Sep 2024). Selected for NRF 우수신진연구(씨앗연구) program (2025). Published \"아는 만큼 보이는 생성형 AI\" (Jul 2025). Leads the AI & Applications Lab.",
+        "ko": "명지대학교 융합소프트웨어학부 조교수 (2024년 9월~). NRF 우수신진연구(씨앗연구) 선정 (2025). 저서 \"아는 만큼 보이는 생성형 AI\" 출판 (2025년 7월). AI & 응용연구실 책임교수."
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "seungju-lee",
+      "category": "phd",
+      "name": {
+        "en": "Seungju Lee",
+        "ko": "이승주"
+      },
+      "role": {
+        "en": "Ph.D. Candidate (2026.03 ~)",
+        "ko": "박사 과정 (2026.03 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "sanghoon-lee",
+      "category": "phd",
+      "name": {
+        "en": "Sanghoon Lee",
+        "ko": "이상훈"
+      },
+      "role": {
+        "en": "Ph.D. Candidate (2026.03 ~)",
+        "ko": "박사 과정 (2026.03 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "junsoo-jang",
+      "category": "intern",
+      "name": {
+        "en": "Junsoo Jang",
+        "ko": "장준수"
+      },
+      "role": {
+        "en": "Research Intern (2025.01 ~)",
+        "ko": "연구 인턴 (2025.01 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "jeemin-kim",
+      "category": "intern",
+      "name": {
+        "en": "Jeemin Kim",
+        "ko": "김지민"
+      },
+      "role": {
+        "en": "Research Intern (2025.04 ~)",
+        "ko": "연구 인턴 (2025.04 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "kyeongmin-kim",
+      "category": "intern",
+      "name": {
+        "en": "Kyeongmin Kim",
+        "ko": "김경민"
+      },
+      "role": {
+        "en": "Research Intern (2025.04 ~)",
+        "ko": "연구 인턴 (2025.04 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "minseon-jo",
+      "category": "intern",
+      "name": {
+        "en": "MinSeon Jo",
+        "ko": "조민선"
+      },
+      "role": {
+        "en": "Research Intern (2025.11 ~)",
+        "ko": "연구 인턴 (2025.11 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "yoojeong-kim",
+      "category": "intern",
+      "name": {
+        "en": "Yoojeong Kim",
+        "ko": "김유정"
+      },
+      "role": {
+        "en": "Research Intern (2025.12 ~)",
+        "ko": "연구 인턴 (2025.12 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "seunggyu-han",
+      "category": "intern",
+      "name": {
+        "en": "SeungGyu Han",
+        "ko": "한승규"
+      },
+      "role": {
+        "en": "Research Intern (2025.12 ~)",
+        "ko": "연구 인턴 (2025.12 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "minwook-kim",
+      "category": "intern",
+      "name": {
+        "en": "Minwook Kim",
+        "ko": "김민욱"
+      },
+      "role": {
+        "en": "Research Intern (2025.12 ~)",
+        "ko": "연구 인턴 (2025.12 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "sukwoo-jung",
+      "category": "intern",
+      "name": {
+        "en": "SukWoo Jung",
+        "ko": "정석우"
+      },
+      "role": {
+        "en": "Research Intern (2025.12 ~)",
+        "ko": "연구 인턴 (2025.12 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "taekdong-kim",
+      "category": "intern",
+      "name": {
+        "en": "Taekdong Kim",
+        "ko": "김택동"
+      },
+      "role": {
+        "en": "Research Intern (2026.01 ~)",
+        "ko": "연구 인턴 (2026.01 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "jihoon-shin",
+      "category": "intern",
+      "name": {
+        "en": "Jihoon Shin",
+        "ko": "신지훈"
+      },
+      "role": {
+        "en": "Research Intern (2026.03 ~)",
+        "ko": "연구 인턴 (2026.03 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "seonga-lee",
+      "category": "intern",
+      "name": {
+        "en": "Seonga Lee",
+        "ko": "이성아"
+      },
+      "role": {
+        "en": "Research Intern (2026.03 ~)",
+        "ko": "연구 인턴 (2026.03 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "slug": "minseo-kim",
+      "category": "intern",
+      "name": {
+        "en": "Minseo Kim",
+        "ko": "김민서"
+      },
+      "role": {
+        "en": "Research Intern (2026.03 ~)",
+        "ko": "연구 인턴 (2026.03 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    }
   ],
-
-  publications: [
-    // ── Upcoming / in preparation ────────────────────────
-    { slug:'chi-perception', cat:'intl-conference', url:'', title:'Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent', authors:'Kim, J. et al.', venue:'Manuscript in preparation for CHI', year:'2027' },
-    { slug:'scentbias-paper', cat:'intl-conference', url:'', title:'Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation', authors:'Kim, J. et al.', venue:'NeurIPS E&D Workshop', year:'2026' },
-    { slug:'bbq-paper', cat:'intl-conference', url:'', title:'When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ', authors:'Kim, J. et al.', venue:'ACL Rolling Review', year:'2026' },
-    { slug:'face-sketch-xai', cat:'intl-journal', url:'', title:'Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion', authors:'Kim, J. et al.', venue:'Journal (under revision)', year:'2026' },
-    // ── 2025 ────────────────────────────────────────────
-    { slug:'j7-lol', cat:'intl-journal', url:'https://www.mdpi.com/journal/applsci', title:'Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input', authors:'Kim, J., Lee, W., & Park, J.', venue:'Applied Sciences', year:'2025', note:'SCIE, 2022 IF: 2.5' },
-    { slug:'j6-smote', cat:'intl-journal', url:'https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361', title:'SMOTE-Diffusion: A Combined Approach for Authentic Data Generation for Time-domain Radar Signal in Intelligent Transportation System', authors:'Yun, K., Park, J., Kim, J., & Kim, T.', venue:'IEEE Sensors Journal', year:'2025', note:'SCIE, 2024 IF: 4.3' },
-    { slug:'game-rating-ai', cat:'domestic-conference', url:'https://www.kiise.or.kr', title:'AI 기반 게임 콘텐츠 이해 및 등급 분류 연구', authors:'Kim, J. et al.', venue:'한국정보과학회', year:'2025' },
-    // ── 2024 ────────────────────────────────────────────
-    { slug:'j5-perfume', cat:'intl-journal', url:'https://www.mdpi.com/journal/applsci', title:'An NLP-Based Perfume Note Estimation Based on Descriptive Sentences', authors:'Kim, J., Oh, K., & Oh, B. S.', venue:'Applied Sciences', year:'2024', note:'SCIE, 2022 IF: 2.5' },
-    // ── 2023 ────────────────────────────────────────────
-    { slug:'j4-facesketch', cat:'intl-journal', url:'https://link.springer.com/journal/521', title:'Face Photo-sketch Recognition based on Multi-Directional Line Features Projection', authors:'Kim, J., Lin, Z., Kim, D., & Toh, K. A.', venue:'Neural Computing and Applications', year:'2023', note:'SCIE, 2022 IF: 6.0' },
-    { slug:'c7-esports', cat:'intl-conference', url:'https://ieeexplore.ieee.org/xpl/conhome/10361948/proceeding', title:'Rethinking Evaluation Metric for Probability Estimation Models Using Esports Data', authors:'Choi, E., Kim, J., & Lee, W.', venue:'IEEE TrustCom 2023', year:'2023' },
-    { slug:'c6-palmvein', cat:'intl-conference', url:'https://www.iceic.org', title:'Multispectral Palm-Vein Fusion for User Identification', authors:'Lee, J., Kim, J., Kim, D., Lee, S., Sung, J., & Toh, K. A.', venue:'IEEE ICEIC 2023', year:'2023' },
-    // ── 2022 ────────────────────────────────────────────
-    { slug:'p2-body', cat:'patent', url:'https://www.kipris.or.kr', title:'Image based body composition analyzing apparatus and body composition analyzing method, and smart device using the same', authors:'Kim, J.', venue:'Republic of Korea', patentNumber:'KR-1023596560000', year:'2022' },
-    { slug:'c5-palm', cat:'intl-conference', url:'https://ieeexplore.ieee.org/xpl/conhome/9933666/proceeding', title:'Identity Verification based on the RGB and NIR Images of the Palm', authors:'Lee, J., Kim, J., & Toh, K. A.', venue:'IEEE INDIN 2022', year:'2022' },
-    // ── 2021 ────────────────────────────────────────────
-    { slug:'j3-plasmon', cat:'intl-journal', url:'https://opg.optica.org/oe/home.cfm', title:'Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate', authors:'Kim, J., Lee, H., Im, S., Lee, S. A., Kim, D., & Toh, K. A.', venue:'Optics Express', year:'2021', note:'SCIE, 2022 IF: 3.8' },
-    { slug:'j2-wifi', cat:'intl-journal', url:'https://ieeeaccess.ieee.org/', title:'Wi-Fi based user identification using in-air handwritten signature', authors:'Jung, J., Moon, H. C., Kim, J., Kim, D., & Toh, K. A.', venue:'IEEE Access', year:'2021', note:'SCIE, 2022 IF: 3.9' },
-    // ── 2019 ────────────────────────────────────────────
-    { slug:'j1-fkp', cat:'intl-journal', url:'https://link.springer.com/journal/12559', title:'A line feature extraction method for finger-knuckle-print verification', authors:'Kim, J., Oh, K., Oh, B. S., Lin, Z., & Toh, K. A.', venue:'Cognitive Computation', year:'2019', note:'SCIE, 2022 IF: 5.4' },
-    { slug:'p1-stock', cat:'patent', url:'https://www.kipris.or.kr', title:'Method of providing stock information', authors:'Kim, J., Kar-Ann Toh', venue:'Republic of Korea', patentNumber:'KR-1020125640000', year:'2019' },
-    { slug:'c4-wifi-triplet', cat:'intl-conference', url:'https://ieeexplore.ieee.org/xpl/conhome/8961595/proceeding', title:'Wi-Fi based handwritten signature verification using a triplet network', authors:'Kwon, Y., Kim, J., & Toh, K. A.', venue:'ICAIP 2019', year:'2019' },
-    { slug:'c3-wifi-transfer', cat:'intl-conference', url:'https://ieeexplore.ieee.org/xpl/conhome/8820578/proceeding', title:'Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection', authors:'Jung, J., Kim, J., & Toh, K. A.', venue:'IEEE ICIP 2019', year:'2019' },
-    // ── 2017 ────────────────────────────────────────────
-    { slug:'c2-glaucoma', cat:'intl-conference', url:'https://ieeexplore.ieee.org/', title:'Fusing geometric and appearance-based features for glaucoma diagnosis', authors:'Oh, K., Kim, J., Yoon, S., & Seo, K. Y.', venue:'AIPR 2017', year:'2017' },
-    // ── 2016 ────────────────────────────────────────────
-    { slug:'c1-fkp-ieee', cat:'intl-conference', url:'https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding', title:'Finger-knuckle-print for identity verification based on difference images', authors:'Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.', venue:'IEEE ICIEA 2016', year:'2016' }
+  "alumni": [
+    {
+      "name": {
+        "en": "Sumin Seo",
+        "ko": "서수민"
+      },
+      "role": {
+        "en": "Research Intern",
+        "ko": "연구 인턴"
+      },
+      "year": "2024.12 ~ 2025.06",
+      "affiliation": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "name": {
+        "en": "Yeonwoo Choo",
+        "ko": "추연우"
+      },
+      "role": {
+        "en": "Research Intern",
+        "ko": "연구 인턴"
+      },
+      "year": "2025.01 ~ 2026.02",
+      "affiliation": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    },
+    {
+      "name": {
+        "en": "Gyuri Kim",
+        "ko": "김규리"
+      },
+      "role": {
+        "en": "Research Intern",
+        "ko": "연구 인턴"
+      },
+      "year": "2025.06 ~ 2026.02",
+      "affiliation": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/profile.jpg"
+    }
   ],
-
-  gallery: [ // date format: 'YYYY-MM-DD' or 'YYYY.MM' etc.
-    { slug:'seminar', cat:'lab', date:'', title:{en:'Research Seminar',ko:'연구 세미나'}, image:'assets/placeholder.jpg', text:{en:'Weekly research discussion, paper reading, and project milestones.',ko:'주간 연구 토론, 논문 읽기, 프로젝트 마일스톤.'} },
-    { slug:'olfactory-experiment', cat:'scent', date:'', title:{en:'Olfactory AI Experiments',ko:'후각 AI 실험'}, image:'assets/placeholder.jpg', text:{en:'Physical scent stimuli, recipe validation, and perception-study preparation.',ko:'물리적 향기 자극, 레시피 검증, 지각 연구 준비.'} },
-    { slug:'game-session', cat:'game', date:'', title:{en:'Game AI Development',ko:'게임 AI 개발'}, image:'assets/placeholder.jpg', text:{en:'Automatic gameplay, agent testing, and multimodal log inspection.',ko:'자동 게임플레이, 에이전트 테스트, 멀티모달 로그 검사.'} },
-    { slug:'student-research', cat:'students', date:'', title:{en:'Student Research',ko:'학생 연구'}, image:'assets/placeholder.jpg', text:{en:'Graduate and undergraduate research sessions.',ko:'대학원생 및 학부생 연구 세션.'} },
-    { slug:'prototype-demo', cat:'demo', date:'', title:{en:'Prototype Demo',ko:'프로토타입 데모'}, image:'assets/placeholder.jpg', text:{en:'Applied AI prototypes, demos, and early-stage systems.',ko:'응용 AI 프로토타입, 데모, 초기 시스템.'} },
-    { slug:'workshop', cat:'lab', date:'', title:{en:'AI Workshop',ko:'AI 워크숍'}, image:'assets/placeholder.jpg', text:{en:'Teaching, industry training, and generative AI workshops.',ko:'교육, 산업 훈련, 생성형 AI 워크숍.'} }
+  "publications": [
+    {
+      "slug": "chi-perception",
+      "cat": "intl-conference",
+      "url": "",
+      "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
+      "authors": "Kim, J. et al.",
+      "venue": "Manuscript in preparation for CHI",
+      "year": "2027"
+    },
+    {
+      "slug": "scentbias-paper",
+      "cat": "intl-conference",
+      "url": "",
+      "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
+      "authors": "Kim, J. et al.",
+      "venue": "NeurIPS E&D Workshop",
+      "year": "2026"
+    },
+    {
+      "slug": "bbq-paper",
+      "cat": "intl-conference",
+      "url": "",
+      "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
+      "authors": "Kim, J. et al.",
+      "venue": "ACL Rolling Review",
+      "year": "2026"
+    },
+    {
+      "slug": "face-sketch-xai",
+      "cat": "intl-journal",
+      "url": "",
+      "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
+      "authors": "Kim, J. et al.",
+      "venue": "Journal (under revision)",
+      "year": "2026"
+    },
+    {
+      "slug": "j7-lol",
+      "cat": "intl-journal",
+      "url": "https://www.mdpi.com/journal/applsci",
+      "title": "Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input",
+      "authors": "Kim, J., Lee, W., & Park, J.",
+      "venue": "Applied Sciences",
+      "year": "2025",
+      "note": "SCIE, 2022 IF: 2.5"
+    },
+    {
+      "slug": "j6-smote",
+      "cat": "intl-journal",
+      "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361",
+      "title": "SMOTE-Diffusion: A Combined Approach for Authentic Data Generation for Time-domain Radar Signal in Intelligent Transportation System",
+      "authors": "Yun, K., Park, J., Kim, J., & Kim, T.",
+      "venue": "IEEE Sensors Journal",
+      "year": "2025",
+      "note": "SCIE, 2024 IF: 4.3"
+    },
+    {
+      "slug": "game-rating-ai",
+      "cat": "domestic-conference",
+      "url": "https://www.kiise.or.kr",
+      "title": "AI 기반 게임 콘텐츠 이해 및 등급 분류 연구",
+      "authors": "Kim, J. et al.",
+      "venue": "한국정보과학회",
+      "year": "2025"
+    },
+    {
+      "slug": "j5-perfume",
+      "cat": "intl-journal",
+      "url": "https://www.mdpi.com/journal/applsci",
+      "title": "An NLP-Based Perfume Note Estimation Based on Descriptive Sentences",
+      "authors": "Kim, J., Oh, K., & Oh, B. S.",
+      "venue": "Applied Sciences",
+      "year": "2024",
+      "note": "SCIE, 2022 IF: 2.5"
+    },
+    {
+      "slug": "j4-facesketch",
+      "cat": "intl-journal",
+      "url": "https://link.springer.com/journal/521",
+      "title": "Face Photo-sketch Recognition based on Multi-Directional Line Features Projection",
+      "authors": "Kim, J., Lin, Z., Kim, D., & Toh, K. A.",
+      "venue": "Neural Computing and Applications",
+      "year": "2023",
+      "note": "SCIE, 2022 IF: 6.0"
+    },
+    {
+      "slug": "c7-esports",
+      "cat": "intl-conference",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/10361948/proceeding",
+      "title": "Rethinking Evaluation Metric for Probability Estimation Models Using Esports Data",
+      "authors": "Choi, E., Kim, J., & Lee, W.",
+      "venue": "IEEE TrustCom 2023",
+      "year": "2023"
+    },
+    {
+      "slug": "c6-palmvein",
+      "cat": "intl-conference",
+      "url": "https://www.iceic.org",
+      "title": "Multispectral Palm-Vein Fusion for User Identification",
+      "authors": "Lee, J., Kim, J., Kim, D., Lee, S., Sung, J., & Toh, K. A.",
+      "venue": "IEEE ICEIC 2023",
+      "year": "2023"
+    },
+    {
+      "slug": "p2-body",
+      "cat": "patent",
+      "url": "https://www.kipris.or.kr",
+      "title": "Image based body composition analyzing apparatus and body composition analyzing method, and smart device using the same",
+      "authors": "Kim, J.",
+      "venue": "Republic of Korea",
+      "patentNumber": "KR-1023596560000",
+      "year": "2022"
+    },
+    {
+      "slug": "c5-palm",
+      "cat": "intl-conference",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/9933666/proceeding",
+      "title": "Identity Verification based on the RGB and NIR Images of the Palm",
+      "authors": "Lee, J., Kim, J., & Toh, K. A.",
+      "venue": "IEEE INDIN 2022",
+      "year": "2022"
+    },
+    {
+      "slug": "j3-plasmon",
+      "cat": "intl-journal",
+      "url": "https://opg.optica.org/oe/home.cfm",
+      "title": "Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate",
+      "authors": "Kim, J., Lee, H., Im, S., Lee, S. A., Kim, D., & Toh, K. A.",
+      "venue": "Optics Express",
+      "year": "2021",
+      "note": "SCIE, 2022 IF: 3.8"
+    },
+    {
+      "slug": "j2-wifi",
+      "cat": "intl-journal",
+      "url": "https://ieeeaccess.ieee.org/",
+      "title": "Wi-Fi based user identification using in-air handwritten signature",
+      "authors": "Jung, J., Moon, H. C., Kim, J., Kim, D., & Toh, K. A.",
+      "venue": "IEEE Access",
+      "year": "2021",
+      "note": "SCIE, 2022 IF: 3.9"
+    },
+    {
+      "slug": "j1-fkp",
+      "cat": "intl-journal",
+      "url": "https://link.springer.com/journal/12559",
+      "title": "A line feature extraction method for finger-knuckle-print verification",
+      "authors": "Kim, J., Oh, K., Oh, B. S., Lin, Z., & Toh, K. A.",
+      "venue": "Cognitive Computation",
+      "year": "2019",
+      "note": "SCIE, 2022 IF: 5.4"
+    },
+    {
+      "slug": "p1-stock",
+      "cat": "patent",
+      "url": "https://www.kipris.or.kr",
+      "title": "Method of providing stock information",
+      "authors": "Kim, J., Kar-Ann Toh",
+      "venue": "Republic of Korea",
+      "patentNumber": "KR-1020125640000",
+      "year": "2019"
+    },
+    {
+      "slug": "c4-wifi-triplet",
+      "cat": "intl-conference",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/8961595/proceeding",
+      "title": "Wi-Fi based handwritten signature verification using a triplet network",
+      "authors": "Kwon, Y., Kim, J., & Toh, K. A.",
+      "venue": "ICAIP 2019",
+      "year": "2019"
+    },
+    {
+      "slug": "c3-wifi-transfer",
+      "cat": "intl-conference",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/8820578/proceeding",
+      "title": "Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection",
+      "authors": "Jung, J., Kim, J., & Toh, K. A.",
+      "venue": "IEEE ICIP 2019",
+      "year": "2019"
+    },
+    {
+      "slug": "c2-glaucoma",
+      "cat": "intl-conference",
+      "url": "https://ieeexplore.ieee.org/",
+      "title": "Fusing geometric and appearance-based features for glaucoma diagnosis",
+      "authors": "Oh, K., Kim, J., Yoon, S., & Seo, K. Y.",
+      "venue": "AIPR 2017",
+      "year": "2017"
+    },
+    {
+      "slug": "c1-fkp-ieee",
+      "cat": "intl-conference",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding",
+      "title": "Finger-knuckle-print for identity verification based on difference images",
+      "authors": "Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.",
+      "venue": "IEEE ICIEA 2016",
+      "year": "2016"
+    }
+  ],
+  "gallery": [
+    {
+      "slug": "seminar",
+      "cat": "lab",
+      "date": "2026.06.18",
+      "title": {
+        "en": "방송미디어공학회 하계학술대회 참석",
+        "ko": "방송미디어공학회 하계학술대회 참석-ko"
+      },
+      "image": "assets/_- visual selection.png",
+      "text": {
+        "en": "test",
+        "ko": "test-ko"
+      }
+    },
+    {
+      "slug": "olfactory-experiment",
+      "cat": "scent",
+      "date": "",
+      "title": {
+        "en": "Olfactory AI Experiments",
+        "ko": "후각 AI 실험"
+      },
+      "image": "assets/placeholder.jpg",
+      "text": {
+        "en": "Physical scent stimuli, recipe validation, and perception-study preparation.",
+        "ko": "물리적 향기 자극, 레시피 검증, 지각 연구 준비."
+      }
+    },
+    {
+      "slug": "game-session",
+      "cat": "game",
+      "date": "",
+      "title": {
+        "en": "Game AI Development",
+        "ko": "게임 AI 개발"
+      },
+      "image": "assets/placeholder.jpg",
+      "text": {
+        "en": "Automatic gameplay, agent testing, and multimodal log inspection.",
+        "ko": "자동 게임플레이, 에이전트 테스트, 멀티모달 로그 검사."
+      }
+    },
+    {
+      "slug": "student-research",
+      "cat": "students",
+      "date": "",
+      "title": {
+        "en": "Student Research",
+        "ko": "학생 연구"
+      },
+      "image": "assets/placeholder.jpg",
+      "text": {
+        "en": "Graduate and undergraduate research sessions.",
+        "ko": "대학원생 및 학부생 연구 세션."
+      }
+    }
   ]
 };
 
