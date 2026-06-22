@@ -1102,7 +1102,7 @@ const data = {
         "en": "Game AI Development",
         "ko": "게임 AI 개발"
       },
-      "image": "assets/placeholder.jpg",
+      "image": "assets/img-1782132639658-ijjlt29s.jpg",
       "text": {
         "en": "Automatic gameplay, agent testing, and multimodal log inspection.",
         "ko": "자동 게임플레이, 에이전트 테스트, 멀티모달 로그 검사."
