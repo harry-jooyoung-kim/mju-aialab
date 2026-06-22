@@ -1251,7 +1251,10 @@ function home() {
       <div class="cta-row">${cta('projects/applied-ai', t('subNav.appliedAI'))}${ghost('publications', t('nav.publications'))}</div>
       <img class="tile-media" src="assets/placeholder.jpg" alt="">
     </section>
-    ${collabLogoStrip()}`;
+    <section class="tile light" style="padding:60px 24px">
+      <h2 style="margin-bottom:32px">${t('contact.collaborators')}</h2>
+      ${collabLogoStrip()}
+    </section>`;
 }
 
 function research() {
