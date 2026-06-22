@@ -525,12 +525,12 @@ const data = {
         "ko": "연구책임자 · 조교수"
       },
       "focus": {
-        "en": "Applied AI, multimodal generation, olfactory AI, game AI, biometric recognition, LLM evaluation",
+        "en": "Applied AI, multimodal generation, olfactory AI, game AI, biometrics, LLM evaluation",
         "ko": "응용 AI, 멀티모달 생성, 후각 AI, 게임 AI, 생체인식, LLM 평가"
       },
       "bio": {
-        "en": "Assistant Professor in the Department of Convergence Software at Myongji University (since Sep 2024). Selected for NRF 우수신진연구(씨앗연구) program (2025). Published \"아는 만큼 보이는 생성형 AI\" (Jul 2025). Leads the AI & Applications Lab.",
-        "ko": "명지대학교 융합소프트웨어학부 조교수 (2024년 9월~). NRF 우수신진연구(씨앗연구) 선정 (2025). 저서 \"아는 만큼 보이는 생성형 AI\" 출판 (2025년 7월). AI & 응용연구실 책임교수."
+        "en": "Jooyoung Kim is an Assistant Professor in the Department of Convergence Software at Myongji University, South Korea. He received his B.S. and Ph.D. degrees in Electrical and Electronic Engineering from Yonsei University, South Korea. After graduation, he worked as a Manager in the Data Science Team, G.AI Group at SK Inc C&C. Additionally, he co-founded PS Analytics, an e-sport data analysis company. His research interests encompass the application and development of state-of-the-art pattern recognition and machine learning methods across multidisciplinary fields.",
+        "ko": "Jooyoung Kim is an Assistant Professor in the Department of Convergence Software at Myongji University, South Korea. He received his B.S. and Ph.D. degrees in Electrical and Electronic Engineering from Yonsei University, South Korea. After graduation, he worked as a Manager in the Data Science Team, G.AI Group at SK Inc C&C. Additionally, he co-founded PS Analytics, an e-sport data analysis company. His research interests encompass the application and development of state-of-the-art pattern recognition and machine learning methods across multidisciplinary fields."
       },
       "image": "assets/profile.jpg"
     },
@@ -553,7 +553,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782171948577-cynoabab.jpg"
     },
     {
       "slug": "sanghoon-lee",
@@ -574,28 +574,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
-    },
-    {
-      "slug": "junsoo-jang",
-      "category": "intern",
-      "name": {
-        "en": "Junsoo Jang",
-        "ko": "장준수"
-      },
-      "role": {
-        "en": "Research Intern (2025.01 ~)",
-        "ko": "연구 인턴 (2025.01 ~)"
-      },
-      "focus": {
-        "en": "",
-        "ko": ""
-      },
-      "bio": {
-        "en": "",
-        "ko": ""
-      },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782171963708-wj19pwtq.jpg"
     },
     {
       "slug": "jeemin-kim",
@@ -606,7 +585,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2025.04 ~)",
-        "ko": "연구 인턴 (2025.04 ~)"
+        "ko": "학부연구생 (2025.04 ~)"
       },
       "focus": {
         "en": "",
@@ -616,18 +595,18 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172195402-54c4j7ot.jpg"
     },
     {
       "slug": "kyeongmin-kim",
-      "category": "intern",
+      "category": "phd",
       "name": {
         "en": "Kyeongmin Kim",
         "ko": "김경민"
       },
       "role": {
-        "en": "Research Intern (2025.04 ~)",
-        "ko": "연구 인턴 (2025.04 ~)"
+        "en": "Ph.D. Candidate (2026.09 ~)",
+        "ko": "박사 과정 (2026.09 ~)"
       },
       "focus": {
         "en": "",
@@ -637,7 +616,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172004427-nxcbo9y3.jpg"
     },
     {
       "slug": "minseon-jo",
@@ -648,7 +627,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2025.11 ~)",
-        "ko": "연구 인턴 (2025.11 ~)"
+        "ko": "학부연구생 (2025.11 ~)"
       },
       "focus": {
         "en": "",
@@ -658,7 +637,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172213056-n3xayg3v.jpg"
     },
     {
       "slug": "yoojeong-kim",
@@ -669,7 +648,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2025.12 ~)",
-        "ko": "연구 인턴 (2025.12 ~)"
+        "ko": "학부연구생 (2025.12 ~)"
       },
       "focus": {
         "en": "",
@@ -679,7 +658,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172224152-acg7i9l0.jpg"
     },
     {
       "slug": "seunggyu-han",
@@ -690,7 +669,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2025.12 ~)",
-        "ko": "연구 인턴 (2025.12 ~)"
+        "ko": "학부연구생 (2025.12 ~)"
       },
       "focus": {
         "en": "",
@@ -700,7 +679,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172238208-lnomv55c.jpg"
     },
     {
       "slug": "minwook-kim",
@@ -711,7 +690,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2025.12 ~)",
-        "ko": "연구 인턴 (2025.12 ~)"
+        "ko": "학부연구생 (2025.12 ~)"
       },
       "focus": {
         "en": "",
@@ -721,7 +700,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172434737-izn3nm65.jpg"
     },
     {
       "slug": "sukwoo-jung",
@@ -732,7 +711,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2025.12 ~)",
-        "ko": "연구 인턴 (2025.12 ~)"
+        "ko": "학부연구생 (2025.12 ~)"
       },
       "focus": {
         "en": "",
@@ -742,7 +721,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172479890-x050c6ux.jpg"
     },
     {
       "slug": "taekdong-kim",
@@ -753,7 +732,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2026.01 ~)",
-        "ko": "연구 인턴 (2026.01 ~)"
+        "ko": "학부연구생 (2026.01 ~)"
       },
       "focus": {
         "en": "",
@@ -763,7 +742,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172495034-a1lv1rri.jpg"
     },
     {
       "slug": "jihoon-shin",
@@ -774,7 +753,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2026.03 ~)",
-        "ko": "연구 인턴 (2026.03 ~)"
+        "ko": "학부연구생 (2026.03 ~)"
       },
       "focus": {
         "en": "",
@@ -784,7 +763,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172512009-75mr7yhy.jpg"
     },
     {
       "slug": "seonga-lee",
@@ -795,7 +774,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2026.03 ~)",
-        "ko": "연구 인턴 (2026.03 ~)"
+        "ko": "학부연구생 (2026.03 ~)"
       },
       "focus": {
         "en": "",
@@ -805,7 +784,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172523774-fc60tag8.jpg"
     },
     {
       "slug": "minseo-kim",
@@ -816,7 +795,7 @@ const data = {
       },
       "role": {
         "en": "Research Intern (2026.03 ~)",
-        "ko": "연구 인턴 (2026.03 ~)"
+        "ko": "학부연구생 (2026.03 ~)"
       },
       "focus": {
         "en": "",
@@ -826,7 +805,7 @@ const data = {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172532194-g63mtefj.jpg"
     }
   ],
   "alumni": [
@@ -837,14 +816,14 @@ const data = {
       },
       "role": {
         "en": "Research Intern",
-        "ko": "연구 인턴"
+        "ko": "학부연구생"
       },
       "year": "2024.12 ~ 2025.06",
       "affiliation": {
         "en": "",
         "ko": ""
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172105928-0sw56103.jpg"
     },
     {
       "name": {
@@ -853,14 +832,14 @@ const data = {
       },
       "role": {
         "en": "Research Intern",
-        "ko": "연구 인턴"
+        "ko": "학부연구생"
       },
       "year": "2025.01 ~ 2026.02",
       "affiliation": {
-        "en": "",
-        "ko": ""
+        "en": "SCSPRO",
+        "ko": "SCSPRO"
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/img-1782172091226-jpcnjh1k.jpg"
     },
     {
       "name": {
@@ -869,21 +848,36 @@ const data = {
       },
       "role": {
         "en": "Research Intern",
-        "ko": "연구 인턴"
+        "ko": "학부연구생"
       },
       "year": "2025.06 ~ 2026.02",
       "affiliation": {
-        "en": "",
-        "ko": ""
+        "en": "Ewha W. Univ",
+        "ko": "이화여자대학교"
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/krk.png"
+    },
+    {
+      "name": {
+        "en": "Junsoo Jang",
+        "ko": "장준수"
+      },
+      "role": {
+        "en": "Research Intern",
+        "ko": "학부연구생"
+      },
+      "year": "2025.01 ~ 2026.08",
+      "affiliation": {
+        "en": "SCSPRO",
+        "ko": "SCSPRO"
+      },
+      "image": "assets/img-1782172071911-x5hczav4.jpg"
     }
   ],
   "publications": [
     {
       "slug": "chi-perception",
       "cat": "intl-conference",
-      "area": "olfactory-ai",
       "url": "",
       "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
       "authors": "Kim, J. et al.",
@@ -893,7 +887,6 @@ const data = {
     {
       "slug": "scentbias-paper",
       "cat": "intl-conference",
-      "area": "olfactory-ai",
       "url": "",
       "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
       "authors": "Kim, J. et al.",
@@ -903,7 +896,6 @@ const data = {
     {
       "slug": "bbq-paper",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "year": "2026",
       "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
       "authors": "Kim, J., Kim, J.",
@@ -915,7 +907,6 @@ const data = {
     {
       "slug": "face-sketch-xai",
       "cat": "intl-journal",
-      "area": "applied-ai",
       "url": "",
       "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
       "authors": "Kim, J. et al.",
@@ -925,7 +916,6 @@ const data = {
     {
       "slug": "j7-lol",
       "cat": "intl-journal",
-      "area": "game-ai",
       "url": "https://www.mdpi.com/journal/applsci",
       "title": "Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input",
       "authors": "Kim, J., Lee, W., & Park, J.",
@@ -936,7 +926,6 @@ const data = {
     {
       "slug": "j6-smote",
       "cat": "intl-journal",
-      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361",
       "title": "SMOTE-Diffusion: A Combined Approach for Authentic Data Generation for Time-domain Radar Signal in Intelligent Transportation System",
       "authors": "Yun, K., Park, J., Kim, J., & Kim, T.",
@@ -947,7 +936,6 @@ const data = {
     {
       "slug": "game-rating-ai",
       "cat": "domestic-conference",
-      "area": "game-ai",
       "url": "https://www.kiise.or.kr",
       "title": "AI 기반 게임 콘텐츠 이해 및 등급 분류 연구",
       "authors": "Kim, J. et al.",
@@ -957,7 +945,6 @@ const data = {
     {
       "slug": "j5-perfume",
       "cat": "intl-journal",
-      "area": "olfactory-ai",
       "url": "https://www.mdpi.com/journal/applsci",
       "title": "An NLP-Based Perfume Note Estimation Based on Descriptive Sentences",
       "authors": "Kim, J., Oh, K., & Oh, B. S.",
@@ -968,7 +955,6 @@ const data = {
     {
       "slug": "j4-facesketch",
       "cat": "intl-journal",
-      "area": "applied-ai",
       "url": "https://link.springer.com/journal/521",
       "title": "Face Photo-sketch Recognition based on Multi-Directional Line Features Projection",
       "authors": "Kim, J., Lin, Z., Kim, D., & Toh, K. A.",
@@ -979,7 +965,6 @@ const data = {
     {
       "slug": "c7-esports",
       "cat": "intl-conference",
-      "area": "game-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/10361948/proceeding",
       "title": "Rethinking Evaluation Metric for Probability Estimation Models Using Esports Data",
       "authors": "Choi, E., Kim, J., & Lee, W.",
@@ -989,7 +974,6 @@ const data = {
     {
       "slug": "c6-palmvein",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "url": "https://www.iceic.org",
       "title": "Multispectral Palm-Vein Fusion for User Identification",
       "authors": "Lee, J., Kim, J., Kim, D., Lee, S., Sung, J., & Toh, K. A.",
@@ -999,7 +983,6 @@ const data = {
     {
       "slug": "p2-body",
       "cat": "patent",
-      "area": "applied-ai",
       "url": "https://www.kipris.or.kr",
       "title": "Image based body composition analyzing apparatus and body composition analyzing method, and smart device using the same",
       "authors": "Kim, J.",
@@ -1010,7 +993,6 @@ const data = {
     {
       "slug": "c5-palm",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/9933666/proceeding",
       "title": "Identity Verification based on the RGB and NIR Images of the Palm",
       "authors": "Lee, J., Kim, J., & Toh, K. A.",
@@ -1020,7 +1002,6 @@ const data = {
     {
       "slug": "j3-plasmon",
       "cat": "intl-journal",
-      "area": "applied-ai",
       "url": "https://opg.optica.org/oe/home.cfm",
       "title": "Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate",
       "authors": "Kim, J., Lee, H., Im, S., Lee, S. A., Kim, D., & Toh, K. A.",
@@ -1031,7 +1012,6 @@ const data = {
     {
       "slug": "j2-wifi",
       "cat": "intl-journal",
-      "area": "applied-ai",
       "url": "https://ieeeaccess.ieee.org/",
       "title": "Wi-Fi based user identification using in-air handwritten signature",
       "authors": "Jung, J., Moon, H. C., Kim, J., Kim, D., & Toh, K. A.",
@@ -1042,7 +1022,6 @@ const data = {
     {
       "slug": "j1-fkp",
       "cat": "intl-journal",
-      "area": "applied-ai",
       "url": "https://link.springer.com/journal/12559",
       "title": "A line feature extraction method for finger-knuckle-print verification",
       "authors": "Kim, J., Oh, K., Oh, B. S., Lin, Z., & Toh, K. A.",
@@ -1053,7 +1032,6 @@ const data = {
     {
       "slug": "p1-stock",
       "cat": "patent",
-      "area": "applied-ai",
       "url": "https://www.kipris.or.kr",
       "title": "Method of providing stock information",
       "authors": "Kim, J., Kar-Ann Toh",
@@ -1064,7 +1042,6 @@ const data = {
     {
       "slug": "c4-wifi-triplet",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/8961595/proceeding",
       "title": "Wi-Fi based handwritten signature verification using a triplet network",
       "authors": "Kwon, Y., Kim, J., & Toh, K. A.",
@@ -1074,7 +1051,6 @@ const data = {
     {
       "slug": "c3-wifi-transfer",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/8820578/proceeding",
       "title": "Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection",
       "authors": "Jung, J., Kim, J., & Toh, K. A.",
@@ -1084,7 +1060,6 @@ const data = {
     {
       "slug": "c2-glaucoma",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/",
       "title": "Fusing geometric and appearance-based features for glaucoma diagnosis",
       "authors": "Oh, K., Kim, J., Yoon, S., & Seo, K. Y.",
@@ -1094,7 +1069,6 @@ const data = {
     {
       "slug": "c1-fkp-ieee",
       "cat": "intl-conference",
-      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding",
       "title": "Finger-knuckle-print for identity verification based on difference images",
       "authors": "Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.",
