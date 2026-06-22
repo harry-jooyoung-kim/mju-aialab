@@ -237,7 +237,7 @@ const data = {
           "이 분야는 e스포츠 분석, LLM 평가, 응용 생성형 AI, 학생 주도 프로젝트를 포괄합니다."
         ]
       },
-      "image": "assets/clr.png"
+      "image": "assets/img-1782133009043-ocrh9x77.jpg"
     }
   ],
   "projects": [
