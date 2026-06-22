@@ -253,15 +253,27 @@ const data = {
     { slug:'c1-fkp-ieee', cat:'intl-conference', url:'https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding', title:'Finger-knuckle-print for identity verification based on difference images', authors:'Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.', venue:'IEEE ICIEA 2016', year:'2016' }
   ],
 
-  gallery: [
-    { slug:'seminar', cat:'lab', title:{en:'Research Seminar',ko:'연구 세미나'}, image:'assets/placeholder.jpg', text:{en:'Weekly research discussion, paper reading, and project milestones.',ko:'주간 연구 토론, 논문 읽기, 프로젝트 마일스톤.'} },
-    { slug:'olfactory-experiment', cat:'scent', title:{en:'Olfactory AI Experiments',ko:'후각 AI 실험'}, image:'assets/placeholder.jpg', text:{en:'Physical scent stimuli, recipe validation, and perception-study preparation.',ko:'물리적 향기 자극, 레시피 검증, 지각 연구 준비.'} },
-    { slug:'game-session', cat:'game', title:{en:'Game AI Development',ko:'게임 AI 개발'}, image:'assets/placeholder.jpg', text:{en:'Automatic gameplay, agent testing, and multimodal log inspection.',ko:'자동 게임플레이, 에이전트 테스트, 멀티모달 로그 검사.'} },
-    { slug:'student-research', cat:'students', title:{en:'Student Research',ko:'학생 연구'}, image:'assets/placeholder.jpg', text:{en:'Graduate and undergraduate research sessions.',ko:'대학원생 및 학부생 연구 세션.'} },
-    { slug:'prototype-demo', cat:'demo', title:{en:'Prototype Demo',ko:'프로토타입 데모'}, image:'assets/placeholder.jpg', text:{en:'Applied AI prototypes, demos, and early-stage systems.',ko:'응용 AI 프로토타입, 데모, 초기 시스템.'} },
-    { slug:'workshop', cat:'lab', title:{en:'AI Workshop',ko:'AI 워크숍'}, image:'assets/placeholder.jpg', text:{en:'Teaching, industry training, and generative AI workshops.',ko:'교육, 산업 훈련, 생성형 AI 워크숍.'} }
+  gallery: [ // date format: 'YYYY-MM-DD' or 'YYYY.MM' etc.
+    { slug:'seminar', cat:'lab', date:'', title:{en:'Research Seminar',ko:'연구 세미나'}, image:'assets/placeholder.jpg', text:{en:'Weekly research discussion, paper reading, and project milestones.',ko:'주간 연구 토론, 논문 읽기, 프로젝트 마일스톤.'} },
+    { slug:'olfactory-experiment', cat:'scent', date:'', title:{en:'Olfactory AI Experiments',ko:'후각 AI 실험'}, image:'assets/placeholder.jpg', text:{en:'Physical scent stimuli, recipe validation, and perception-study preparation.',ko:'물리적 향기 자극, 레시피 검증, 지각 연구 준비.'} },
+    { slug:'game-session', cat:'game', date:'', title:{en:'Game AI Development',ko:'게임 AI 개발'}, image:'assets/placeholder.jpg', text:{en:'Automatic gameplay, agent testing, and multimodal log inspection.',ko:'자동 게임플레이, 에이전트 테스트, 멀티모달 로그 검사.'} },
+    { slug:'student-research', cat:'students', date:'', title:{en:'Student Research',ko:'학생 연구'}, image:'assets/placeholder.jpg', text:{en:'Graduate and undergraduate research sessions.',ko:'대학원생 및 학부생 연구 세션.'} },
+    { slug:'prototype-demo', cat:'demo', date:'', title:{en:'Prototype Demo',ko:'프로토타입 데모'}, image:'assets/placeholder.jpg', text:{en:'Applied AI prototypes, demos, and early-stage systems.',ko:'응용 AI 프로토타입, 데모, 초기 시스템.'} },
+    { slug:'workshop', cat:'lab', date:'', title:{en:'AI Workshop',ko:'AI 워크숍'}, image:'assets/placeholder.jpg', text:{en:'Teaching, industry training, and generative AI workshops.',ko:'교육, 산업 훈련, 생성형 AI 워크숍.'} }
   ]
 };
+
+/* ── Load admin overrides from localStorage ─────────────── */
+(function() {
+  try {
+    const raw = localStorage.getItem('aialab-admin-data');
+    if (!raw) return;
+    const saved = JSON.parse(raw);
+    ['research','projects','people','alumni','publications','gallery'].forEach(k => {
+      if (Array.isArray(saved[k]) && saved[k].length > 0) data[k] = saved[k];
+    });
+  } catch(e) {}
+})();
 
 /* ── Utilities ───────────────────────────────────────────── */
 const $ = s => document.querySelector(s);
@@ -334,7 +346,9 @@ function pubRow(p) {
 
 function galleryCard(g) {
   return `<a class="gallery-card" href="#/gallery/${g.slug}">
-    <img src="${g.image}" alt=""><h3>${L(g.title)}</h3><p>${L(g.text)}</p></a>`;
+    <img src="${g.image}" alt="">
+    ${g.date ? `<p class="gallery-date">${g.date}</p>` : ''}
+    <h3>${L(g.title)}</h3><p>${L(g.text)}</p></a>`;
 }
 
 function collabLogoStrip() {
@@ -451,7 +465,7 @@ function people() {
       ${subhead(t('people.categories.pi'))}
       <div class="grid two" style="max-width:480px">${pi.map(personCard).join('')}</div>
       ${phd.length ? subhead(t('people.categories.phd')) + `<div class="grid">${phd.map(personCard).join('')}</div>` : ''}
-      ${interns.length ? subhead(t('people.categories.intern')) + `<div class="grid" style="grid-template-columns:repeat(4,minmax(0,1fr))">${interns.map(internCard).join('')}</div>` : ''}
+      ${interns.length ? subhead(t('people.categories.intern')) + `<div class="grid-interns">${interns.map(internCard).join('')}</div>` : ''}
     </section>
     <div class="alumni-section">
       <h2 class="alumni-heading">${t('people.alumni')}</h2>
@@ -521,6 +535,7 @@ function galleryDetail(slug) {
       <h1>${L(g.title)}</h1><p>${L(g.text)}</p>
     </div></section>
     <section class="content narrow prose">
+      ${g.date ? `<p style="font-size:14px;color:var(--muted);margin-bottom:20px">${g.date}</p>` : ''}
       <img src="${g.image}" alt="" style="border-radius:18px;margin-bottom:28px;aspect-ratio:4/3;object-fit:cover">
       <h2>${t('cards.activityNote')}</h2><p>${t('cards.activityNoteText')}</p>
       <div class="cta-row" style="justify-content:flex-start">${ghost('gallery',t('cards.backGallery'))}</div>
