@@ -1154,9 +1154,14 @@ const data = {
     const raw = localStorage.getItem('aialab-admin-data');
     if (!raw) return;
     const saved = JSON.parse(raw);
-    ['research','projects','people','alumni','publications','gallery'].forEach(k => {
+    ['research','projects','people','alumni','gallery'].forEach(k => {
       if (Array.isArray(saved[k]) && saved[k].length > 0) data[k] = saved[k];
     });
+    // For publications, only override if saved data has area fields to avoid wiping them
+    if (Array.isArray(saved.publications) && saved.publications.length > 0) {
+      const hasArea = saved.publications.some(p => p.area);
+      if (hasArea) data.publications = saved.publications;
+    }
   } catch(e) {}
 })();
 
@@ -1501,8 +1506,8 @@ function render() {
   else if (parts[0]==='project') html=projectDetail(parts[1]);
   else if (parts[0]==='people'&&parts[1]) html=personDetail(parts[1]);
   else if (parts[0]==='people') html=people();
-  else if (parts[0]==='publications') html=publications();
-  else if (parts[0]==='publication') html=publications();
+  else if (parts[0]==='publications') { window._pubCat=null; window._pubArea=null; html=publications(); }
+  else if (parts[0]==='publication') { window._pubCat=null; window._pubArea=null; html=publications(); }
   else if (parts[0]==='gallery'&&parts[1]) html=galleryDetail(parts[1]);
   else if (parts[0]==='gallery') html=gallery();
   else if (parts[0]==='contact') html=contact();
