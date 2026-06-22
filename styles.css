@@ -163,7 +163,7 @@
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* ── Collaborator Logo Strip ─────────────────────────────── */
-.collab-logos-strip{overflow:hidden;padding:28px 0;background:var(--parchment)}
+.collab-logos-strip{overflow:hidden;padding:28px 0;background:var(--canvas)}
 .collab-logos-strip.inset{padding:12px 0;background:transparent}
 .collab-marquee{display:flex;gap:0;width:max-content;align-items:center;will-change:transform}
 .collab-marquee.is-running{animation:slide-logos var(--marquee-duration,22s) linear infinite}
