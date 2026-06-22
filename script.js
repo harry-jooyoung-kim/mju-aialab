@@ -883,6 +883,7 @@ const data = {
     {
       "slug": "chi-perception",
       "cat": "intl-conference",
+      "area": "olfactory-ai",
       "url": "",
       "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
       "authors": "Kim, J. et al.",
@@ -892,6 +893,7 @@ const data = {
     {
       "slug": "scentbias-paper",
       "cat": "intl-conference",
+      "area": "olfactory-ai",
       "url": "",
       "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
       "authors": "Kim, J. et al.",
@@ -901,6 +903,7 @@ const data = {
     {
       "slug": "bbq-paper",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "year": "2026",
       "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
       "authors": "Kim, J., Kim, J.",
@@ -912,6 +915,7 @@ const data = {
     {
       "slug": "face-sketch-xai",
       "cat": "intl-journal",
+      "area": "applied-ai",
       "url": "",
       "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
       "authors": "Kim, J. et al.",
@@ -921,6 +925,7 @@ const data = {
     {
       "slug": "j7-lol",
       "cat": "intl-journal",
+      "area": "game-ai",
       "url": "https://www.mdpi.com/journal/applsci",
       "title": "Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input",
       "authors": "Kim, J., Lee, W., & Park, J.",
@@ -931,6 +936,7 @@ const data = {
     {
       "slug": "j6-smote",
       "cat": "intl-journal",
+      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361",
       "title": "SMOTE-Diffusion: A Combined Approach for Authentic Data Generation for Time-domain Radar Signal in Intelligent Transportation System",
       "authors": "Yun, K., Park, J., Kim, J., & Kim, T.",
@@ -941,6 +947,7 @@ const data = {
     {
       "slug": "game-rating-ai",
       "cat": "domestic-conference",
+      "area": "game-ai",
       "url": "https://www.kiise.or.kr",
       "title": "AI 기반 게임 콘텐츠 이해 및 등급 분류 연구",
       "authors": "Kim, J. et al.",
@@ -950,6 +957,7 @@ const data = {
     {
       "slug": "j5-perfume",
       "cat": "intl-journal",
+      "area": "olfactory-ai",
       "url": "https://www.mdpi.com/journal/applsci",
       "title": "An NLP-Based Perfume Note Estimation Based on Descriptive Sentences",
       "authors": "Kim, J., Oh, K., & Oh, B. S.",
@@ -960,6 +968,7 @@ const data = {
     {
       "slug": "j4-facesketch",
       "cat": "intl-journal",
+      "area": "applied-ai",
       "url": "https://link.springer.com/journal/521",
       "title": "Face Photo-sketch Recognition based on Multi-Directional Line Features Projection",
       "authors": "Kim, J., Lin, Z., Kim, D., & Toh, K. A.",
@@ -970,6 +979,7 @@ const data = {
     {
       "slug": "c7-esports",
       "cat": "intl-conference",
+      "area": "game-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/10361948/proceeding",
       "title": "Rethinking Evaluation Metric for Probability Estimation Models Using Esports Data",
       "authors": "Choi, E., Kim, J., & Lee, W.",
@@ -979,6 +989,7 @@ const data = {
     {
       "slug": "c6-palmvein",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "url": "https://www.iceic.org",
       "title": "Multispectral Palm-Vein Fusion for User Identification",
       "authors": "Lee, J., Kim, J., Kim, D., Lee, S., Sung, J., & Toh, K. A.",
@@ -988,6 +999,7 @@ const data = {
     {
       "slug": "p2-body",
       "cat": "patent",
+      "area": "applied-ai",
       "url": "https://www.kipris.or.kr",
       "title": "Image based body composition analyzing apparatus and body composition analyzing method, and smart device using the same",
       "authors": "Kim, J.",
@@ -998,6 +1010,7 @@ const data = {
     {
       "slug": "c5-palm",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/9933666/proceeding",
       "title": "Identity Verification based on the RGB and NIR Images of the Palm",
       "authors": "Lee, J., Kim, J., & Toh, K. A.",
@@ -1007,6 +1020,7 @@ const data = {
     {
       "slug": "j3-plasmon",
       "cat": "intl-journal",
+      "area": "applied-ai",
       "url": "https://opg.optica.org/oe/home.cfm",
       "title": "Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate",
       "authors": "Kim, J., Lee, H., Im, S., Lee, S. A., Kim, D., & Toh, K. A.",
@@ -1017,6 +1031,7 @@ const data = {
     {
       "slug": "j2-wifi",
       "cat": "intl-journal",
+      "area": "applied-ai",
       "url": "https://ieeeaccess.ieee.org/",
       "title": "Wi-Fi based user identification using in-air handwritten signature",
       "authors": "Jung, J., Moon, H. C., Kim, J., Kim, D., & Toh, K. A.",
@@ -1027,6 +1042,7 @@ const data = {
     {
       "slug": "j1-fkp",
       "cat": "intl-journal",
+      "area": "applied-ai",
       "url": "https://link.springer.com/journal/12559",
       "title": "A line feature extraction method for finger-knuckle-print verification",
       "authors": "Kim, J., Oh, K., Oh, B. S., Lin, Z., & Toh, K. A.",
@@ -1366,14 +1382,20 @@ function personDetail(slug) {
     </section>`;
 }
 
-function publications(cat) {
-  const tabs = ['all','intl-journal','intl-conference','domestic-journal','domestic-conference','patent'];
-  const items = cat ? data.publications.filter(p => p.cat === cat) : data.publications;
+function publications(cat, area) {
+  const catTabs = ['all','intl-journal','intl-conference','domestic-journal','domestic-conference','patent'];
+  const areaTabs = ['all','game-ai','olfactory-ai','applied-ai'];
+  let items = data.publications;
+  if (cat && cat !== 'all') items = items.filter(p => p.cat === cat);
+  if (area && area !== 'all') items = items.filter(p => p.area === area);
   return `
     <section class="section-header parchment"><h1>${t('publications.h1')}</h1><p>${t('publications.lead')}</p></section>
     <section class="content narrow">
       <div class="chip-row">
-        ${tabs.map(c => `<button class="chip ${(!cat&&c==='all')||cat===c?'is-active':''}" data-pub="${c}">${t(`publications.tabs.${c}`)}</button>`).join('')}
+        ${catTabs.map(c => `<button class="chip ${(!cat&&c==='all')||cat===c?'is-active':''}" data-pub="${c}">${t(`publications.tabs.${c}`)}</button>`).join('')}
+      </div>
+      <div class="chip-row">
+        ${areaTabs.map(a => `<button class="chip ${(!area&&a==='all')||area===a?'is-active':''}" data-pub-area="${a}" style="font-size:12px">${a==='all'?t('publications.tabs.all'):t(`subNav.${a==='game-ai'?'gameAI':a==='olfactory-ai'?'olfactoryAI':'appliedAI'}`)}</button>`).join('')}
       </div>
       ${items.map(pubRow).join('')}
     </section>`;
@@ -1495,9 +1517,15 @@ function attachInteractions() {
     app.innerHTML = `<div class="view">${projects(v==='all'?null:v)}</div>`;
     attachInteractions();
   }));
+  let currentPubCat = null, currentPubArea = null;
   document.querySelectorAll('[data-pub]').forEach(b => b.addEventListener('click', () => {
-    const v = b.dataset.pub;
-    app.innerHTML = `<div class="view">${publications(v==='all'?null:v)}</div>`;
+    currentPubCat = b.dataset.pub === 'all' ? null : b.dataset.pub;
+    app.innerHTML = `<div class="view">${publications(currentPubCat, currentPubArea)}</div>`;
+    attachInteractions();
+  }));
+  document.querySelectorAll('[data-pub-area]').forEach(b => b.addEventListener('click', () => {
+    currentPubArea = b.dataset.pubArea === 'all' ? null : b.dataset.pubArea;
+    app.innerHTML = `<div class="view">${publications(currentPubCat, currentPubArea)}</div>`;
     attachInteractions();
   }));
   document.querySelectorAll('[data-gallery]').forEach(b => b.addEventListener('click', () => {
