@@ -15,6 +15,7 @@
 .brand-logo{height:22px;width:auto;display:block;opacity:1!important}
 .brand-nav{display:flex;align-items:center;opacity:1}
 .brand-nav:hover{text-decoration:none}
+.brand-nav:hover .brand-logo{opacity:1!important;filter:brightness(1)!important}
 .nav-links{display:flex;align-items:center;justify-content:center;gap:28px}
 .nav-links a{color:#fff;opacity:.84;font-size:14px;letter-spacing:-.12px}
 .nav-links a:hover{opacity:1;text-decoration:none}
