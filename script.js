@@ -1081,20 +1081,6 @@ const data = {
   ],
   "gallery": [
     {
-      "slug": "seminar",
-      "cat": "lab",
-      "date": "2026.06.18",
-      "title": {
-        "en": "방송미디어공학회 하계학술대회 참석",
-        "ko": "방송미디어공학회 하계학술대회 참석-ko"
-      },
-      "image": "assets/_- visual selection.png",
-      "text": {
-        "en": "test",
-        "ko": "test-ko"
-      }
-    },
-    {
       "slug": "olfactory-experiment",
       "cat": "scent",
       "date": "",
@@ -1134,6 +1120,20 @@ const data = {
       "text": {
         "en": "Graduate and undergraduate research sessions.",
         "ko": "대학원생 및 학부생 연구 세션."
+      }
+    },
+    {
+      "slug": "test",
+      "cat": "lab",
+      "date": "",
+      "title": {
+        "en": "test",
+        "ko": "테스트"
+      },
+      "image": "assets/_-visual-selection-3.png",
+      "text": {
+        "en": "영어",
+        "ko": "한국어"
       }
     }
   ]
