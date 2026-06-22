@@ -1053,6 +1053,7 @@ const data = {
     {
       "slug": "p1-stock",
       "cat": "patent",
+      "area": "applied-ai",
       "url": "https://www.kipris.or.kr",
       "title": "Method of providing stock information",
       "authors": "Kim, J., Kar-Ann Toh",
@@ -1063,6 +1064,7 @@ const data = {
     {
       "slug": "c4-wifi-triplet",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/8961595/proceeding",
       "title": "Wi-Fi based handwritten signature verification using a triplet network",
       "authors": "Kwon, Y., Kim, J., & Toh, K. A.",
@@ -1072,6 +1074,7 @@ const data = {
     {
       "slug": "c3-wifi-transfer",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/8820578/proceeding",
       "title": "Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection",
       "authors": "Jung, J., Kim, J., & Toh, K. A.",
@@ -1081,6 +1084,7 @@ const data = {
     {
       "slug": "c2-glaucoma",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/",
       "title": "Fusing geometric and appearance-based features for glaucoma diagnosis",
       "authors": "Oh, K., Kim, J., Yoon, S., & Seo, K. Y.",
@@ -1090,6 +1094,7 @@ const data = {
     {
       "slug": "c1-fkp-ieee",
       "cat": "intl-conference",
+      "area": "applied-ai",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding",
       "title": "Finger-knuckle-print for identity verification based on difference images",
       "authors": "Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.",
