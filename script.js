@@ -1361,7 +1361,7 @@ function personDetail(slug) {
       </article>
       <aside class="side-panel"><div class="spec-list">
         <div class="spec"><strong>${t('cards.role')}</strong><span>${L(p.role)}</span></div>
-        <div class="spec"><strong>${t('contact.emailLabel')}</strong><span>${t('cards.contactVia')}</span></div>
+        <div class="spec"><strong>${t('contact.emailLabel')}</strong><span>${p.email ? `<a href="mailto:${p.email}">${p.email}</a>` : t('cards.contactVia')}</span></div>
       </div></aside>
     </section>`;
 }
