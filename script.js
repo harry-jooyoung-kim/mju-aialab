@@ -208,6 +208,13 @@ const data = {
     },
     {
       "slug": "applied-ai",
+      "theme": "dark",
+      "tags": [
+        "biometrics",
+        "LLM evaluation",
+        "e-sports",
+        "XAI"
+      ],
       "title": {
         "en": "Applied AI",
         "ko": "응용 AI"
@@ -216,14 +223,6 @@ const data = {
         "en": "Biometric intelligence, LLM evaluation, e-sports analytics, and emerging applied AI.",
         "ko": "생체인식, LLM 평가, e스포츠 분석, 그리고 다양한 응용 AI 연구."
       },
-      "image": "assets/placeholder.jpg",
-      "theme": "dark",
-      "tags": [
-        "biometrics",
-        "LLM evaluation",
-        "e-sports",
-        "XAI"
-      ],
       "status": {
         "en": "Applied sensing & evaluation program",
         "ko": "응용 감지 및 평가 프로그램"
@@ -237,7 +236,8 @@ const data = {
           "얼굴, 정맥, 심전도 등 생체 신호를 위한 경량 설명 가능 모델을 개발합니다.",
           "이 분야는 e스포츠 분석, LLM 평가, 응용 생성형 AI, 학생 주도 프로젝트를 포괄합니다."
         ]
-      }
+      },
+      "image": "assets/clr.png"
     }
   ],
   "projects": [
@@ -1120,20 +1120,6 @@ const data = {
       "text": {
         "en": "Graduate and undergraduate research sessions.",
         "ko": "대학원생 및 학부생 연구 세션."
-      }
-    },
-    {
-      "slug": "test",
-      "cat": "lab",
-      "date": "",
-      "title": {
-        "en": "test",
-        "ko": "테스트"
-      },
-      "image": "assets/_-visual-selection-3.png",
-      "text": {
-        "en": "영어",
-        "ko": "한국어"
       }
     }
   ]
