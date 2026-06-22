@@ -1522,15 +1522,14 @@ function attachInteractions() {
     app.innerHTML = `<div class="view">${projects(v==='all'?null:v)}</div>`;
     attachInteractions();
   }));
-  let currentPubCat = null, currentPubArea = null;
   document.querySelectorAll('[data-pub]').forEach(b => b.addEventListener('click', () => {
-    currentPubCat = b.dataset.pub === 'all' ? null : b.dataset.pub;
-    app.innerHTML = `<div class="view">${publications(currentPubCat, currentPubArea)}</div>`;
+    window._pubCat = b.dataset.pub === 'all' ? null : b.dataset.pub;
+    app.innerHTML = `<div class="view">${publications(window._pubCat, window._pubArea)}</div>`;
     attachInteractions();
   }));
   document.querySelectorAll('[data-pub-area]').forEach(b => b.addEventListener('click', () => {
-    currentPubArea = b.dataset.pubArea === 'all' ? null : b.dataset.pubArea;
-    app.innerHTML = `<div class="view">${publications(currentPubCat, currentPubArea)}</div>`;
+    window._pubArea = b.dataset.pubArea === 'all' ? null : b.dataset.pubArea;
+    app.innerHTML = `<div class="view">${publications(window._pubCat, window._pubArea)}</div>`;
     attachInteractions();
   }));
   document.querySelectorAll('[data-gallery]').forEach(b => b.addEventListener('click', () => {
