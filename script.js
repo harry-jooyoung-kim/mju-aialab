@@ -176,6 +176,12 @@ const data = {
     },
     {
       "slug": "olfactory-ai",
+      "theme": "light",
+      "tags": [
+        "text-to-scent",
+        "perception",
+        "scent speaker"
+      ],
       "title": {
         "en": "Olfactory AI",
         "ko": "후각 AI"
@@ -184,13 +190,6 @@ const data = {
         "en": "AI systems that generate, evaluate, and physically render scents.",
         "ko": "향기를 생성하고 평가하고 물리적으로 렌더링하는 AI 시스템."
       },
-      "image": "assets/placeholder.jpg",
-      "theme": "light",
-      "tags": [
-        "text-to-scent",
-        "perception",
-        "scent speaker"
-      ],
       "status": {
         "en": "Core lab identity project",
         "ko": "핵심 연구실 프로젝트"
@@ -204,7 +203,8 @@ const data = {
           "언어, 미디어, 맥락, 인간 상태가 어떻게 제조 가능한 향기 레시피와 물리적 후각 경험으로 변환될 수 있는지 연구합니다.",
           "현재 연구는 텍스트-향기 생성, 향기 지각 연구, 구조화 출력 안전성, 향기 렌더링 디바이스를 포괄합니다."
         ]
-      }
+      },
+      "image": "assets/img-1782179641699-41ejmwgb.jpg"
     },
     {
       "slug": "applied-ai",
