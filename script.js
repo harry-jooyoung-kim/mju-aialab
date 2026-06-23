@@ -245,6 +245,7 @@ const data = {
       "slug": "game-rating-agent",
       "area": "game-ai",
       "period": "2026.04.01-2030.03.31",
+      "stageColor": "green",
       "title": {
         "en": "게임물 등급분류 및 사후관리 효율화를 위한 AI 기반의 게임등급분류 기술 개발",
         "ko": "게임물 등급분류 및 사후관리 효율화를 위한 AI 기반의 게임등급분류 기술 개발"
@@ -1176,10 +1177,11 @@ function researchCard(r) {
 }
 
 function projectCard(p) {
+  const stageColor = p.stageColor==='red'?'#d93025':p.stageColor==='green'?'#27ae60':'var(--ink)';
   return `<a class="card" href="#/project/${p.slug}">
-    <img src="${p.image}" alt=""><span class="meta">${L(p.type)} · ${L(p.stage)}${p.period ? ' · ' + p.period : ''}</span>
+    <img src="${p.image}" alt=""><span class="meta">${L(p.type)}${p.period ? ' · ' + p.period : ''}</span>
     <h3>${L(p.title)}</h3><p>${L(p.desc)}</p>
-    <span class="text-link">${t('cards.viewProject')}</span></a>`;
+    <span style="font-size:13px;font-weight:600;color:${stageColor}">${L(p.stage)}</span></a>`;
 }
 
 function piCard(p) {
