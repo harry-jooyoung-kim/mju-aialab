@@ -1306,9 +1306,11 @@ function home() {
       <img class="tile-media" src="${data.research[2].image}" alt="">
     </section>
     <section class="tile parchment" style="padding:60px 24px">
-      <div style="position:relative;margin-bottom:32px;text-align:center">
+      <div style="text-align:center;margin-bottom:8px">
         <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0">${t('gallery.recentEvents')}</h2>
-        <a href="#/gallery" style="position:absolute;right:max(24px,calc((100vw - var(--max))/2 + 32px));top:50%;transform:translateY(-50%);font-size:14px;color:var(--primary);white-space:nowrap">${t('gallery.viewAll')} ↗</a>
+      </div>
+      <div style="text-align:right;margin-bottom:24px;max-width:var(--max);margin-left:auto;margin-right:auto;padding:0 32px">
+        <a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a>
       </div>
       <div class="content" style="padding-top:0;padding-bottom:0"><div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div></div>
     </section>
