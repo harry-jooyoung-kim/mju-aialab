@@ -1080,7 +1080,7 @@ const data = {
   "gallery": [
     {
       "slug": "olfactory-experiment",
-      "cat": "scent",
+      "cat": "experiment",
       "date": "",
       "title": {
         "en": "Olfactory AI Experiments",
@@ -1094,7 +1094,7 @@ const data = {
     },
     {
       "slug": "game-session",
-      "cat": "game",
+      "cat": "prototype",
       "date": "",
       "title": {
         "en": "Game AI Development",
@@ -1108,7 +1108,7 @@ const data = {
     },
     {
       "slug": "student-research",
-      "cat": "students",
+      "cat": "seminar",
       "date": "",
       "title": {
         "en": "Student Research",
@@ -1132,11 +1132,8 @@ const data = {
     ['research','projects','people','alumni','gallery'].forEach(k => {
       if (Array.isArray(saved[k]) && saved[k].length > 0) data[k] = saved[k];
     });
-    // For publications, only override if saved data has area fields to avoid wiping them
-    if (Array.isArray(saved.publications) && saved.publications.length > 0) {
-      const hasArea = saved.publications.some(p => p.area);
-      if (hasArea) data.publications = saved.publications;
-    }
+    // Publications are always loaded from script.js (source of truth for area tags)
+    // localStorage override for publications is intentionally disabled
   } catch(e) {}
 })();
 
