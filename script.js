@@ -6,7 +6,7 @@ const TR = {
   en: {
     labName: 'AI & Applications Lab',
     nav: { research:'Research', projects:'Projects', people:'People', publications:'Publications', gallery:'Gallery', contact:'Contact' },
-    subNav: { gameAI:'Game AI', olfactoryAI:'Olfactory AI', appliedAI:'Applied AI', join:'Join' },
+    subNav: { gameAI:'Game & Interactive AI', olfactoryAI:'Olfactory AI', appliedAI:'Applied AI', join:'Join' },
     search: { label:'Search the lab site', placeholder:'Search projects, papers, people...' },
     home: {
       eyebrow:'Myongji University · Department of Convergence Software',
@@ -41,7 +41,7 @@ const TR = {
       phoneVal:'02-300-0705',
       emailLabel:'E-mail',
       collabAreas:'Collaboration areas',
-      collabText:'Game AI, Olfactory AI, Biometric Intelligence, multimodal evaluation, LLM safety, and applied generative AI services.',
+      collabText:'Game & Interactive AI, Olfactory AI, Biometric Intelligence, multimodal evaluation, LLM safety, and applied generative AI services.',
       collaborators:'Collaborators',
       collabSubtext:'Institutions and groups we work with.',
       prospective:'Prospective Students',
@@ -68,7 +68,7 @@ const TR = {
   ko: {
     labName: 'AI & 응용연구실',
     nav: { research:'연구', projects:'프로젝트', people:'구성원', publications:'논문', gallery:'갤러리', contact:'연락처' },
-    subNav: { gameAI:'게임 AI', olfactoryAI:'후각 AI', appliedAI:'응용 AI', join:'합류하기' },
+    subNav: { gameAI:'게임 & 인터랙티브 AI', olfactoryAI:'후각 AI', appliedAI:'응용 AI', join:'합류하기' },
     search: { label:'연구실 사이트 검색', placeholder:'프로젝트, 논문, 구성원 검색...' },
     home: {
       eyebrow:'명지대학교 · 융합소프트웨어학부',
