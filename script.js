@@ -201,10 +201,10 @@ const data = {
         ],
         "ko": [
           "언어, 미디어, 맥락, 인간 상태가 어떻게 제조 가능한 향기 레시피와 물리적 후각 경험으로 변환될 수 있는지 연구합니다.",
-          "현재 연구는 텍스트-향기 생성, 향기 지각 연구, 구조화 출력 안전성, 향기 렌더링 디바이스를 포괄합니다."
+          "이 연구는 텍스트-향기 생성, 향기 지각 연구, 구조화 출력 안전성, 향기 렌더링 디바이스를 포괄합니다."
         ]
       },
-      "image": "assets/img-1782179641699-41ejmwgb.jpg"
+      "image": "assets/img-1782255785391-1bci4vjf.jpg"
     },
     {
       "slug": "applied-ai",
@@ -237,7 +237,7 @@ const data = {
           "이 분야는 e스포츠 분석, LLM 평가, 응용 생성형 AI, 학생 주도 프로젝트를 포괄합니다."
         ]
       },
-      "image": "assets/img-1782133009043-ocrh9x77.jpg"
+      "image": "assets/img-1782256051514-ngfzte5f.jpg"
     }
   ],
   "projects": [
@@ -960,16 +960,6 @@ const data = {
       "venue": "IEEE Sensors Journal",
       "year": "2025",
       "note": "SCIE, 2024 IF: 4.3"
-    },
-    {
-      "slug": "game-rating-ai",
-      "cat": "domestic-conference",
-      "area": "game-ai",
-      "url": "https://www.kiise.or.kr",
-      "title": "AI 기반 게임 콘텐츠 이해 및 등급 분류 연구",
-      "authors": "Kim, J. et al.",
-      "venue": "한국정보과학회",
-      "year": "2025"
     },
     {
       "slug": "j5-perfume",
