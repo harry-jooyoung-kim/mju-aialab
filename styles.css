@@ -175,8 +175,8 @@
 .collab-logos-strip.inset{padding:12px 0;background:transparent}
 .collab-marquee{display:flex;gap:0;width:max-content;align-items:center;will-change:transform}
 .collab-marquee.is-running{animation:slide-logos var(--marquee-duration,22s) linear infinite}
-.collab-logo{height:36px;width:80px;object-fit:contain;display:block;flex-shrink:0;opacity:.65;filter:grayscale(1);transition:opacity .2s,filter .2s;margin-right:56px}
-.collab-logo:hover{opacity:1;filter:none}
+.collab-logo{height:36px;width:80px;object-fit:contain;display:block;flex-shrink:0;opacity:.9;filter:none;margin-right:56px}
+.collab-logo:hover{opacity:1}
 @keyframes slide-logos{0%{transform:translateX(0)}100%{transform:translateX(var(--marquee-offset,0px))}}
 .collab-section-title{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin:32px 0 4px}
 .collab-aside-box{margin-top:24px;background:var(--parchment);border-radius:var(--radius-lg);padding:20px;overflow:hidden}
