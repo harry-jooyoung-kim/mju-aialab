@@ -243,48 +243,32 @@ const data = {
   "projects": [
     {
       "slug": "game-rating-agent",
-      "title": {
-        "en": "Automatic Gameplay and Rating AI",
-        "ko": "자동 게임플레이 및 등급 분류 AI"
-      },
       "area": "game-ai",
+      "title": {
+        "en": "게임물 등급분류 및 사후관리 효율화를 위한 AI 기반의 게임등급분류 기술 개발",
+        "ko": "게임물 등급분류 및 사후관리 효율화를 위한 AI 기반의 게임등급분류 기술 개발"
+      },
       "type": {
-        "en": "Funded Project",
-        "ko": "연구과제"
+        "en": "문화체육관광부 CT R&D 과제",
+        "ko": "문화체육관광부 CT R&D 과제"
       },
       "stage": {
-        "en": "Active",
-        "ko": "진행 중"
+        "en": "Active (2026.04.01-2030.03.31)",
+        "ko": "진행 중 (2026.04.01-2030.03.31)"
       },
       "desc": {
-        "en": "Large-scale development of agents and multimodal evaluators for game rating classification.",
-        "ko": "게임 등급 분류를 위한 에이전트 및 멀티모달 평가기 대규모 개발."
+        "en": "게임 플레이 영상과 사람처럼 플레이 하는 AI 에이전트를 통한 XAI 기반의 피드백 순환 등급분류 시스템 개발",
+        "ko": "게임 플레이 영상과 사람처럼 플레이 하는 AI 에이전트를 통한 XAI 기반의 피드백 순환 등급분류 시스템 개발"
       },
-      "image": "assets/placeholder.jpg",
       "goals": {
-        "en": [
-          "Build agents that navigate game environments",
-          "Extract multimodal evidence from gameplay",
-          "Classify content and explain rating decisions"
-        ],
-        "ko": [
-          "게임 환경을 탐색하는 에이전트 개발",
-          "게임플레이에서 멀티모달 증거 추출",
-          "콘텐츠 분류 및 등급 결정 설명"
-        ]
+        "en": [],
+        "ko": []
       },
       "outputs": {
-        "en": [
-          "Agent baseline",
-          "Gameplay log schema",
-          "Rating-classification pipeline"
-        ],
-        "ko": [
-          "에이전트 기준 모델",
-          "게임플레이 로그 스키마",
-          "등급 분류 파이프라인"
-        ]
-      }
+        "en": [],
+        "ko": []
+      },
+      "image": "assets/img-1782256770659-t3x70zsd.jpg"
     },
     {
       "slug": "text-to-scent",
@@ -1356,8 +1340,6 @@ function projectDetail(slug) {
     <section class="content split">
       <article class="prose">
         <img src="${p.image}" alt="" style="border-radius:18px;margin-bottom:28px;aspect-ratio:16/9;object-fit:cover">
-        <h2>${t('cards.researchGoals')}</h2>${L(p.goals).map(g=>`<p>${g}</p>`).join('')}
-        <h2>${t('cards.expectedOutputs')}</h2>${L(p.outputs).map(o=>`<p>${o}</p>`).join('')}
         <div class="cta-row" style="justify-content:flex-start">${cta('contact',t('cards.contactUs'))}${ghost('gallery',t('cards.viewGallery'))}</div>
       </article>
       <aside class="side-panel"><div class="spec-list">
