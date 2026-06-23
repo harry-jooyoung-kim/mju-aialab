@@ -1184,7 +1184,7 @@ function researchCard(r) {
 
 function projectCard(p) {
   return `<a class="card" href="#/project/${p.slug}">
-    <img src="${p.image}" alt=""><span class="meta">${L(p.type)} · ${L(p.stage)}</span>
+    <img src="${p.image}" alt=""><span class="meta">${L(p.type)} · ${L(p.stage)}${p.period ? ' · ' + p.period : ''}</span>
     <h3>${L(p.title)}</h3><p>${L(p.desc)}</p>
     <span class="text-link">${t('cards.viewProject')}</span></a>`;
 }
@@ -1313,7 +1313,12 @@ function research() {
 }
 
 function projects(filter) {
-  const items = filter ? data.projects.filter(p => p.area === filter) : data.projects;
+  const sorted = [...data.projects].sort((a, b) => {
+    const da = a.period ? a.period.split('-')[0].replace(/\./g,'') : '0';
+    const db = b.period ? b.period.split('-')[0].replace(/\./g,'') : '0';
+    return db > da ? 1 : -1;
+  });
+  const items = filter ? sorted.filter(p => p.area === filter) : sorted;
   const chips = ['all', ...data.research.map(r => r.slug)];
   return `
     <section class="section-header parchment"><h1>${t('projects.h1')}</h1><p>${t('projects.lead')}</p></section>
@@ -1346,6 +1351,7 @@ function projectDetail(slug) {
         <div class="spec"><strong>${t('cards.area')}</strong><span>${L(area?.title)||p.area}</span></div>
         <div class="spec"><strong>${t('cards.type')}</strong><span>${L(p.type)}</span></div>
         <div class="spec"><strong>${t('cards.status')}</strong><span>${L(p.stage)}</span></div>
+        ${p.period ? `<div class="spec"><strong>Period</strong><span>${p.period}</span></div>` : ''}
         <div class="spec"><strong>${t('cards.related')}</strong><span>${area?.tags?.join(', ')||''}</span></div>
       </div></aside>
     </section>`;
