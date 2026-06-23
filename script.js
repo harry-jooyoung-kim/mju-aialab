@@ -1363,7 +1363,7 @@ function people() {
     <section class="section-header"><h1>${t('people.h1')}</h1><p>${t('people.lead')}</p></section>
     <section class="content">
       ${subhead(t('people.categories.pi'))}
-      <div class="pi-card-wrap">${pi.map(piCard).join('')}</div>
+      <div class="grid">${pi.map(personCard).join('')}</div>
       ${phd.length ? subhead(t('people.categories.phd')) + `<div class="grid">${phd.map(personCard).join('')}</div>` : ''}
       ${interns.length ? subhead(t('people.categories.intern')) + `<div class="grid-interns">${interns.map(internCard).join('')}</div>` : ''}
     </section>
