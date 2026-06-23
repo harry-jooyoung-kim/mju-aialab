@@ -1323,7 +1323,7 @@ function home() {
       <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0 0 8px">${t('gallery.recentEvents')}</p>
       <div class="content" style="padding-top:16px;padding-bottom:0">
         <div style="text-align:right;margin-bottom:16px"><a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a></div>
-        <div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div>
+        <div class="grid">${[...data.gallery].sort((a,b)=>{if(!a.date&&!b.date)return 0;if(!a.date)return 1;if(!b.date)return -1;return b.date.replace(/\./g,'-')>a.date.replace(/\./g,'-')?1:-1;}).slice(0,3).map(galleryCard).join('')}</div>
       </div>
     </section>
     <section class="tile dark" style="padding:32px 24px 60px">
@@ -1463,7 +1463,13 @@ function publications(cat, area) {
 
 function gallery(cat) {
   const cats = ['all', ...new Set(data.gallery.map(g => g.cat))];
-  const items = cat ? data.gallery.filter(g => g.cat === cat) : data.gallery;
+  const sorted = [...data.gallery].sort((a, b) => {
+    if (!a.date && !b.date) return 0;
+    if (!a.date) return 1;
+    if (!b.date) return -1;
+    return b.date.replace(/\./g,'-') > a.date.replace(/\./g,'-') ? 1 : -1;
+  });
+  const items = cat ? sorted.filter(g => g.cat === cat) : sorted;
   return `
     <section class="section-header"><h1>${t('gallery.h1')}</h1><p>${t('gallery.lead')}</p></section>
     <section class="content">
