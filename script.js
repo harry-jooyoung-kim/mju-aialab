@@ -144,6 +144,12 @@ const data = {
   "research": [
     {
       "slug": "game-ai",
+      "theme": "dark",
+      "tags": [
+        "agent",
+        "game rating",
+        "multimodal"
+      ],
       "title": {
         "en": "Game & Interactive AI",
         "ko": "게임 & 인터랙티브 AI"
@@ -152,13 +158,6 @@ const data = {
         "en": "Agents that play, inspect, and evaluate interactive content.",
         "ko": "인터랙티브 콘텐츠를 플레이하고 검사하고 평가하는 AI 에이전트."
       },
-      "image": "assets/placeholder.jpg",
-      "theme": "dark",
-      "tags": [
-        "agent",
-        "game rating",
-        "multimodal"
-      ],
       "status": {
         "en": "Large-scale funded project",
         "ko": "대형 연구과제"
@@ -172,7 +171,8 @@ const data = {
           "자동 게임플레이, 행동 로깅, 게임 등급 분류를 위한 AI 에이전트와 멀티모달 파이프라인을 개발합니다.",
           "게임플레이 에이전트, 비전-언어 이해, LLM 평가기, 구조화 로그를 결합하여 설명 가능한 결정을 만듭니다."
         ]
-      }
+      },
+      "image": "assets/img-1782179804796-1jtwbfr3.jpg"
     },
     {
       "slug": "olfactory-ai",
