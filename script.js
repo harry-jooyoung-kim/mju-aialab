@@ -1459,7 +1459,6 @@ function galleryDetail(slug) {
     <section class="content narrow prose">
       ${g.date ? `<p style="font-size:14px;color:var(--muted);margin-bottom:20px">${g.date}</p>` : ''}
       <img src="${g.image}" alt="" style="border-radius:18px;margin-bottom:28px;aspect-ratio:4/3;object-fit:cover">
-      <h2>${t('cards.activityNote')}</h2><p>${t('cards.activityNoteText')}</p>
       <div class="cta-row" style="justify-content:flex-start">${ghost('gallery',t('cards.backGallery'))}</div>
     </section>`;
 }
