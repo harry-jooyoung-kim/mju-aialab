@@ -546,14 +546,15 @@ const data = {
         "ko": "박사 과정 (2026.03 ~)"
       },
       "focus": {
-        "en": "",
-        "ko": ""
+        "en": "test",
+        "ko": "테스트"
       },
       "bio": {
-        "en": "",
-        "ko": ""
+        "en": "test",
+        "ko": "테스트"
       },
-      "image": "assets/img-1782171948577-cynoabab.jpg"
+      "image": "assets/img-1782171948577-cynoabab.jpg",
+      "email": "a@a.com"
     },
     {
       "slug": "sanghoon-lee",
