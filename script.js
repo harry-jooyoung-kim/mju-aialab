@@ -1370,7 +1370,7 @@ function people() {
     <div class="alumni-section">
       <h2 class="alumni-heading">${t('people.alumni')}</h2>
       <p style="color:var(--muted);margin:0 0 28px;font-size:17px">${t('people.alumniLead')}</p>
-      <div class="grid" style="grid-template-columns:repeat(4,minmax(0,1fr))">${data.alumni.map(alumniCard).join('')}</div>
+      <div class="grid">${data.alumni.map(alumniCard).join('')}</div>
     </div>`;
 }
 
