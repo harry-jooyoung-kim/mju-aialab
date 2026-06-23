@@ -1294,7 +1294,7 @@ function home() {
     <section class="tile parchment" style="padding:60px 24px">
       <div style="max-width:var(--max);margin:0 auto;text-align:left">
         <div style="position:relative;text-align:center;margin-bottom:32px">
-          <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(28px,3vw,40px);font-weight:600;letter-spacing:-.04em;margin:0">${t('gallery.recentEvents')}</h2>
+          <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0">${t('gallery.recentEvents')}</h2>
           <a href="#/gallery" style="position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:14px;color:var(--primary);white-space:nowrap">${t('gallery.viewAll')} ↗</a>
         </div>
         <div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div>
