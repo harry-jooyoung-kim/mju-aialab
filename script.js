@@ -31,7 +31,7 @@ const TR = {
       patentNo:'Patent No.',
       viewLink:'View ↗'
     },
-    gallery: { h1:'Gallery', lead:'Research seminars, prototypes, experiments, and student activities.' },
+    gallery: { h1:'Gallery', lead:'Research seminars, prototypes, experiments, and student activities.', recentEvents:'Recent Events', viewAll:'View all' },
     contact: {
       h1:'Contact',
       lead:'We welcome motivated students and collaborators interested in applied AI systems.',
@@ -93,7 +93,7 @@ const TR = {
       patentNo:'특허번호',
       viewLink:'보기 ↗'
     },
-    gallery: { h1:'갤러리', lead:'연구 세미나, 프로토타입, 실험, 학생 활동.' },
+    gallery: { h1:'갤러리', lead:'연구 세미나, 프로토타입, 실험, 학생 활동.', recentEvents:'최근 활동', viewAll:'전체 보기' },
     contact: {
       h1:'연락처',
       lead:'응용 AI 시스템에 관심 있는 학생 및 협력 연구자를 환영합니다.',
@@ -1291,8 +1291,17 @@ function home() {
       <div class="cta-row">${cta('projects/applied-ai', t('subNav.appliedAI'))}${ghost('publications', t('nav.publications'))}</div>
       <img class="tile-media" src="${data.research[2].image}" alt="">
     </section>
-    <section class="tile light" style="padding:32px 24px 60px">
-      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
+    <section class="tile parchment" style="padding:60px 24px">
+      <div style="max-width:var(--max);margin:0 auto;text-align:left">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:32px">
+          <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(28px,3vw,40px);font-weight:600;letter-spacing:-.04em;margin:0">${t('gallery.recentEvents')}</h2>
+          <a href="#/gallery" style="font-size:14px;color:var(--primary);white-space:nowrap">${t('gallery.viewAll')} ↗</a>
+        </div>
+        <div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div>
+      </div>
+    </section>
+    <section class="tile dark" style="padding:32px 24px 60px">
+      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:#fff;letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
       ${collabLogoStrip()}
     </section>`;
 }
