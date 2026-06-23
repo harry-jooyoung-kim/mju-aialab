@@ -876,206 +876,27 @@ const data = {
     }
   ],
   "publications": [
-    {
-      "slug": "chi-perception",
-      "cat": "intl-conference",
-      "url": "",
-      "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
-      "authors": "Kim, J. et al.",
-      "venue": "Manuscript in preparation for CHI",
-      "year": "2027"
-    },
-    {
-      "slug": "scentbias-paper",
-      "cat": "intl-conference",
-      "url": "",
-      "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
-      "authors": "Kim, J. et al.",
-      "venue": "NeurIPS E&D Workshop",
-      "year": "2026"
-    },
-    {
-      "slug": "bbq-paper",
-      "cat": "intl-conference",
-      "year": "2026",
-      "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
-      "authors": "Kim, J., Kim, J.",
-      "venue": "ACL Rolling Review",
-      "url": "",
-      "note": "EMNLP 2026 Findings",
-      "patentNumber": ""
-    },
-    {
-      "slug": "face-sketch-xai",
-      "cat": "intl-journal",
-      "url": "",
-      "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
-      "authors": "Kim, J. et al.",
-      "venue": "Journal (under revision)",
-      "year": "2026"
-    },
-    {
-      "slug": "j7-lol",
-      "cat": "intl-journal",
-      "url": "https://www.mdpi.com/journal/applsci",
-      "title": "Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input",
-      "authors": "Kim, J., Lee, W., & Park, J.",
-      "venue": "Applied Sciences",
-      "year": "2025",
-      "note": "SCIE, 2022 IF: 2.5"
-    },
-    {
-      "slug": "j6-smote",
-      "cat": "intl-journal",
-      "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361",
-      "title": "SMOTE-Diffusion: A Combined Approach for Authentic Data Generation for Time-domain Radar Signal in Intelligent Transportation System",
-      "authors": "Yun, K., Park, J., Kim, J., & Kim, T.",
-      "venue": "IEEE Sensors Journal",
-      "year": "2025",
-      "note": "SCIE, 2024 IF: 4.3"
-    },
-    {
-      "slug": "game-rating-ai",
-      "cat": "domestic-conference",
-      "url": "https://www.kiise.or.kr",
-      "title": "AI 기반 게임 콘텐츠 이해 및 등급 분류 연구",
-      "authors": "Kim, J. et al.",
-      "venue": "한국정보과학회",
-      "year": "2025"
-    },
-    {
-      "slug": "j5-perfume",
-      "cat": "intl-journal",
-      "url": "https://www.mdpi.com/journal/applsci",
-      "title": "An NLP-Based Perfume Note Estimation Based on Descriptive Sentences",
-      "authors": "Kim, J., Oh, K., & Oh, B. S.",
-      "venue": "Applied Sciences",
-      "year": "2024",
-      "note": "SCIE, 2022 IF: 2.5"
-    },
-    {
-      "slug": "j4-facesketch",
-      "cat": "intl-journal",
-      "url": "https://link.springer.com/journal/521",
-      "title": "Face Photo-sketch Recognition based on Multi-Directional Line Features Projection",
-      "authors": "Kim, J., Lin, Z., Kim, D., & Toh, K. A.",
-      "venue": "Neural Computing and Applications",
-      "year": "2023",
-      "note": "SCIE, 2022 IF: 6.0"
-    },
-    {
-      "slug": "c7-esports",
-      "cat": "intl-conference",
-      "url": "https://ieeexplore.ieee.org/xpl/conhome/10361948/proceeding",
-      "title": "Rethinking Evaluation Metric for Probability Estimation Models Using Esports Data",
-      "authors": "Choi, E., Kim, J., & Lee, W.",
-      "venue": "IEEE TrustCom 2023",
-      "year": "2023"
-    },
-    {
-      "slug": "c6-palmvein",
-      "cat": "intl-conference",
-      "url": "https://www.iceic.org",
-      "title": "Multispectral Palm-Vein Fusion for User Identification",
-      "authors": "Lee, J., Kim, J., Kim, D., Lee, S., Sung, J., & Toh, K. A.",
-      "venue": "IEEE ICEIC 2023",
-      "year": "2023"
-    },
-    {
-      "slug": "p2-body",
-      "cat": "patent",
-      "url": "https://www.kipris.or.kr",
-      "title": "Image based body composition analyzing apparatus and body composition analyzing method, and smart device using the same",
-      "authors": "Kim, J.",
-      "venue": "Republic of Korea",
-      "patentNumber": "KR-1023596560000",
-      "year": "2022"
-    },
-    {
-      "slug": "c5-palm",
-      "cat": "intl-conference",
-      "url": "https://ieeexplore.ieee.org/xpl/conhome/9933666/proceeding",
-      "title": "Identity Verification based on the RGB and NIR Images of the Palm",
-      "authors": "Lee, J., Kim, J., & Toh, K. A.",
-      "venue": "IEEE INDIN 2022",
-      "year": "2022"
-    },
-    {
-      "slug": "j3-plasmon",
-      "cat": "intl-journal",
-      "url": "https://opg.optica.org/oe/home.cfm",
-      "title": "Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate",
-      "authors": "Kim, J., Lee, H., Im, S., Lee, S. A., Kim, D., & Toh, K. A.",
-      "venue": "Optics Express",
-      "year": "2021",
-      "note": "SCIE, 2022 IF: 3.8"
-    },
-    {
-      "slug": "j2-wifi",
-      "cat": "intl-journal",
-      "url": "https://ieeeaccess.ieee.org/",
-      "title": "Wi-Fi based user identification using in-air handwritten signature",
-      "authors": "Jung, J., Moon, H. C., Kim, J., Kim, D., & Toh, K. A.",
-      "venue": "IEEE Access",
-      "year": "2021",
-      "note": "SCIE, 2022 IF: 3.9"
-    },
-    {
-      "slug": "j1-fkp",
-      "cat": "intl-journal",
-      "url": "https://link.springer.com/journal/12559",
-      "title": "A line feature extraction method for finger-knuckle-print verification",
-      "authors": "Kim, J., Oh, K., Oh, B. S., Lin, Z., & Toh, K. A.",
-      "venue": "Cognitive Computation",
-      "year": "2019",
-      "note": "SCIE, 2022 IF: 5.4"
-    },
-    {
-      "slug": "p1-stock",
-      "cat": "patent",
-      "url": "https://www.kipris.or.kr",
-      "title": "Method of providing stock information",
-      "authors": "Kim, J., Kar-Ann Toh",
-      "venue": "Republic of Korea",
-      "patentNumber": "KR-1020125640000",
-      "year": "2019"
-    },
-    {
-      "slug": "c4-wifi-triplet",
-      "cat": "intl-conference",
-      "url": "https://ieeexplore.ieee.org/xpl/conhome/8961595/proceeding",
-      "title": "Wi-Fi based handwritten signature verification using a triplet network",
-      "authors": "Kwon, Y., Kim, J., & Toh, K. A.",
-      "venue": "ICAIP 2019",
-      "year": "2019"
-    },
-    {
-      "slug": "c3-wifi-transfer",
-      "cat": "intl-conference",
-      "url": "https://ieeexplore.ieee.org/xpl/conhome/8820578/proceeding",
-      "title": "Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection",
-      "authors": "Jung, J., Kim, J., & Toh, K. A.",
-      "venue": "IEEE ICIP 2019",
-      "year": "2019"
-    },
-    {
-      "slug": "c2-glaucoma",
-      "cat": "intl-conference",
-      "url": "https://ieeexplore.ieee.org/",
-      "title": "Fusing geometric and appearance-based features for glaucoma diagnosis",
-      "authors": "Oh, K., Kim, J., Yoon, S., & Seo, K. Y.",
-      "venue": "AIPR 2017",
-      "year": "2017"
-    },
-    {
-      "slug": "c1-fkp-ieee",
-      "cat": "intl-conference",
-      "url": "https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding",
-      "title": "Finger-knuckle-print for identity verification based on difference images",
-      "authors": "Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.",
-      "venue": "IEEE ICIEA 2016",
-      "year": "2016"
-    }
+    { "slug": "chi-perception", "cat": "intl-conference", "area": "olfactory-ai", "url": "", "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent", "authors": "Kim, J. et al.", "venue": "Manuscript in preparation for CHI", "year": "2027" },
+    { "slug": "scentbias-paper", "cat": "intl-conference", "area": "olfactory-ai", "url": "", "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation", "authors": "Kim, J. et al.", "venue": "NeurIPS E&D Workshop", "year": "2026" },
+    { "slug": "bbq-paper", "cat": "intl-conference", "area": "applied-ai", "year": "2026", "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ", "authors": "Kim, J., Kim, J.", "venue": "ACL Rolling Review", "url": "", "note": "EMNLP 2026 Findings", "patentNumber": "" },
+    { "slug": "face-sketch-xai", "cat": "intl-journal", "area": "applied-ai", "url": "", "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion", "authors": "Kim, J. et al.", "venue": "Journal (under revision)", "year": "2026" },
+    { "slug": "j7-lol", "cat": "intl-journal", "area": "game-ai", "url": "https://www.mdpi.com/journal/applsci", "title": "Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input", "authors": "Kim, J., Lee, W., & Park, J.", "venue": "Applied Sciences", "year": "2025", "note": "SCIE, 2022 IF: 2.5" },
+    { "slug": "j6-smote", "cat": "intl-journal", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361", "title": "SMOTE-Diffusion: A Combined Approach for Authentic Data Generation for Time-domain Radar Signal in Intelligent Transportation System", "authors": "Yun, K., Park, J., Kim, J., & Kim, T.", "venue": "IEEE Sensors Journal", "year": "2025", "note": "SCIE, 2024 IF: 4.3" },
+    { "slug": "game-rating-ai", "cat": "domestic-conference", "area": "game-ai", "url": "https://www.kiise.or.kr", "title": "AI 기반 게임 콘텐츠 이해 및 등급 분류 연구", "authors": "Kim, J. et al.", "venue": "한국정보과학회", "year": "2025" },
+    { "slug": "j5-perfume", "cat": "intl-journal", "area": "olfactory-ai", "url": "https://www.mdpi.com/journal/applsci", "title": "An NLP-Based Perfume Note Estimation Based on Descriptive Sentences", "authors": "Kim, J., Oh, K., & Oh, B. S.", "venue": "Applied Sciences", "year": "2024", "note": "SCIE, 2022 IF: 2.5" },
+    { "slug": "j4-facesketch", "cat": "intl-journal", "area": "applied-ai", "url": "https://link.springer.com/journal/521", "title": "Face Photo-sketch Recognition based on Multi-Directional Line Features Projection", "authors": "Kim, J., Lin, Z., Kim, D., & Toh, K. A.", "venue": "Neural Computing and Applications", "year": "2023", "note": "SCIE, 2022 IF: 6.0" },
+    { "slug": "c7-esports", "cat": "intl-conference", "area": "game-ai", "url": "https://ieeexplore.ieee.org/xpl/conhome/10361948/proceeding", "title": "Rethinking Evaluation Metric for Probability Estimation Models Using Esports Data", "authors": "Choi, E., Kim, J., & Lee, W.", "venue": "IEEE TrustCom 2023", "year": "2023" },
+    { "slug": "c6-palmvein", "cat": "intl-conference", "area": "applied-ai", "url": "https://www.iceic.org", "title": "Multispectral Palm-Vein Fusion for User Identification", "authors": "Lee, J., Kim, J., Kim, D., Lee, S., Sung, J., & Toh, K. A.", "venue": "IEEE ICEIC 2023", "year": "2023" },
+    { "slug": "p2-body", "cat": "patent", "area": "applied-ai", "url": "https://www.kipris.or.kr", "title": "Image based body composition analyzing apparatus and body composition analyzing method, and smart device using the same", "authors": "Kim, J.", "venue": "Republic of Korea", "patentNumber": "KR-1023596560000", "year": "2022" },
+    { "slug": "c5-palm", "cat": "intl-conference", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/xpl/conhome/9933666/proceeding", "title": "Identity Verification based on the RGB and NIR Images of the Palm", "authors": "Lee, J., Kim, J., & Toh, K. A.", "venue": "IEEE INDIN 2022", "year": "2022" },
+    { "slug": "j3-plasmon", "cat": "intl-journal", "area": "applied-ai", "url": "https://opg.optica.org/oe/home.cfm", "title": "Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate", "authors": "Kim, J., Lee, H., Im, S., Lee, S. A., Kim, D., & Toh, K. A.", "venue": "Optics Express", "year": "2021", "note": "SCIE, 2022 IF: 3.8" },
+    { "slug": "j2-wifi", "cat": "intl-journal", "area": "applied-ai", "url": "https://ieeeaccess.ieee.org/", "title": "Wi-Fi based user identification using in-air handwritten signature", "authors": "Jung, J., Moon, H. C., Kim, J., Kim, D., & Toh, K. A.", "venue": "IEEE Access", "year": "2021", "note": "SCIE, 2022 IF: 3.9" },
+    { "slug": "j1-fkp", "cat": "intl-journal", "area": "applied-ai", "url": "https://link.springer.com/journal/12559", "title": "A line feature extraction method for finger-knuckle-print verification", "authors": "Kim, J., Oh, K., Oh, B. S., Lin, Z., & Toh, K. A.", "venue": "Cognitive Computation", "year": "2019", "note": "SCIE, 2022 IF: 5.4" },
+    { "slug": "p1-stock", "cat": "patent", "area": "applied-ai", "url": "https://www.kipris.or.kr", "title": "Method of providing stock information", "authors": "Kim, J., Kar-Ann Toh", "venue": "Republic of Korea", "patentNumber": "KR-1020125640000", "year": "2019" },
+    { "slug": "c4-wifi-triplet", "cat": "intl-conference", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/xpl/conhome/8961595/proceeding", "title": "Wi-Fi based handwritten signature verification using a triplet network", "authors": "Kwon, Y., Kim, J., & Toh, K. A.", "venue": "ICAIP 2019", "year": "2019" },
+    { "slug": "c3-wifi-transfer", "cat": "intl-conference", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/xpl/conhome/8820578/proceeding", "title": "Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection", "authors": "Jung, J., Kim, J., & Toh, K. A.", "venue": "IEEE ICIP 2019", "year": "2019" },
+    { "slug": "c2-glaucoma", "cat": "intl-conference", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/", "title": "Fusing geometric and appearance-based features for glaucoma diagnosis", "authors": "Oh, K., Kim, J., Yoon, S., & Seo, K. Y.", "venue": "AIPR 2017", "year": "2017" },
+    { "slug": "c1-fkp-ieee", "cat": "intl-conference", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/xpl/conhome/7510283/proceeding", "title": "Finger-knuckle-print for identity verification based on difference images", "authors": "Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.", "venue": "IEEE ICIEA 2016", "year": "2016" }
   ],
   "gallery": [
     {
