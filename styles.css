@@ -125,6 +125,13 @@
 /* ── Person Avatar ───────────────────────────────────────── */
 .person-avatar{width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--ink);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:#fff;flex-shrink:0}
 .person-avatar img{width:100%;height:100%;object-fit:cover}
+.pi-card-wrap{display:flex;flex-direction:column;gap:16px;max-width:680px}
+.pi-card{flex-direction:row!important;align-items:center;gap:28px;padding:28px;min-height:auto!important}
+.pi-avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.pi-avatar-init{width:120px;height:120px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:600;color:#fff;flex-shrink:0}
+.pi-card-body{display:flex;flex-direction:column;gap:6px}
+.pi-card-body h3{font-size:22px;margin:0}
+.pi-card-body p{margin:0;font-size:14px;color:var(--muted)}
 
 /* ── People category subheadings ────────────────────────── */
 .section-subhead{font-family:"SF Pro Display",system-ui,-apple-system,sans-serif;font-size:22px;font-weight:600;letter-spacing:-.03em;color:var(--ink);margin:48px 0 20px;padding-bottom:12px;border-bottom:1px solid var(--hairline)}

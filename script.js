@@ -1180,6 +1180,20 @@ function projectCard(p) {
     <span class="text-link">${t('cards.viewProject')}</span></a>`;
 }
 
+function piCard(p) {
+  const avatar = p.image
+    ? `<img src="${p.image}" alt="${L(p.name)}" class="pi-avatar">`
+    : `<div class="pi-avatar pi-avatar-init"><span>${(L(p.name)||'P').charAt(0)}</span></div>`;
+  return `<a class="card pi-card" href="#/people/${p.slug}">
+    ${avatar}
+    <div class="pi-card-body">
+      <span class="meta">${L(p.role)}</span>
+      <h3>${L(p.name)}</h3>
+      ${L(p.focus) ? `<p>${L(p.focus)}</p>` : ''}
+    </div>
+  </a>`;
+}
+
 function personCard(p) {
   const avatar = p.image ? `<img src="${p.image}" alt="${L(p.name)}">` : `<span>${(L(p.name)||'G').charAt(0)}</span>`;
   const focusText = L(p.focus);
@@ -1349,7 +1363,7 @@ function people() {
     <section class="section-header"><h1>${t('people.h1')}</h1><p>${t('people.lead')}</p></section>
     <section class="content">
       ${subhead(t('people.categories.pi'))}
-      <div class="grid two" style="max-width:480px">${pi.map(personCard).join('')}</div>
+      <div class="pi-card-wrap">${pi.map(piCard).join('')}</div>
       ${phd.length ? subhead(t('people.categories.phd')) + `<div class="grid">${phd.map(personCard).join('')}</div>` : ''}
       ${interns.length ? subhead(t('people.categories.intern')) + `<div class="grid-interns">${interns.map(internCard).join('')}</div>` : ''}
     </section>
