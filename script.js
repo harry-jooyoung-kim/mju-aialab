@@ -1343,7 +1343,7 @@ function projectDetail(slug) {
       <aside class="side-panel"><div class="spec-list">
         <div class="spec"><strong>${t('cards.area')}</strong><span>${L(area?.title)||p.area}</span></div>
         <div class="spec"><strong>${t('cards.type')}</strong><span>${L(p.type)}</span></div>
-        <div class="spec"><strong>${t('cards.status')}</strong><span>${L(p.stage)}</span></div>
+        <div class="spec"><strong>${t('cards.status')}</strong><span style="font-weight:600;color:${p.stageColor==='red'?'#d93025':p.stageColor==='green'?'#27ae60':'var(--ink)'}">${L(p.stage)}</span></div>
         ${p.period ? `<div class="spec"><strong>Period</strong><span>${p.period}</span></div>` : ''}
         <div class="spec"><strong>${t('cards.related')}</strong><span>${area?.tags?.join(', ')||''}</span></div>
       </div></aside>
