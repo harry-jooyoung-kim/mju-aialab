@@ -66,7 +66,7 @@ const TR = {
     cards: { viewProject:'View project', exploreArea:'Explore area', profile:'Profile', details:'Details', backPub:'Back to publications', backGallery:'Back to gallery', contactUs:'Contact us', viewGallery:'View gallery', overview:'Overview', projectsInArea:'Projects in this area', researchGoals:'Research goals', expectedOutputs:'Expected outputs', activityNote:'Activity note', activityNoteText:"This gallery page is a lab activity log. Replace placeholder images with real photos and add date, participants, location, and notes.", focus:'Research Focus', bio:'Bio', role:'Role', contactVia:'Contact via PI', related:'Related', area:'Area', type:'Type', status:'Status', summary:'Summary', researchContext:'Research context', researchContextText:"This item is part of the lab's applied AI portfolio. Details can be expanded with abstract, links, code, dataset, and publication status.", researchArea:'Research Area', allProjects:'All projects', collaborate:'Collaborate', notFound:'Page not found', notFoundLead:'The page you requested does not exist.', goHome:'Go home' }
   },
   ko: {
-    labName: 'AI & 응용연구실',
+    labName: 'AI & Applications Lab',
     nav: { research:'연구', projects:'프로젝트', people:'구성원', publications:'논문', gallery:'갤러리', contact:'연락처' },
     subNav: { gameAI:'게임 & 인터랙티브 AI', olfactoryAI:'후각 AI', appliedAI:'응용 AI', join:'합류하기' },
     search: { label:'연구실 사이트 검색', placeholder:'프로젝트, 논문, 구성원 검색...' },
@@ -97,7 +97,7 @@ const TR = {
     contact: {
       h1:'연락처',
       lead:'응용 AI 시스템에 관심 있는 학생 및 협력 연구자를 환영합니다.',
-      labTitle:'AI & 응용연구실',
+      labTitle:'AI & Applications Lab',
       address:'서울특별시 서대문구 거북골로 34 명지대학교 인문캠퍼스 종합관 1604호 (우편번호 03674)',
       phone:'전화',
       phoneVal:'02-300-0705',
@@ -119,7 +119,7 @@ const TR = {
       lead:'아이디어를 실제 시스템, 데이터, 실험으로 연결하고자 하는 학생을 모집합니다.',
       cta1:'PI에게 연락', cta2:'프로젝트 보기'
     },
-    floatingBar: { text:'AI & 응용연구실 탐색', cta:'합류하기' },
+    floatingBar: { text:'AI & Applications Lab 탐색', cta:'합류하기' },
     footer: {
       labDesc:'명지대학교 융합소프트웨어학부. 실세계 응용 AI 시스템을 연구하고 평가합니다.',
       research:'연구', resources:'자료', contact:'연락처', address:'명지대학교, 서울, 대한민국',
