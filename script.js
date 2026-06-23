@@ -1212,7 +1212,7 @@ function gallery(cat) {
     <section class="section-header"><h1>${t('gallery.h1')}</h1><p>${t('gallery.lead')}</p></section>
     <section class="content">
       <div class="chip-row">
-        ${cats.map(c => `<button class="chip ${(!cat&&c==='all')||cat===c?'is-active':''}" data-gallery="${c}">${c==='all'?t('publications.tabs.all'):c.toUpperCase()}</button>`).join('')}
+        ${cats.map(c => `<button class="chip ${(!cat&&c==='all')||cat===c?'is-active':''}" data-gallery="${c}">${c==='all'?t('publications.tabs.all'):c.charAt(0).toUpperCase()+c.slice(1)}</button>`).join('')}
       </div>
       <div class="gallery-grid">${items.map(galleryCard).join('')}</div>
     </section>`;
