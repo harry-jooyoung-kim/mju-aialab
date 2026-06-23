@@ -1263,7 +1263,7 @@ function home() {
         <h1>${t('home.h1')}</h1>
         <p class="lead">${t('home.lead')}</p>
         <div class="cta-row">${cta('projects', t('home.cta1'))}${ghost('join', t('home.cta2'))}</div>
-        <img class="hero-art" src="assets/placeholder.jpg" alt="AI & Applications Lab">
+        <img class="hero-art" src="assets/myongji-home.png" alt="AI & Applications Lab">
       </div>
     </section>
     <section class="tile dark">
