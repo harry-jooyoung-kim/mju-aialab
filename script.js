@@ -1147,6 +1147,20 @@ const data = {
         "en": "Lab Website Renewal!",
         "ko": "연구실 홈페이지를 개편하였습니다!"
       }
+    },
+    {
+      "slug": "paper-accept",
+      "cat": "team",
+      "date": "2026.06.23",
+      "title": {
+        "en": "IEEE Sensors Journal Accepted in June 2026",
+        "ko": "IEEE Sensors Journal Accepted in June 2026"
+      },
+      "image": "assets/img-1782179187605-ui55m5y2.jpg",
+      "text": {
+        "en": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)",
+        "ko": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)"
+      }
     }
   ]
 };
