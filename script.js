@@ -1477,9 +1477,9 @@ function join() {
       <div class="cta-row">${cta('contact',t('join.cta1'))}${ghost('projects',t('join.cta2'))}</div>
     </div></section>
     <section class="content"><div class="grid">
-      <a class="card" href="#/projects/game-ai"><img src="assets/placeholder.jpg" alt=""><h3>${L(data.research[0].title)}</h3><p>${lang==='ko'?'에이전트, 콘텐츠 이해, 안전성 평가에 관심 있는 학생.':'For students interested in agents, content understanding, and safety evaluation.'}</p></a>
-      <a class="card" href="#/projects/olfactory-ai"><img src="assets/placeholder.jpg" alt=""><h3>${L(data.research[1].title)}</h3><p>${lang==='ko'?'생성형 AI, 지각, HCI, 향기 렌더링에 관심 있는 학생.':'For students interested in generative AI, perception, HCI, and scent rendering.'}</p></a>
-      <a class="card" href="#/projects/applied-ai"><img src="assets/placeholder.jpg" alt=""><h3>${L(data.research[2].title)}</h3><p>${lang==='ko'?'경량 모델, 설명 가능성, 실세계 감지에 관심 있는 학생.':'For students interested in compact models, explainability, and real-world sensing.'}</p></a>
+      <a class="card" href="#/projects/game-ai"><img src="${data.research[0].image}" alt=""><h3>${L(data.research[0].title)}</h3><p>${lang==='ko'?'에이전트, 콘텐츠 이해, 안전성 평가에 관심 있는 학생.':'For students interested in agents, content understanding, and safety evaluation.'}</p></a>
+      <a class="card" href="#/projects/olfactory-ai"><img src="${data.research[1].image}" alt=""><h3>${L(data.research[1].title)}</h3><p>${lang==='ko'?'생성형 AI, 지각, HCI, 향기 렌더링에 관심 있는 학생.':'For students interested in generative AI, perception, HCI, and scent rendering.'}</p></a>
+      <a class="card" href="#/projects/applied-ai"><img src="${data.research[2].image}" alt=""><h3>${L(data.research[2].title)}</h3><p>${lang==='ko'?'경량 모델, 설명 가능성, 실세계 감지에 관심 있는 학생.':'For students interested in compact models, explainability, and real-world sensing.'}</p></a>
     </div></section>`;
 }
 
