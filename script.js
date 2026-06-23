@@ -1305,14 +1305,12 @@ function home() {
       <div class="cta-row">${cta('projects/applied-ai', t('subNav.appliedAI'))}${ghost('publications', t('nav.publications'))}</div>
       <img class="tile-media" src="${data.research[2].image}" alt="">
     </section>
-    <section class="tile parchment" style="padding:60px 24px">
-      <div style="text-align:center;margin-bottom:8px">
-        <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0">${t('gallery.recentEvents')}</h2>
+    <section class="tile parchment" style="padding:40px 24px 60px">
+      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0 0 8px">${t('gallery.recentEvents')}</p>
+      <div class="content" style="padding-top:16px;padding-bottom:0">
+        <div style="text-align:right;margin-bottom:16px"><a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a></div>
+        <div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div>
       </div>
-      <div style="text-align:right;margin-bottom:24px;max-width:var(--max);margin-left:auto;margin-right:auto;padding:0 32px">
-        <a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a>
-      </div>
-      <div class="content" style="padding-top:0;padding-bottom:0"><div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div></div>
     </section>
     <section class="tile dark" style="padding:32px 24px 60px">
       <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:#fff;letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
