@@ -1270,19 +1270,19 @@ function home() {
       <h2>${L(data.research[0].title)}</h2>
       <p class="tile-lead">${L(data.research[0].short)}</p>
       <div class="cta-row">${cta('projects/game-ai', t('subNav.gameAI'))}${ghost('project/game-rating-agent', t('cards.viewProject'))}</div>
-      <img class="tile-media" src="assets/placeholder.jpg" alt="">
+      <img class="tile-media" src="${data.research[0].image}" alt="">
     </section>
     <section class="tile light">
       <h2>${L(data.research[1].title)}</h2>
       <p class="tile-lead">${L(data.research[1].short)}</p>
       <div class="cta-row">${cta('projects/olfactory-ai', t('subNav.olfactoryAI'))}${ghost('project/text-to-scent', t('cards.viewProject'))}</div>
-      <img class="tile-media" src="assets/placeholder.jpg" alt="">
+      <img class="tile-media" src="${data.research[1].image}" alt="">
     </section>
     <section class="tile dark2">
       <h2>${L(data.research[2].title)}</h2>
       <p class="tile-lead">${L(data.research[2].short)}</p>
       <div class="cta-row">${cta('projects/applied-ai', t('subNav.appliedAI'))}${ghost('publications', t('nav.publications'))}</div>
-      <img class="tile-media" src="assets/placeholder.jpg" alt="">
+      <img class="tile-media" src="${data.research[2].image}" alt="">
     </section>
     <section class="tile light" style="padding:32px 24px 60px">
       <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
