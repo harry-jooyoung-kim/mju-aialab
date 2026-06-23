@@ -546,15 +546,15 @@ const data = {
         "ko": "박사 과정 (2026.03 ~)"
       },
       "focus": {
-        "en": "test",
-        "ko": "테스트"
+        "en": "Applied AI, game&interactive AI",
+        "ko": "Applied AI, game&interactive AI"
       },
       "bio": {
-        "en": "test",
-        "ko": "테스트"
+        "en": "Applied AI, game&interactive AI",
+        "ko": "Applied AI, game&interactive AI"
       },
       "image": "assets/img-1782171948577-cynoabab.jpg",
-      "email": "a@a.com"
+      "email": "sj99ai@mju.ac.kr"
     },
     {
       "slug": "sanghoon-lee",
