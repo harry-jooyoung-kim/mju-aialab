@@ -244,6 +244,7 @@ const data = {
     {
       "slug": "game-rating-agent",
       "area": "game-ai",
+      "period": "2026.04.01-2030.03.31",
       "title": {
         "en": "게임물 등급분류 및 사후관리 효율화를 위한 AI 기반의 게임등급분류 기술 개발",
         "ko": "게임물 등급분류 및 사후관리 효율화를 위한 AI 기반의 게임등급분류 기술 개발"
@@ -253,20 +254,12 @@ const data = {
         "ko": "문화체육관광부 CT R&D 과제"
       },
       "stage": {
-        "en": "Active (2026.04.01-2030.03.31)",
-        "ko": "진행 중 (2026.04.01-2030.03.31)"
+        "en": "진행 중 (공동기관 연구책임자)",
+        "ko": "진행 중 (공동기관 연구책임자)"
       },
       "desc": {
         "en": "게임 플레이 영상과 사람처럼 플레이 하는 AI 에이전트를 통한 XAI 기반의 피드백 순환 등급분류 시스템 개발",
         "ko": "게임 플레이 영상과 사람처럼 플레이 하는 AI 에이전트를 통한 XAI 기반의 피드백 순환 등급분류 시스템 개발"
-      },
-      "goals": {
-        "en": [],
-        "ko": []
-      },
-      "outputs": {
-        "en": [],
-        "ko": []
       },
       "image": "assets/img-1782256770659-t3x70zsd.jpg"
     },
@@ -1342,9 +1335,11 @@ function projectDetail(slug) {
       <div class="breadcrumb"><a href="#/projects">${t('nav.projects')}</a> / <a href="#/projects/${p.area}">${L(area?.title)||''}</a></div>
       <h1>${L(p.title)}</h1><p>${L(p.desc)}</p>
     </div></section>
+    <section class="content narrow" style="padding-bottom:0">
+      <img src="${p.image}" alt="" style="border-radius:18px;margin-bottom:40px;aspect-ratio:16/9;object-fit:cover;width:100%">
+    </section>
     <section class="content split">
       <article class="prose">
-        <img src="${p.image}" alt="" style="border-radius:18px;margin-bottom:28px;aspect-ratio:16/9;object-fit:cover">
         <div class="cta-row" style="justify-content:flex-start">${cta('contact',t('cards.contactUs'))}${ghost('gallery',t('cards.viewGallery'))}</div>
       </article>
       <aside class="side-panel"><div class="spec-list">
