@@ -1161,6 +1161,20 @@ const data = {
         "en": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)",
         "ko": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)"
       }
+    },
+    {
+      "slug": "test",
+      "cat": "prototype",
+      "date": "2026.01.01",
+      "title": {
+        "en": "test",
+        "ko": "test"
+      },
+      "image": "assets/img-1782179515644-ipum3pan.jpg",
+      "text": {
+        "en": "tests",
+        "ko": "tests"
+      }
     }
   ]
 };
