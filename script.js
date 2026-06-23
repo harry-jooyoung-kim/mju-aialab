@@ -807,6 +807,27 @@ const data = {
         "ko": ""
       },
       "image": "assets/img-1782172532194-g63mtefj.jpg"
+    },
+    {
+      "slug": "sion-kim",
+      "category": "intern",
+      "name": {
+        "en": "Sion Kim",
+        "ko": "김시온"
+      },
+      "role": {
+        "en": "Research Intern (2026.06 ~)",
+        "ko": "학부연구생 (2026.06 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/img-1782178286631-bxcf7m3o.jpg"
     }
   ],
   "alumni": [
@@ -1100,45 +1121,31 @@ const data = {
   ],
   "gallery": [
     {
-      "slug": "olfactory-experiment",
-      "cat": "experiment",
-      "date": "",
+      "slug": "conference-presentation",
+      "cat": "conference",
+      "date": "2026.06.18",
       "title": {
-        "en": "Olfactory AI Experiments",
-        "ko": "후각 AI 실험"
+        "en": "한국방송미디어공학회 하계학술대회 참석",
+        "ko": "한국방송미디어공학회 하계학술대회 참석"
       },
-      "image": "assets/placeholder.jpg",
+      "image": "assets/img-1782178539348-bgiye2kj.jpg",
       "text": {
-        "en": "Physical scent stimuli, recipe validation, and perception-study preparation.",
-        "ko": "물리적 향기 자극, 레시피 검증, 지각 연구 준비."
+        "en": "연구실 이승주, 이상훈, 조민선 학생이 한국방송미디어공학회 하계학술대회에 참석하여 연구 내용을 발표했습니다.",
+        "ko": "연구실 이승주, 이상훈, 조민선 학생이 한국방송미디어공학회 하계학술대회에 참석하여 연구 내용을 발표했습니다."
       }
     },
     {
-      "slug": "game-session",
-      "cat": "prototype",
-      "date": "",
+      "slug": "website-renewal",
+      "cat": "team",
+      "date": "2026.06.23",
       "title": {
-        "en": "Game AI Development",
-        "ko": "게임 AI 개발"
+        "en": "Lab Website Renewal",
+        "ko": "연구실 홈페이지 개편"
       },
-      "image": "assets/img-1782132639658-ijjlt29s.jpg",
+      "image": "assets/img-1782178399474-uekqcyu3.jpg",
       "text": {
-        "en": "Automatic gameplay, agent testing, and multimodal log inspection.",
-        "ko": "자동 게임플레이, 에이전트 테스트, 멀티모달 로그 검사."
-      }
-    },
-    {
-      "slug": "student-research",
-      "cat": "seminar",
-      "date": "",
-      "title": {
-        "en": "Student Research",
-        "ko": "학생 연구"
-      },
-      "image": "assets/placeholder.jpg",
-      "text": {
-        "en": "Graduate and undergraduate research sessions.",
-        "ko": "대학원생 및 학부생 연구 세션."
+        "en": "Lab Website Renewal!",
+        "ko": "연구실 홈페이지를 개편하였습니다!"
       }
     }
   ]
