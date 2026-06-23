@@ -1306,13 +1306,11 @@ function home() {
       <img class="tile-media" src="${data.research[2].image}" alt="">
     </section>
     <section class="tile parchment" style="padding:60px 24px">
-      <div style="max-width:var(--max);margin:0 auto;text-align:left">
-        <div style="position:relative;text-align:center;margin-bottom:32px">
-          <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0">${t('gallery.recentEvents')}</h2>
-          <a href="#/gallery" style="position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:14px;color:var(--primary);white-space:nowrap">${t('gallery.viewAll')} ↗</a>
-        </div>
-        <div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div>
+      <div style="position:relative;margin-bottom:32px;text-align:center">
+        <h2 style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0">${t('gallery.recentEvents')}</h2>
+        <a href="#/gallery" style="position:absolute;right:max(24px,calc((100vw - var(--max))/2 + 32px));top:50%;transform:translateY(-50%);font-size:14px;color:var(--primary);white-space:nowrap">${t('gallery.viewAll')} ↗</a>
       </div>
+      <div class="content" style="padding-top:0;padding-bottom:0"><div class="grid">${data.gallery.slice(0,3).map(galleryCard).join('')}</div></div>
     </section>
     <section class="tile dark" style="padding:32px 24px 60px">
       <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:#fff;letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
