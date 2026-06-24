@@ -883,7 +883,7 @@ const data = {
       "area": "olfactory-ai",
       "url": "",
       "title": "Expanding Multimedia to Smell: A Hybrid LLM-Rule Framework for Manufacturable Text-to-Scent Generation",
-      "authors": "Kim, J. et al.",
+      "authors": "Kim, J.",
       "venue": "ACM MM 2026",
       "year": "2026",
       "note": "under review"
@@ -894,7 +894,7 @@ const data = {
       "area": "olfactory-ai",
       "url": "",
       "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
-      "authors": "Kim, J. et al.",
+      "authors": "Kim, J.",
       "venue": "NeurIPS 2026",
       "year": "2026",
       "note": "under review"
