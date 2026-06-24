@@ -1251,7 +1251,7 @@ function pubRow(p) {
     <div>
       <p style="font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px">${catLabel} · ${p.year}</p>
       <h3>${p.title}</h3>
-      ${p.authors ? `<p style="font-size:14px;color:var(--muted);margin:5px 0 3px"><strong style="color:var(--ink);font-weight:600">${t('publications.authors')}:</strong> ${p.authors}</p>` : ''}
+      ${p.authors ? `<p style="font-size:14px;color:var(--muted);margin:5px 0 3px"><strong style="color:var(--ink);font-weight:600">${t('publications.authors')}:</strong> ${p.authors.replace(/Kim,\s*J\./g, '<strong style="color:var(--ink);font-weight:700">Kim, J.</strong>')}</p>` : ''}
       <p style="font-size:14px;color:var(--muted)">${p.venue}</p>
       ${p.patentNumber ? `<p style="font-size:13px;color:var(--muted);margin:3px 0">${t('publications.patentNo')}: <strong>${p.patentNumber}</strong></p>` : ''}
       ${p.note ? `<p style="font-size:12px;color:var(--primary);font-weight:600;margin:4px 0">${p.note}</p>` : ''}
