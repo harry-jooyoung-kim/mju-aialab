@@ -916,7 +916,7 @@ const data = {
       "area": "applied-ai",
       "url": "",
       "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
-      "authors": "Kim, Gyuri & Kim, J.",
+      "authors": "Kim, G. & Kim, J.",
       "venue": "Scientific Reports",
       "year": "2026",
       "note": "under revision"
@@ -1432,7 +1432,8 @@ function personDetail(slug) {
 function publications(cat, area) {
   const catTabs = ['all','intl-journal','intl-conference','domestic-journal','domestic-conference','patent'];
   const areaTabs = ['all','game-ai','olfactory-ai','applied-ai'];
-  let items = data.publications;
+  const isPending = p => /under\s*(review|revision|preparation)|in\s*preparation/i.test((p.note||'') + (p.venue||''));
+  let items = [...data.publications].sort((a, b) => isPending(b) - isPending(a));
   if (cat && cat !== 'all') items = items.filter(p => p.cat === cat);
   if (area && area !== 'all') items = items.filter(p => p.area === area);
   return `
