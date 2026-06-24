@@ -262,7 +262,7 @@ const data = {
         "en": "게임 플레이 영상과 사람처럼 플레이 하는 AI 에이전트를 통한 XAI 기반의 피드백 순환 등급분류 시스템 개발",
         "ko": "게임 플레이 영상과 사람처럼 플레이 하는 AI 에이전트를 통한 XAI 기반의 피드백 순환 등급분류 시스템 개발"
       },
-      "image": "assets/img-1782256770659-t3x70zsd.jpg"
+      "image": "assets/img-1782258599467-efp1ocbw.jpg"
     },
     {
       "slug": "text-to-scent",
@@ -445,49 +445,27 @@ const data = {
       }
     },
     {
-      "slug": "student-scent-apps",
+      "slug": "palm-vein",
+      "area": "applied-ai",
+      "period": "2026.01.01-2026.06.30",
+      "stageColor": "green",
       "title": {
-        "en": "Multimodal Scent Applications",
-        "ko": "멀티모달 향기 응용"
+        "en": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현",
+        "ko": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현"
       },
-      "area": "olfactory-ai",
       "type": {
-        "en": "Student Projects",
-        "ko": "학생 프로젝트"
+        "en": "기업 프로젝트",
+        "ko": "기업 프로젝트"
       },
       "stage": {
-        "en": "Exploratory",
-        "ko": "탐색 중"
+        "en": "진행 중 (연구책임자)",
+        "ko": "진행 중 (연구책임자)"
       },
       "desc": {
-        "en": "Undergraduate research projects connecting scent with fashion, music, diary, and ambient media.",
-        "ko": "향기를 패션, 음악, 일기, 주변 미디어와 연결하는 학부 연구."
+        "en": "손바닥 정맥 인식 알고리즘 개발",
+        "ko": "손바닥 정맥 인식 알고리즘 개발"
       },
-      "image": "assets/placeholder.jpg",
-      "goals": {
-        "en": [
-          "Build lightweight demos",
-          "Collect reusable data",
-          "Feed promising ideas into graduate projects"
-        ],
-        "ko": [
-          "경량 데모 개발",
-          "재사용 가능한 데이터 수집",
-          "대학원 프로젝트로 아이디어 연결"
-        ]
-      },
-      "outputs": {
-        "en": [
-          "Fashion-to-scent demo",
-          "Music-to-scent mapping",
-          "Gallery-ready prototypes"
-        ],
-        "ko": [
-          "패션-향기 데모",
-          "음악-향기 매핑",
-          "갤러리 전시 프로토타입"
-        ]
-      }
+      "image": "assets/img-1782259025052-1ivionkt.jpg"
     }
   ],
   "people": [
