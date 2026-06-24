@@ -916,7 +916,7 @@ const data = {
       "area": "applied-ai",
       "url": "",
       "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
-      "authors": "Kim, J. et al.",
+      "authors": "Kim, Gyuri & Kim, J.",
       "venue": "Scientific Reports",
       "year": "2026",
       "note": "under revision"
