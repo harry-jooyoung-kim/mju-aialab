@@ -905,7 +905,7 @@ const data = {
       "area": "applied-ai",
       "year": "2026",
       "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
-      "authors": "Kim, J. et al.",
+      "authors": "Kim, Jeemin & Kim, J.",
       "venue": "EMNLP 2026",
       "url": "",
       "note": "under review"
