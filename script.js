@@ -853,6 +853,9 @@ const data = {
     }
   ],
   "publications": [
+    { "slug": "koba2026-thermal", "cat": "domestic-conference", "area": "applied-ai", "url": "", "title": "생성형 AI 기반 컬러화와 4채널 ResNet18 앙상블을 이용한 열화상 객체 인식 성능 향상", "authors": "조민선, 김주영", "venue": "한국방송·미디어공학회 하계학술대회", "year": "2026" },
+    { "slug": "koba2026-rescue", "cat": "domestic-conference", "area": "applied-ai", "url": "", "title": "Pose-Visibility 계층 구조와 Poincaré Prototype 정규화를 이용한 산림 위급 조난자 탐지", "authors": "이상훈, 김주영", "venue": "한국방송·미디어공학회 하계학술대회", "year": "2026" },
+    { "slug": "koba2026-inverted", "cat": "domestic-conference", "area": "applied-ai", "url": "", "title": "픽셀 반전 기반 Inverted Grid를 이용한 비전-언어모델의 공간 위치 추정 개선", "authors": "이승주, 김주영", "venue": "한국방송·미디어공학회 하계학술대회", "year": "2026" },
     {
       "slug": "chi-smell-story",
       "cat": "intl-conference",
