@@ -927,7 +927,7 @@ const data = {
       "area": "olfactory-ai",
       "url": "",
       "title": "Multi-context Perfume Note Prediction with Review-scaled Labels and Note–Accord Co-occurrence Gating",
-      "authors": "Kim, J. et al.",
+      "authors": "Kim, J., Oh, K., & Oh, B. S.",
       "venue": "Engineering Applications of Artificial Intelligence",
       "year": "2026",
       "note": "under revision"
