@@ -858,10 +858,21 @@ const data = {
       "cat": "intl-conference",
       "area": "olfactory-ai",
       "url": "",
-      "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
+      "title": "From Recipe to Cartridge: Designing Compact Olfactory Displays for Text-Generated Scents",
       "authors": "Kim, J. et al.",
-      "venue": "Manuscript in preparation for CHI",
+      "venue": "Manuscript in preparation for CHI 2027",
       "year": "2027"
+    },
+    {
+      "slug": "acmmm-text-to-scent",
+      "cat": "intl-conference",
+      "area": "olfactory-ai",
+      "url": "",
+      "title": "Expanding Multimedia to Smell: A Hybrid LLM-Rule Framework for Manufacturable Text-to-Scent Generation",
+      "authors": "Kim, J. et al.",
+      "venue": "ACM MM 2026",
+      "year": "2026",
+      "note": "under review"
     },
     {
       "slug": "scentbias-paper",
@@ -870,8 +881,9 @@ const data = {
       "url": "",
       "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
       "authors": "Kim, J. et al.",
-      "venue": "NeurIPS E&D Workshop",
-      "year": "2026"
+      "venue": "NeurIPS 2026",
+      "year": "2026",
+      "note": "under review"
     },
     {
       "slug": "bbq-paper",
@@ -879,11 +891,10 @@ const data = {
       "area": "applied-ai",
       "year": "2026",
       "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
-      "authors": "Kim, J., Kim, J.",
-      "venue": "ACL Rolling Review",
+      "authors": "Kim, J. et al.",
+      "venue": "EMNLP 2026",
       "url": "",
-      "note": "EMNLP 2026 Findings",
-      "patentNumber": ""
+      "note": "under review"
     },
     {
       "slug": "face-sketch-xai",
@@ -892,8 +903,20 @@ const data = {
       "url": "",
       "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
       "authors": "Kim, J. et al.",
-      "venue": "Journal (under revision)",
-      "year": "2026"
+      "venue": "Scientific Reports",
+      "year": "2026",
+      "note": "under revision"
+    },
+    {
+      "slug": "perfume-note-prediction",
+      "cat": "intl-journal",
+      "area": "olfactory-ai",
+      "url": "",
+      "title": "Multi-context Perfume Note Prediction with Review-scaled Labels and Note–Accord Co-occurrence Gating",
+      "authors": "Kim, J. et al.",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "year": "2026",
+      "note": "under revision"
     },
     {
       "slug": "j7-lol",
