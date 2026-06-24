@@ -854,6 +854,16 @@ const data = {
   ],
   "publications": [
     {
+      "slug": "chi-smell-story",
+      "cat": "intl-conference",
+      "area": "olfactory-ai",
+      "url": "",
+      "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
+      "authors": "Kim, J. et al.",
+      "venue": "Manuscript in preparation for CHI 2027",
+      "year": "2027"
+    },
+    {
       "slug": "chi-perception",
       "cat": "intl-conference",
       "area": "olfactory-ai",
