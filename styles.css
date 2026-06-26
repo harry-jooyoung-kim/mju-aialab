@@ -90,7 +90,7 @@
 .card p{margin:0;color:var(--muted);font-size:15px}
 .card.dark p{color:var(--muted-dark)}
 .card .meta{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
-.card img{border-radius:var(--radius-sm);aspect-ratio:16/10;object-fit:cover;background:var(--parchment)}
+.card img{border-radius:var(--radius-sm);aspect-ratio:16/10;object-fit:cover;background:var(--canvas)}
 
 /* ── Chips ───────────────────────────────────────────────── */
 .chip-row{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px}
