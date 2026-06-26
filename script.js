@@ -14,7 +14,7 @@ const TR = {
       lead:'We build and evaluate AI systems across game & interactive media, olfactory generation, biometric sensing, and language-model evaluation.',
       cta1:'Explore projects', cta2:'Prospective students'
     },
-    research: { h1:'Research areas', lead:'Three connected pillars. Each is an applied AI domain united by evaluation-centered multimodal methods.' },
+    research: { h1:'Research areas', lead:'We conduct research across three pillars — game & interactive AI, olfactory AI, and applied AI — united by a shared focus on building and evaluating multimodal systems.' },
     projects: { h1:'Projects', lead:'Click into each project for goals, outputs, and related lab activities.' },
     people: {
       h1:'People',
@@ -76,7 +76,7 @@ const TR = {
       lead:'게임 & 인터랙티브 미디어, 후각 생성, 생체인식, 언어모델 평가 분야의 AI 시스템을 연구하고 개발합니다.',
       cta1:'프로젝트 탐색', cta2:'지원 안내'
     },
-    research: { h1:'연구 분야', lead:'세 가지 연구 기둥. 각각 독립적인 응용 분야이지만 평가 중심의 멀티모달 AI라는 공통 방법론을 공유합니다.' },
+    research: { h1:'연구 분야', lead:'게임 & 인터랙티브 AI, 후각 AI, 응용 AI — 세 축의 연구를 수행하고 있습니다.' },
     projects: { h1:'프로젝트', lead:'각 프로젝트의 목표, 산출물, 관련 활동을 확인하세요.' },
     people: {
       h1:'구성원',
