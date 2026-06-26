@@ -265,184 +265,96 @@ const data = {
       "image": "assets/img-1782258599467-efp1ocbw.jpg"
     },
     {
-      "slug": "text-to-scent",
-      "title": {
-        "en": "Text-to-Scent Generation and Evaluation",
-        "ko": "텍스트-향기 생성 및 평가"
-      },
+      "slug": "description-to-recipe",
       "area": "olfactory-ai",
+      "period": "2026.03.01-2026.08.31",
+      "stageColor": "green",
+      "title": {
+        "en": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발",
+        "ko": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발"
+      },
       "type": {
-        "en": "Core Research",
-        "ko": "핵심 연구"
+        "en": "사기업 연구과제",
+        "ko": "사기업 연구과제"
       },
       "stage": {
-        "en": "Active",
-        "ko": "진행 중"
+        "en": "진행 중 (연구책임자)",
+        "ko": "진행 중 (연구책임자)"
       },
       "desc": {
-        "en": "Manufacturable scent recipe generation from natural language, followed by human perceptual evaluation.",
-        "ko": "자연어에서 제조 가능한 향기 레시피 생성 및 인간 지각 평가."
+        "en": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발",
+        "ko": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발"
       },
-      "image": "assets/placeholder.jpg",
-      "goals": {
-        "en": [
-          "Generate valid scent recipes from text",
-          "Measure semantic alignment in human perception",
-          "Build reusable evaluation protocols"
-        ],
-        "ko": [
-          "텍스트에서 유효한 향기 레시피 생성",
-          "인간 지각에서 의미 정렬 측정",
-          "재사용 가능한 평가 프로토콜 구축"
-        ]
-      },
-      "outputs": {
-        "en": [
-          "100 manufactured perfumes",
-          "1,000 perceptual evaluations",
-          "CHI perception manuscript"
-        ],
-        "ko": [
-          "100개 제조 향수",
-          "1,000개 지각 평가",
-          "CHI 지각 논문"
-        ]
-      }
+      "image": "assets/placeholder.jpg"
     },
     {
-      "slug": "scent-speaker",
-      "title": {
-        "en": "AI Olfactory Renderer / Scent Speaker",
-        "ko": "AI 후각 렌더러 / 향기 스피커"
-      },
+      "slug": "text-to-scent-perception",
       "area": "olfactory-ai",
+      "period": "2025.09.01-2026.08.31",
+      "stageColor": "green",
+      "title": {
+        "en": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구",
+        "ko": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구"
+      },
       "type": {
-        "en": "Device Research",
-        "ko": "디바이스 연구"
+        "en": "우수신진연구 (씨앗)",
+        "ko": "우수신진연구 (씨앗)"
       },
       "stage": {
-        "en": "Prototype",
-        "ko": "프로토타입"
+        "en": "진행 중 (연구책임자)",
+        "ko": "진행 중 (연구책임자)"
       },
       "desc": {
-        "en": "A physical output device that renders generated scent recipes as real-time olfactory media.",
-        "ko": "생성된 향기 레시피를 실시간 후각 미디어로 렌더링하는 물리적 출력 디바이스."
+        "en": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구",
+        "ko": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구"
       },
-      "image": "assets/placeholder.jpg",
-      "goals": {
-        "en": [
-          "Represent recipes with cartridge blends",
-          "Control emission and evaporation",
-          "Evaluate rendering consistency"
-        ],
-        "ko": [
-          "카트리지 블렌드로 레시피 표현",
-          "방출 및 증발 제어",
-          "렌더링 일관성 평가"
-        ]
-      },
-      "outputs": {
-        "en": [
-          "Renderer architecture",
-          "Calibration protocol",
-          "Interactive demo"
-        ],
-        "ko": [
-          "렌더러 아키텍처",
-          "교정 프로토콜",
-          "인터랙티브 데모"
-        ]
-      }
+      "image": "assets/img-1782440308254-7f4b5xer.jpg"
     },
     {
-      "slug": "scentbias",
-      "title": {
-        "en": "SCENTBIAS: Structured-output Safety",
-        "ko": "SCENTBIAS: 구조화 출력 안전성"
-      },
+      "slug": "generative-ai-deepfake",
       "area": "applied-ai",
+      "period": "2026.04.01-20",
+      "stageColor": "green",
+      "title": {
+        "en": "생성형 AI 수정영역 탐지 및 불법 콘텐츠 검색 표준 기술 개발",
+        "ko": "생성형 AI 수정영역 탐지 및 불법 콘텐츠 검색 표준 기술 개발"
+      },
       "type": {
-        "en": "Benchmark",
-        "ko": "벤치마크"
+        "en": "국가표준기술력향상사업",
+        "ko": "국가표준기술력향상사업"
       },
       "stage": {
-        "en": "Submitted",
-        "ko": "제출됨"
+        "en": "진행 중 (참여연구자)",
+        "ko": "진행 중 (참여연구자)"
       },
       "desc": {
-        "en": "Evaluation suite for demographic differentiation and stereotype-related failures in text-to-scent generation.",
-        "ko": "텍스트-향기 생성에서 인구통계학적 차별화 및 고정관념 관련 실패 평가."
+        "en": "생성형 AI 수정영역 탐지 및 불법 콘텐츠 검색 표준 기술 개발",
+        "ko": "생성형 AI 수정영역 탐지 및 불법 콘텐츠 검색 표준 기술 개발"
       },
-      "image": "assets/placeholder.jpg",
-      "goals": {
-        "en": [
-          "Detect demographic conditioning",
-          "Measure safety bypass",
-          "Separate distributional differentiation"
-        ],
-        "ko": [
-          "인구통계학적 조건화 감지",
-          "안전성 우회 측정",
-          "분포적 차별화 분리"
-        ]
-      },
-      "outputs": {
-        "en": [
-          "Five-protocol suite",
-          "Trap-word diagnostic",
-          "Mitigation analysis"
-        ],
-        "ko": [
-          "5개 프로토콜 모음",
-          "함정 단어 진단",
-          "완화 분석"
-        ]
-      }
+      "image": "assets/img-1782440185042-cagldwp1.jpg"
     },
     {
-      "slug": "biometric-ondevice",
-      "title": {
-        "en": "Efficient Biometric Recognition",
-        "ko": "효율적 생체인식"
-      },
+      "slug": "battery-image-processing",
       "area": "applied-ai",
+      "period": "2026.04.01-2026.06.30",
+      "stageColor": "green",
+      "title": {
+        "en": "비파괴 센서 기반 배터리 외관·내부 통합 이기종 데이터 레이크 솔루션 개발 및 K-NPU Edge AI 검사장비 개발",
+        "ko": "비파괴 센서 기반 배터리 외관·내부 통합 이기종 데이터 레이크 솔루션 개발 및 K-NPU Edge AI 검사장비 개발"
+      },
       "type": {
-        "en": "Applied AI",
-        "ko": "응용 AI"
+        "en": "연구산업육성사업",
+        "ko": "연구산업육성사업"
       },
       "stage": {
-        "en": "Active",
-        "ko": "진행 중"
+        "en": "진행 중 (참여연구자)",
+        "ko": "진행 중 (참여연구자)"
       },
       "desc": {
-        "en": "Compression, quantization, and explainability for biometric models under deployment constraints.",
-        "ko": "배포 제약 조건에서 생체인식 모델의 압축, 양자화, 설명 가능성."
+        "en": "비파괴 센서 기반 배터리 외관·내부 통합 이기종 데이터 레이크 솔루션 개발 및 K-NPU Edge AI 검사장비 개발",
+        "ko": "비파괴 센서 기반 배터리 외관·내부 통합 이기종 데이터 레이크 솔루션 개발 및 K-NPU Edge AI 검사장비 개발"
       },
-      "image": "assets/placeholder.jpg",
-      "goals": {
-        "en": [
-          "Reduce model size without performance loss",
-          "Evaluate INT8 and FP16 deployment",
-          "Explain decisions with region-wise attribution"
-        ],
-        "ko": [
-          "성능 손실 없이 모델 크기 감소",
-          "INT8 및 FP16 배포 평가",
-          "영역별 귀속으로 결정 설명"
-        ]
-      },
-      "outputs": {
-        "en": [
-          "On-device baseline",
-          "Quantization report",
-          "Journal manuscript"
-        ],
-        "ko": [
-          "온디바이스 기준 모델",
-          "양자화 보고서",
-          "저널 논문"
-        ]
-      }
+      "image": "assets/img-1782439858741-occv6bof.jpg"
     },
     {
       "slug": "palm-vein",
@@ -853,10 +765,47 @@ const data = {
     }
   ],
   "publications": [
-    { "slug": "sensors2026-nerf-radar", "cat": "intl-journal", "area": "applied-ai", "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361", "title": "Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures", "authors": "Park, J., Kim, J., & Kim, T.", "venue": "IEEE Sensors Journal", "year": "2026", "note": "SCIE, 2024 IF: 4.3" },
-    { "slug": "koba2026-thermal", "cat": "domestic-conference", "area": "applied-ai", "url": "", "title": "생성형 AI 기반 컬러화와 4채널 ResNet18 앙상블을 이용한 열화상 객체 인식 성능 향상", "authors": "조민선, 김주영", "venue": "한국방송·미디어공학회 하계학술대회", "year": "2026" },
-    { "slug": "koba2026-rescue", "cat": "domestic-conference", "area": "applied-ai", "url": "", "title": "Pose-Visibility 계층 구조와 Poincaré Prototype 정규화를 이용한 산림 위급 조난자 탐지", "authors": "이상훈, 김주영", "venue": "한국방송·미디어공학회 하계학술대회", "year": "2026" },
-    { "slug": "koba2026-inverted", "cat": "domestic-conference", "area": "applied-ai", "url": "", "title": "픽셀 반전 기반 Inverted Grid를 이용한 비전-언어모델의 공간 위치 추정 개선", "authors": "이승주, 김주영", "venue": "한국방송·미디어공학회 하계학술대회", "year": "2026" },
+    {
+      "slug": "sensors2026-nerf-radar",
+      "cat": "intl-journal",
+      "area": "applied-ai",
+      "url": "https://ieeexplore.ieee.org/xpl/ReseArchPubType.jsp?punumber=7361",
+      "title": "Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures",
+      "authors": "Park, J., Kim, J., & Kim, T.",
+      "venue": "IEEE Sensors Journal",
+      "year": "2026",
+      "note": "SCIE, 2024 IF: 4.3"
+    },
+    {
+      "slug": "koba2026-thermal",
+      "cat": "domestic-conference",
+      "area": "applied-ai",
+      "url": "",
+      "title": "생성형 AI 기반 컬러화와 4채널 ResNet18 앙상블을 이용한 열화상 객체 인식 성능 향상",
+      "authors": "조민선, 김주영",
+      "venue": "한국방송·미디어공학회 하계학술대회",
+      "year": "2026"
+    },
+    {
+      "slug": "koba2026-rescue",
+      "cat": "domestic-conference",
+      "area": "applied-ai",
+      "url": "",
+      "title": "Pose-Visibility 계층 구조와 Poincaré Prototype 정규화를 이용한 산림 위급 조난자 탐지",
+      "authors": "이상훈, 김주영",
+      "venue": "한국방송·미디어공학회 하계학술대회",
+      "year": "2026"
+    },
+    {
+      "slug": "koba2026-inverted",
+      "cat": "domestic-conference",
+      "area": "applied-ai",
+      "url": "",
+      "title": "픽셀 반전 기반 Inverted Grid를 이용한 비전-언어모델의 공간 위치 추정 개선",
+      "authors": "이승주, 김주영",
+      "venue": "한국방송·미디어공학회 하계학술대회",
+      "year": "2026"
+    },
     {
       "slug": "chi-smell-story",
       "cat": "intl-conference",
