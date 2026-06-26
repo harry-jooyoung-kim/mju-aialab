@@ -59,7 +59,7 @@ const TR = {
     },
     floatingBar: { text:'Explore AI & Applications Lab', cta:'Join the Lab' },
     footer: {
-      labDesc:'Department of Convergence Software, Myongji University. We develop and evaluate AI systems for real-world applications.',
+      labDesc:'Department of Convergence Software, Myongji University. We research and develop AI systems across game & interactive AI, olfactory AI, and applied AI.',
       research:'Research', resources:'Resources', contact:'Contact', address:'Myongji University, Seoul, Republic of Korea',
       links: { gameAI:'Game & Interactive AI', olfactoryAI:'Olfactory AI', appliedAI:'Applied AI', publications:'Publications', gallery:'Gallery', join:'Prospective Students', contact:'Contact' }
     },
@@ -121,7 +121,7 @@ const TR = {
     },
     floatingBar: { text:'AI & Applications Lab 탐색', cta:'합류하기' },
     footer: {
-      labDesc:'명지대학교 융합소프트웨어학부. 실세계 응용 AI 시스템을 연구하고 평가합니다.',
+      labDesc:'명지대학교 융합소프트웨어학부. 게임 & 인터랙티브 AI, 후각 AI, 응용 AI 분야의 시스템을 연구하고 개발합니다.',
       research:'연구', resources:'자료', contact:'연락처', address:'명지대학교, 서울, 대한민국',
       links: { gameAI:'게임 & 인터랙티브 AI', olfactoryAI:'후각 AI', appliedAI:'응용 AI', publications:'논문', gallery:'갤러리', join:'지원 안내', contact:'연락처' }
     },
