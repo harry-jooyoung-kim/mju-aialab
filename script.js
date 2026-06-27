@@ -1301,7 +1301,7 @@ function projectDetail(slug) {
       <div class="breadcrumb"><a href="#/projects">${t('nav.projects')}</a> / <a href="#/projects/${p.area}">${L(area?.title)||''}</a></div>
       <h1>${L(p.title)}</h1><p>${L(p.desc)}</p>
     </div></section>
-    <section class="content split" style="grid-template-columns:2fr 1fr">
+    <section class="content split project-split">
       <article class="prose">
         <img src="${p.image}" alt="" style="border-radius:18px;margin-bottom:28px;aspect-ratio:16/9;object-fit:cover;width:100%">
         <div class="cta-row" style="justify-content:flex-start">${cta('contact',t('cards.contactUs'))}${ghost('gallery',t('cards.viewGallery'))}</div>
