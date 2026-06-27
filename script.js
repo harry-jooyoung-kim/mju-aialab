@@ -362,7 +362,7 @@ const data = {
       "slug": "palm-vein",
       "area": "applied-ai",
       "period": "2026.01.01-2026.06.30",
-      "stageColor": "green",
+      "stageColor": "red",
       "title": {
         "en": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현",
         "ko": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현"
@@ -1237,7 +1237,11 @@ function home() {
       </div>
     </section>
     ${(() => {
-      const activeCount = data.projects.filter(p => p.stageColor==='green' || /active|진행|ongoing/i.test(L(p.stage)||'')).length;
+      const activeCount = data.projects.filter(p => {
+        if (p.stageColor === 'green') return true;
+        if (p.stageColor === 'red') return false;
+        return /active|진행|ongoing/i.test(L(p.stage)||'');
+      }).length;
       return `<section class="stats-row">
       <div class="stat-item"><span class="stat-num">${activeCount}</span><span class="stat-cap">${t('home.statPillars')}</span></div>
       <div class="stat-item"><span class="stat-num">${data.publications.length}</span><span class="stat-cap">${t('home.statPubs')}</span></div>
