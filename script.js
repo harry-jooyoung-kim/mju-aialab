@@ -213,8 +213,8 @@ const data = {
       "theme": "dark",
       "tags": [
         "biometrics",
-        "LLM evaluation",
-        "e-sports",
+        "standards",
+        "bias & evaluation",
         "XAI"
       ],
       "title": {
@@ -222,21 +222,21 @@ const data = {
         "ko": "응용 AI"
       },
       "short": {
-        "en": "Biometric intelligence, LLM evaluation, e-sports analytics, and emerging applied AI.",
-        "ko": "생체인식, LLM 평가, e스포츠 분석, 그리고 다양한 응용 AI 연구."
+        "en": "Biometric recognition, AI standards & content forensics, and trustworthy evaluation of bias and fairness.",
+        "ko": "생체인식, AI 표준·콘텐츠 포렌식, 그리고 편향·공정성에 대한 신뢰성 평가."
       },
       "status": {
-        "en": "Applied sensing & evaluation program",
-        "ko": "응용 감지 및 평가 프로그램"
+        "en": "Applied sensing, standards & evaluation program",
+        "ko": "응용 감지·표준·평가 프로그램"
       },
       "body": {
         "en": [
-          "We build compact and explainable models for face, vein, ECG, and other biometric signals, emphasizing deployability and robustness under real-world constraints.",
-          "This pillar also includes e-sports analytics, LLM evaluation, applied generative AI demonstrations, and student-led projects in any emerging domain where AI evaluation and sensing converge."
+          "We develop compact and explainable models for biometric signals — palm-vein, face, and related modalities — emphasizing lightweight deployability and robustness under real-world constraints.",
+          "We also work on AI standards and content forensics, including standard technology for detecting generative-AI edited regions and retrieving illegal content, and on trustworthy evaluation — measuring bias, fairness, and failure modes of AI and language models."
         ],
         "ko": [
-          "얼굴, 정맥, 심전도 등 생체 신호를 위한 경량 설명 가능 모델을 개발합니다.",
-          "이 분야는 e스포츠 분석, LLM 평가, 응용 생성형 AI, 학생 주도 프로젝트를 포괄합니다."
+          "손바닥 정맥, 얼굴 등 생체 신호를 위한 경량·설명 가능 모델을 개발하며, 실제 환경에서의 경량 배포와 강건성을 중시합니다.",
+          "또한 생성형 AI 수정영역 탐지 및 불법 콘텐츠 검색 표준 기술 등 AI 표준·콘텐츠 포렌식 연구와, AI 및 언어모델의 편향·공정성·실패 사례를 측정하는 신뢰성 평가 연구를 수행합니다."
         ]
       },
       "image": "assets/img-1782256051514-ngfzte5f.jpg"
