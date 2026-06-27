@@ -11,7 +11,7 @@ const TR = {
     home: {
       eyebrow:'Myongji University · Department of Convergence Software',
       h1:'AI systems for real-world applications.',
-      lead:'We build and evaluate AI systems across game & interactive media, olfactory generation, biometric sensing, and language-model evaluation.',
+      lead:'We build and evaluate AI systems across game & interactive media, olfactory generation, digital content standards, and trustworthy AI evaluation.',
       cta1:'Explore projects', cta2:'Prospective students',
       statPillars:'Active projects', statPubs:'Publications & patents', statPeople:'Researchers'
     },
@@ -74,7 +74,7 @@ const TR = {
     home: {
       eyebrow:'명지대학교 · 융합소프트웨어학부',
       h1:'실세계 응용을 위한 AI 시스템.',
-      lead:'게임 & 인터랙티브 미디어, 후각 생성, 생체인식, 언어모델 평가 분야의 AI 시스템을 연구하고 개발합니다.',
+      lead:'게임 & 인터랙티브 미디어, 후각 생성, 디지털 콘텐츠 표준, 신뢰성 있는 AI 평가 분야의 AI 시스템을 연구하고 개발합니다.',
       cta1:'프로젝트 탐색', cta2:'지원 안내',
       statPillars:'수행 중 프로젝트', statPubs:'논문 & 특허', statPeople:'연구원'
     },
