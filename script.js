@@ -13,7 +13,7 @@ const TR = {
       h1:'AI systems for real-world applications.',
       lead:'We build and evaluate AI systems across game & interactive media, olfactory generation, biometric sensing, and language-model evaluation.',
       cta1:'Explore projects', cta2:'Prospective students',
-      statPillars:'Research pillars', statPubs:'Publications & patents', statPeople:'Researchers'
+      statPillars:'Active projects', statPubs:'Publications & patents', statPeople:'Researchers'
     },
     research: { h1:'Research areas', lead:'We conduct research across three pillars — game & interactive AI, olfactory AI, and applied AI — united by a shared focus on building and evaluating multimodal systems.' },
     projects: { h1:'Projects', lead:'Click into each project for goals, outputs, and related lab activities.' },
@@ -76,7 +76,7 @@ const TR = {
       h1:'실세계 응용을 위한 AI 시스템.',
       lead:'게임 & 인터랙티브 미디어, 후각 생성, 생체인식, 언어모델 평가 분야의 AI 시스템을 연구하고 개발합니다.',
       cta1:'프로젝트 탐색', cta2:'지원 안내',
-      statPillars:'연구 분야', statPubs:'논문 & 특허', statPeople:'연구원'
+      statPillars:'수행 중 프로젝트', statPubs:'논문 & 특허', statPeople:'연구원'
     },
     research: { h1:'연구 분야', lead:'게임 & 인터랙티브 AI, 후각 AI, 응용 AI — 세 축의 연구를 수행하고 있습니다.' },
     projects: { h1:'프로젝트', lead:'각 프로젝트의 목표, 산출물, 관련 활동을 확인하세요.' },
@@ -1236,11 +1236,14 @@ function home() {
         <img class="hero-art" src="assets/myongji-home.png" alt="AI & Applications Lab">
       </div>
     </section>
-    <section class="stats-row">
-      <div class="stat-item"><span class="stat-num">${data.research.length}</span><span class="stat-cap">${t('home.statPillars')}</span></div>
+    ${(() => {
+      const activeCount = data.projects.filter(p => p.stageColor==='green' || /active|진행|ongoing/i.test(L(p.stage)||'')).length;
+      return `<section class="stats-row">
+      <div class="stat-item"><span class="stat-num">${activeCount}</span><span class="stat-cap">${t('home.statPillars')}</span></div>
       <div class="stat-item"><span class="stat-num">${data.publications.length}</span><span class="stat-cap">${t('home.statPubs')}</span></div>
       <div class="stat-item"><span class="stat-num">${data.people.length}</span><span class="stat-cap">${t('home.statPeople')}</span></div>
-    </section>
+    </section>`;
+    })()}
     <section class="tile dark">
       <h2>${L(data.research[0].title)}</h2>
       <p class="tile-lead">${L(data.research[0].short)}</p>
