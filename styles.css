@@ -160,6 +160,8 @@
 .alumni-card img{aspect-ratio:1;border-radius:50%!important;width:72px;height:72px;object-fit:cover}
 
 /* ── Publications ────────────────────────────────────────── */
+.pub-year-head{font-family:"SF Pro Display",system-ui,-apple-system,sans-serif;font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--ink);margin:36px 0 4px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.pub-year-head:first-of-type{margin-top:8px}
 .paper{display:grid;grid-template-columns:1fr auto;gap:20px;padding:22px 0;border-bottom:1px solid var(--hairline)}
 .paper h3{font-size:20px;margin:0 0 8px;letter-spacing:-.02em}
 .paper p{margin:0;color:var(--muted);font-size:14px}

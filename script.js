@@ -362,7 +362,7 @@ const data = {
       "slug": "palm-vein",
       "area": "applied-ai",
       "period": "2026.01.01-2026.06.30",
-      "stageColor": "red",
+      "stageColor": "green",
       "title": {
         "en": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현",
         "ko": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현"
@@ -1396,9 +1396,26 @@ function publications(cat, area) {
   const catTabs = ['all','intl-journal','intl-conference','domestic-journal','domestic-conference','patent'];
   const areaTabs = ['all','game-ai','olfactory-ai','applied-ai'];
   const isPending = p => /under\s*(review|revision|preparation)|in\s*preparation/i.test((p.note||'') + (p.venue||''));
-  let items = [...data.publications].sort((a, b) => isPending(b) - isPending(a));
+  let items = [...data.publications].sort((a, b) => {
+    if (isPending(a) !== isPending(b)) return isPending(b) - isPending(a);
+    return (parseInt(b.year)||0) - (parseInt(a.year)||0);
+  });
   if (cat && cat !== 'all') items = items.filter(p => p.cat === cat);
   if (area && area !== 'all') items = items.filter(p => p.area === area);
+
+  // Group into year buckets with separators (>=2024 individually, rest "Before 2024")
+  const bucketOf = p => { const y = parseInt(p.year)||0; return y >= 2024 ? String(y) : 'before-2024'; };
+  let body = '', lastBucket = null;
+  items.forEach(p => {
+    const b = bucketOf(p);
+    if (b !== lastBucket) {
+      const label = b === 'before-2024' ? (lang==='ko'?'2024년 이전':'Before 2024') : b;
+      body += `<h2 class="pub-year-head">${label}</h2>`;
+      lastBucket = b;
+    }
+    body += pubRow(p);
+  });
+
   return `
     <section class="section-header parchment"><h1>${t('publications.h1')}</h1><p>${t('publications.lead')}</p></section>
     <section class="content narrow">
@@ -1408,7 +1425,7 @@ function publications(cat, area) {
       <div class="chip-row">
         ${areaTabs.map(a => `<button class="chip ${(!area&&a==='all')||area===a?'is-active':''}" data-pub-area="${a}" style="font-size:12px">${a==='all'?t('publications.tabs.all'):t(`subNav.${a==='game-ai'?'gameAI':a==='olfactory-ai'?'olfactoryAI':'appliedAI'}`)}</button>`).join('')}
       </div>
-      ${items.map(pubRow).join('')}
+      ${body}
     </section>`;
 }
 
