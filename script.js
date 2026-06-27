@@ -1099,18 +1099,13 @@ const data = {
   ]
 };
 
-/* ── Load admin overrides from localStorage ─────────────── */
+/* ── Single source of truth: script.js ───────────────────
+   The admin panel writes directly to script.js (saveToScriptJs) and reads it
+   back via loadDataFromScriptJs(), so the live site always renders the data
+   defined above. A stale localStorage cache from earlier admin sessions is
+   cleared here to avoid overriding fresh script.js edits. */
 (function() {
-  try {
-    const raw = localStorage.getItem('aialab-admin-data');
-    if (!raw) return;
-    const saved = JSON.parse(raw);
-    ['research','projects','people','alumni','gallery'].forEach(k => {
-      if (Array.isArray(saved[k]) && saved[k].length > 0) data[k] = saved[k];
-    });
-    // Publications are always loaded from script.js (source of truth for area tags)
-    // localStorage override for publications is intentionally disabled
-  } catch(e) {}
+  try { localStorage.removeItem('aialab-admin-data'); } catch(e) {}
 })();
 
 /* ── Utilities ───────────────────────────────────────────── */
