@@ -1397,8 +1397,9 @@ function publications(cat, area) {
   const areaTabs = ['all','game-ai','olfactory-ai','applied-ai'];
   const isPending = p => /under\s*(review|revision|preparation)|in\s*preparation/i.test((p.note||'') + (p.venue||''));
   let items = [...data.publications].sort((a, b) => {
-    if (isPending(a) !== isPending(b)) return isPending(b) - isPending(a);
-    return (parseInt(b.year)||0) - (parseInt(a.year)||0);
+    const dy = (parseInt(b.year)||0) - (parseInt(a.year)||0);
+    if (dy !== 0) return dy;
+    return isPending(b) - isPending(a);
   });
   if (cat && cat !== 'all') items = items.filter(p => p.cat === cat);
   if (area && area !== 'all') items = items.filter(p => p.area === area);
