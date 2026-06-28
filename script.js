@@ -1225,7 +1225,7 @@ function home() {
       }).length;
       return `<section class="stats-row">
       <div class="stat-item"><span class="stat-num">${activeCount}</span><span class="stat-cap">${t('home.statPillars')}</span></div>
-      <div class="stat-item"><span class="stat-num">${data.publications.length}</span><span class="stat-cap">${t('home.statPubs')}</span></div>
+      <div class="stat-item"><span class="stat-num">${data.publications.filter(p => !/under\s*(review|revision|preparation)|in\s*preparation/i.test((p.note||'') + (p.venue||''))).length}</span><span class="stat-cap">${t('home.statPubs')}</span></div>
       <div class="stat-item"><span class="stat-num">${data.people.length}</span><span class="stat-cap">${t('home.statPeople')}</span></div>
     </section>`;
     })()}
