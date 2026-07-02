@@ -362,7 +362,7 @@ const data = {
       "slug": "palm-vein",
       "area": "applied-ai",
       "period": "2026.01.01-2026.06.30",
-      "stageColor": "green",
+      "stageColor": "red",
       "title": {
         "en": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현",
         "ko": "근적외선 기반 비접촉 손바닥 정맥 인식을 위한 경량 알고리즘 개발 및 데모 구현"
@@ -372,8 +372,8 @@ const data = {
         "ko": "기업 프로젝트"
       },
       "stage": {
-        "en": "진행 중 (연구책임자)",
-        "ko": "진행 중 (연구책임자)"
+        "en": "종료 (연구책임자)",
+        "ko": "종료 (연구책임자)"
       },
       "desc": {
         "en": "손바닥 정맥 인식 알고리즘 개발",
@@ -829,15 +829,16 @@ const data = {
       "year": "2027"
     },
     {
-      "slug": "acmmm-text-to-scent",
-      "cat": "intl-conference",
+      "slug": "entcom-text-to-scent",
+      "cat": "intl-journal",
       "area": "olfactory-ai",
-      "url": "",
-      "title": "Expanding Multimedia to Smell: A Hybrid LLM-Rule Framework for Manufacturable Text-to-Scent Generation",
-      "authors": "Kim, J.",
-      "venue": "ACM MM 2026",
       "year": "2026",
-      "note": "under review"
+      "title": "Manufacturable Text-to-Scent Generation for Olfactory Entertainment Media",
+      "authors": "Kim, J.",
+      "venue": "Entertainment Computing",
+      "url": "",
+      "note": "under revision",
+      "patentNumber": ""
     },
     {
       "slug": "scentbias-paper",
