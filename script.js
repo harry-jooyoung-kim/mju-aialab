@@ -698,6 +698,27 @@ const data = {
         "ko": ""
       },
       "image": "assets/img-1782178286631-bxcf7m3o.jpg"
+    },
+    {
+      "slug": "Yuchul-Lee",
+      "category": "ms",
+      "name": {
+        "en": "Yuchul Lee",
+        "ko": "이유철"
+      },
+      "role": {
+        "en": "MS Candidate (2025.03~ / Co-supervision)",
+        "ko": "MS Candidate (2025.03~ / Co-supervision)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/img-1782952534990-g3u98er8.jpg"
     }
   ],
   "alumni": [
@@ -1332,7 +1353,7 @@ function areaDetail(slug) {
 
 function people() {
   const bycat = cat => data.people.filter(p => p.category === cat);
-  const pi = bycat('pi'), phd = bycat('phd'), interns = bycat('intern');
+  const pi = bycat('pi'), phd = bycat('phd'), ms = bycat('ms'), interns = bycat('intern');
   const subhead = label => `<h2 class="section-subhead">${label}</h2>`;
   return `
     <section class="section-header"><h1>${t('people.h1')}</h1><p>${t('people.lead')}</p></section>
@@ -1340,6 +1361,7 @@ function people() {
       ${subhead(t('people.categories.pi'))}
       <div class="grid">${pi.map(personCard).join('')}</div>
       ${phd.length ? subhead(t('people.categories.phd')) + `<div class="grid">${phd.map(personCard).join('')}</div>` : ''}
+      ${ms.length ? subhead(t('people.categories.ms')) + `<div class="grid">${ms.map(personCard).join('')}</div>` : ''}
       ${interns.length ? subhead(t('people.categories.intern')) + `<div class="grid-interns">${interns.map(internCard).join('')}</div>` : ''}
     </section>
     <div class="alumni-section">
