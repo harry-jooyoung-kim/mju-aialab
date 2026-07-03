@@ -1635,11 +1635,7 @@ function initMarquees() {
   });
 }
 
-/* ── Hero canvas: full-bleed flowing background ──────────────
-   Two styles, toggled by double-clicking the hero (for review):
-     'constellation' — drifting neural dots + links (default)
-     'aurora'        — soft flowing watercolor gradients
-   Choice persists in localStorage('heroMode').               */
+/* ── Hero canvas: full-bleed flowing neural constellation ──── */
 let _heroRAF = null, _heroResize = null;
 function initHeroCanvas() {
   // Tear down any previous instance (SPA re-renders reuse this)
@@ -1653,12 +1649,8 @@ function initHeroCanvas() {
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const DPR = Math.min(window.devicePixelRatio || 1, 2);
   const LINK = 128, MOUSE_R = 160;
-  let mode = localStorage.getItem('heroMode') || 'constellation';
-  let W = 0, H = 0, particles = [], blobs = [];
+  let W = 0, H = 0, particles = [];
   const mouse = { x: -9999, y: -9999, active: false };
-
-  // Analogous cool palette (blues → lavender → teal) so blobs melt together
-  const AURORA = ['70,150,255', '120,135,250', '150,130,245', '90,185,225', '100,160,250', '135,120,235'];
 
   function build() {
     const r = wrap.getBoundingClientRect();
@@ -1666,23 +1658,13 @@ function initHeroCanvas() {
     if (!W || !H) return;
     canvas.width = W * DPR; canvas.height = H * DPR;
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    if (mode === 'aurora') {
-      blobs = AURORA.map(c => ({
-        c, ox: Math.random() * W, oy: Math.random() * H,
-        ax: 0.16 + Math.random() * 0.14, ay: 0.13 + Math.random() * 0.13,
-        sx: 0.10 + Math.random() * 0.10, sy: 0.09 + Math.random() * 0.10,
-        px: Math.random() * Math.PI * 2, py: Math.random() * Math.PI * 2,
-        r: Math.min(W, H) * (0.5 + Math.random() * 0.28)
-      }));
-    } else {
-      const count = Math.max(30, Math.min(104, Math.round((W * H) / 12500)));
-      particles = [];
-      for (let i = 0; i < count; i++) particles.push({
-        x: Math.random() * W, y: Math.random() * H,
-        vx: (Math.random() - .5) * 0.22, vy: (Math.random() - .5) * 0.22,
-        r: Math.random() * 1.5 + 1.1, phase: Math.random() * Math.PI * 2
-      });
-    }
+    const count = Math.max(30, Math.min(104, Math.round((W * H) / 12500)));
+    particles = [];
+    for (let i = 0; i < count; i++) particles.push({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - .5) * 0.22, vy: (Math.random() - .5) * 0.22,
+      r: Math.random() * 1.5 + 1.1, phase: Math.random() * Math.PI * 2
+    });
   }
   build();
   _heroResize = () => build();
@@ -1694,14 +1676,9 @@ function initHeroCanvas() {
     mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.active = true;
   });
   wrap.addEventListener('pointerleave', () => { mouse.active = false; mouse.x = mouse.y = -9999; });
-  // Double-click the hero background to switch styles (for review)
-  canvas.addEventListener('dblclick', () => {
-    mode = mode === 'aurora' ? 'constellation' : 'aurora';
-    localStorage.setItem('heroMode', mode);
-    build(); if (reduce) draw(0);
-  });
 
-  function drawConstellation(t) {
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
     const s = t * 0.001;
     for (const p of particles) {
       p.x += p.vx + Math.cos(s * 0.3 + p.phase) * 0.12;
@@ -1741,38 +1718,6 @@ function initHeroCanvas() {
       ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(29,29,31,0.5)'; ctx.fill();
     }
-  }
-
-  function drawAurora(t) {
-    const s = t * 0.001;
-    // additive blend + gentle multi-stop falloff = smooth, no banding
-    ctx.globalCompositeOperation = 'lighter';
-    for (const b of blobs) {
-      const x = b.ox + Math.cos(s * b.sx + b.px) * W * b.ax;
-      const y = b.oy + Math.sin(s * b.sy + b.py) * H * b.ay;
-      const g = ctx.createRadialGradient(x, y, 0, x, y, b.r);
-      g.addColorStop(0, `rgba(${b.c},0.16)`);
-      g.addColorStop(0.35, `rgba(${b.c},0.09)`);
-      g.addColorStop(0.7, `rgba(${b.c},0.03)`);
-      g.addColorStop(1, `rgba(${b.c},0)`);
-      ctx.fillStyle = g;
-      ctx.beginPath(); ctx.arc(x, y, b.r, 0, Math.PI * 2); ctx.fill();
-    }
-    if (mouse.active) {
-      const rr = Math.min(W, H) * 0.4;
-      const g = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, rr);
-      g.addColorStop(0, 'rgba(120,170,255,0.14)');
-      g.addColorStop(0.5, 'rgba(120,170,255,0.05)');
-      g.addColorStop(1, 'rgba(120,170,255,0)');
-      ctx.fillStyle = g;
-      ctx.beginPath(); ctx.arc(mouse.x, mouse.y, rr, 0, Math.PI * 2); ctx.fill();
-    }
-    ctx.globalCompositeOperation = 'source-over';
-  }
-
-  function draw(t) {
-    ctx.clearRect(0, 0, W, H);
-    if (mode === 'aurora') drawAurora(t); else drawConstellation(t);
   }
 
   if (reduce) {
