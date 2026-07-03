@@ -1406,9 +1406,9 @@ function people() {
 function personDetail(slug) {
   const p = data.people.find(x => x.slug === slug);
   if (!p) return notFound();
-  const avatar = p.image
-    ? `<img src="${p.image}" alt="${L(p.name)}" style="width:112px;height:112px;border-radius:50%;object-fit:cover;margin-bottom:24px">`
-    : `<div class="person-avatar" style="width:112px;height:112px;font-size:30px;margin-bottom:24px"><span>${(L(p.name)||'G').charAt(0)}</span></div>`;
+  const heroAvatar = p.image
+    ? `<img class="hero-avatar" src="${p.image}" alt="${L(p.name)}">`
+    : `<div class="hero-avatar hero-avatar-init"><span>${(L(p.name)||'G').charAt(0)}</span></div>`;
   const focusText = L(p.focus), bioText = L(p.bio);
   const cvSection = (key, items) => (items && items.length)
     ? `<h2>${t('cards.'+key)}</h2><ul class="cv-list">${items.map(i => `<li>${i}</li>`).join('')}</ul>`
@@ -1424,11 +1424,13 @@ function personDetail(slug) {
   return `
     <section class="detail-hero"><div class="wrap">
       <div class="breadcrumb"><a href="#/people">${t('nav.people')}</a> / ${L(p.name)}</div>
-      <h1>${L(p.name)}</h1><p>${L(p.role)}</p>
+      <div class="hero-id">
+        ${heroAvatar}
+        <div class="hero-id-text"><h1>${L(p.name)}</h1><p>${L(p.role)}</p></div>
+      </div>
     </div></section>
     <section class="content split">
       <article class="prose">
-        ${avatar}
         ${focusText ? `<h2>${t('cards.focus')}</h2><p>${focusText}</p>` : ''}
         ${bioText ? `<h2>${t('cards.bio')}</h2><p>${bioText}</p>` : ''}
         ${cv}
