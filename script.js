@@ -1636,10 +1636,11 @@ function initMarquees() {
 }
 
 /* ── Hero canvas: full-bleed flowing background ──────────────
-   Two styles, toggled by double-clicking the hero:
-     'constellation' — drifting neural dots + links (default)
-     'aurora'        — soft flowing watercolor gradients
-   Choice persists in localStorage('heroMode').               */
+   Default style is 'constellation' (drifting neural dots + links).
+   An 'aurora' (soft watercolor) style also exists but is not
+   exposed publicly — to preview it, run in the browser console:
+     localStorage.setItem('heroMode','aurora')   // then reload
+     localStorage.removeItem('heroMode')         // back to default */
 let _heroRAF = null, _heroResize = null;
 function initHeroCanvas() {
   // Tear down any previous instance (SPA re-renders reuse this)
@@ -1693,12 +1694,6 @@ function initHeroCanvas() {
     mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.active = true;
   });
   wrap.addEventListener('pointerleave', () => { mouse.active = false; mouse.x = mouse.y = -9999; });
-  // Double-click empty background to switch styles
-  canvas.addEventListener('dblclick', () => {
-    mode = mode === 'aurora' ? 'constellation' : 'aurora';
-    localStorage.setItem('heroMode', mode);
-    build(); if (reduce) draw(0);
-  });
 
   function drawConstellation(t) {
     const s = t * 0.001;
