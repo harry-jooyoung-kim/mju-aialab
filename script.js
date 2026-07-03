@@ -287,7 +287,7 @@ const data = {
         "en": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발",
         "ko": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발"
       },
-      "image": "assets/img-1783069876938-ykjgz1x3.jpg"
+      "image": "assets/img-1783071551222-mbseuq0n.jpg"
     },
     {
       "slug": "text-to-scent-perception",
@@ -379,7 +379,7 @@ const data = {
         "en": "손바닥 정맥 인식 알고리즘 개발",
         "ko": "손바닥 정맥 인식 알고리즘 개발"
       },
-      "image": "assets/img-1783069869804-339k7y1x.jpg"
+      "image": "assets/img-1783071542792-mjspz5o1.jpg"
     }
   ],
   "people": [
