@@ -1648,30 +1648,53 @@ function initHeroCanvas() {
   const ctx = canvas.getContext('2d');
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const DPR = Math.min(window.devicePixelRatio || 1, 2);
-  const LINK = 128, MOUSE_R = 160;
-  let W = 0, H = 0, particles = [];
+  const MOUSE_R = 160;
+  let W = 0, H = 0, particles = [], builtW = 0;
+  let flow = 0.14, linkD = 128, lineW = 1;      // per-size tuning (set in spawn)
   const mouse = { x: -9999, y: -9999, active: false };
 
-  function build() {
+  function measure() {
     const r = wrap.getBoundingClientRect();
     W = r.width; H = r.height;
-    if (!W || !H) return;
+    if (!W || !H) return false;
     canvas.width = W * DPR; canvas.height = H * DPR;
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    const count = Math.max(30, Math.min(104, Math.round((W * H) / 12500)));
+    return true;
+  }
+  function spawn() {
+    const small = W < 640;                        // phones: bigger, faster, denser links
+    flow = small ? 0.34 : 0.14;
+    linkD = small ? 150 : 128;
+    lineW = small ? 1.4 : 1;
+    const sizeMul = small ? 1.9 : 1;
+    const vmax = small ? 0.55 : 0.22;
+    const count = Math.max(22, Math.min(small ? 54 : 104, Math.round((W * H) / (small ? 11000 : 12500))));
     particles = [];
     for (let i = 0; i < count; i++) particles.push({
       x: Math.random() * W, y: Math.random() * H,
-      vx: (Math.random() - .5) * 0.22, vy: (Math.random() - .5) * 0.22,
-      r: Math.random() * 1.5 + 1.1, phase: Math.random() * Math.PI * 2
+      vx: (Math.random() - .5) * vmax, vy: (Math.random() - .5) * vmax,
+      r: (Math.random() * 1.5 + 1.2) * sizeMul, phase: Math.random() * Math.PI * 2
     });
+    builtW = W;
   }
+  function build() { if (measure()) spawn(); }
   build();
-  _heroResize = () => build();
+
+  // Rebuild particles ONLY on a real width change. Mobile browsers fire
+  // resize constantly while scrolling (URL bar shows/hides → height changes);
+  // respawning there teleported every particle. Now height-only changes just
+  // resize the canvas and keep the existing particles in place.
+  let _rt = null;
+  _heroResize = () => {
+    clearTimeout(_rt);
+    _rt = setTimeout(() => { if (measure() && Math.abs(W - builtW) > 40) spawn(); }, 150);
+  };
   window.addEventListener('resize', _heroResize);
 
-  // Pointer listeners live on the freshly-rendered section, so they die with it (no leak)
+  // Only a real mouse (not touch) repels particles — otherwise a finger swipe
+  // to scroll the page would scatter them. On phones it just flows on its own.
   wrap.addEventListener('pointermove', e => {
+    if (e.pointerType && e.pointerType !== 'mouse') return;
     const r = canvas.getBoundingClientRect();
     mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.active = true;
   });
@@ -1681,8 +1704,8 @@ function initHeroCanvas() {
     ctx.clearRect(0, 0, W, H);
     const s = t * 0.001;
     for (const p of particles) {
-      p.x += p.vx + Math.cos(s * 0.3 + p.phase) * 0.12;
-      p.y += p.vy + Math.sin(s * 0.25 + p.phase) * 0.12;
+      p.x += p.vx + Math.cos(s * 0.3 + p.phase) * flow;
+      p.y += p.vy + Math.sin(s * 0.25 + p.phase) * flow;
       if (mouse.active) {
         const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
         if (d2 < MOUSE_R * MOUSE_R && d2 > 0.01) {
@@ -1697,9 +1720,9 @@ function initHeroCanvas() {
       const a = particles[i];
       for (let j = i + 1; j < particles.length; j++) {
         const b = particles[j], dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
-        if (d2 < LINK * LINK) {
-          const o = (1 - Math.sqrt(d2) / LINK) * 0.4;
-          ctx.strokeStyle = `rgba(0,102,204,${o})`; ctx.lineWidth = 1;
+        if (d2 < linkD * linkD) {
+          const o = (1 - Math.sqrt(d2) / linkD) * 0.4;
+          ctx.strokeStyle = `rgba(0,102,204,${o})`; ctx.lineWidth = lineW;
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
         }
       }
@@ -1709,7 +1732,7 @@ function initHeroCanvas() {
         const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
         if (d2 < MOUSE_R * MOUSE_R) {
           const o = (1 - Math.sqrt(d2) / MOUSE_R) * 0.5;
-          ctx.strokeStyle = `rgba(0,113,227,${o})`; ctx.lineWidth = 1;
+          ctx.strokeStyle = `rgba(0,113,227,${o})`; ctx.lineWidth = lineW;
           ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
         }
       }
