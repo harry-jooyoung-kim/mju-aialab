@@ -423,7 +423,7 @@ const data = {
           "Kim J. (2025). 아는 만큼 보이는 생성형 AI. 길벗, Seoul, Korea. ISBN: 979‑11‑407‑1507‑7."
         ],
         "invitedTalks": [
-          "2026.07.24  \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\", Holodecks Conference, University of Southern California (USC)"
+          "\"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\", Holodecks Conference, University of Southern California (USC) (2026)"
         ],
         "honors": [
           "1st Prize Winner, LCL Open Learning Lounge, with the project 'Research on Data-flywheel-centered MLOps Pipeline for operating generative AI-based services', SK Inc C&C (2023)",
@@ -1253,7 +1253,7 @@ function galleryCard(g) {
 }
 
 function collabLogoStrip() {
-  const logo = `<img src="assets/embl.png" alt="EMBL" class="collab-logo">`;
+  const logo = `<img src="assets/embl_white.png" alt="EMBL" class="collab-logo">`;
   const logos = logo.repeat(12);
   return `<div class="collab-logos-strip"><div class="collab-marquee">${logos}${logos}</div></div>`;
 }
