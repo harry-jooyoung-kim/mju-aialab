@@ -1636,11 +1636,10 @@ function initMarquees() {
 }
 
 /* ── Hero canvas: full-bleed flowing background ──────────────
-   Default style is 'constellation' (drifting neural dots + links).
-   An 'aurora' (soft watercolor) style also exists but is not
-   exposed publicly — to preview it, run in the browser console:
-     localStorage.setItem('heroMode','aurora')   // then reload
-     localStorage.removeItem('heroMode')         // back to default */
+   Two styles, toggled by double-clicking the hero (for review):
+     'constellation' — drifting neural dots + links (default)
+     'aurora'        — soft flowing watercolor gradients
+   Choice persists in localStorage('heroMode').               */
 let _heroRAF = null, _heroResize = null;
 function initHeroCanvas() {
   // Tear down any previous instance (SPA re-renders reuse this)
@@ -1658,7 +1657,8 @@ function initHeroCanvas() {
   let W = 0, H = 0, particles = [], blobs = [];
   const mouse = { x: -9999, y: -9999, active: false };
 
-  const AURORA = ['41,151,255', '138,124,255', '96,205,180', '255,176,130', '120,170,255'];
+  // Analogous cool palette (blues → lavender → teal) so blobs melt together
+  const AURORA = ['70,150,255', '120,135,250', '150,130,245', '90,185,225', '100,160,250', '135,120,235'];
 
   function build() {
     const r = wrap.getBoundingClientRect();
@@ -1694,6 +1694,12 @@ function initHeroCanvas() {
     mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.active = true;
   });
   wrap.addEventListener('pointerleave', () => { mouse.active = false; mouse.x = mouse.y = -9999; });
+  // Double-click the hero background to switch styles (for review)
+  canvas.addEventListener('dblclick', () => {
+    mode = mode === 'aurora' ? 'constellation' : 'aurora';
+    localStorage.setItem('heroMode', mode);
+    build(); if (reduce) draw(0);
+  });
 
   function drawConstellation(t) {
     const s = t * 0.001;
@@ -1739,23 +1745,29 @@ function initHeroCanvas() {
 
   function drawAurora(t) {
     const s = t * 0.001;
+    // additive blend + gentle multi-stop falloff = smooth, no banding
+    ctx.globalCompositeOperation = 'lighter';
     for (const b of blobs) {
       const x = b.ox + Math.cos(s * b.sx + b.px) * W * b.ax;
       const y = b.oy + Math.sin(s * b.sy + b.py) * H * b.ay;
       const g = ctx.createRadialGradient(x, y, 0, x, y, b.r);
-      g.addColorStop(0, `rgba(${b.c},0.28)`);
+      g.addColorStop(0, `rgba(${b.c},0.16)`);
+      g.addColorStop(0.35, `rgba(${b.c},0.09)`);
+      g.addColorStop(0.7, `rgba(${b.c},0.03)`);
       g.addColorStop(1, `rgba(${b.c},0)`);
       ctx.fillStyle = g;
       ctx.beginPath(); ctx.arc(x, y, b.r, 0, Math.PI * 2); ctx.fill();
     }
     if (mouse.active) {
-      const rr = Math.min(W, H) * 0.34;
+      const rr = Math.min(W, H) * 0.4;
       const g = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, rr);
-      g.addColorStop(0, 'rgba(41,151,255,0.22)');
-      g.addColorStop(1, 'rgba(41,151,255,0)');
+      g.addColorStop(0, 'rgba(120,170,255,0.14)');
+      g.addColorStop(0.5, 'rgba(120,170,255,0.05)');
+      g.addColorStop(1, 'rgba(120,170,255,0)');
       ctx.fillStyle = g;
       ctx.beginPath(); ctx.arc(mouse.x, mouse.y, rr, 0, Math.PI * 2); ctx.fill();
     }
+    ctx.globalCompositeOperation = 'source-over';
   }
 
   function draw(t) {
