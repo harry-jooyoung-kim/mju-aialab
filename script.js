@@ -403,6 +403,7 @@ const data = {
         "ko": "Jooyoung Kim is an Assistant Professor in the Department of Convergence Software at Myongji University, South Korea. He received his B.S. and Ph.D. degrees in Electrical and Electronic Engineering from Yonsei University, South Korea. After graduation, he worked as a Manager in the Data Science Team, G.AI Group at SK Inc C&C. Additionally, he co-founded PS Analytics, an e-sport data analysis company. His research interests encompass the application and development of state-of-the-art pattern recognition and machine learning methods across multidisciplinary fields."
       },
       "image": "assets/profile.jpg",
+      "email": "harrykim@mju.ac.kr",
       "cv": {
         "education": [
           "B.S. in Electrical and Electronic Engineering, Yonsei University, South Korea",
