@@ -16,10 +16,10 @@ const TR = {
       statPillars:'Active projects', statPubs:'Publications & patents', statPeople:'Researchers'
     },
     research: { h1:'Research areas', lead:'We conduct research across three pillars — game & interactive AI, olfactory AI, and applied AI — united by a shared focus on building and evaluating multimodal systems.' },
-    projects: { h1:'Projects', lead:'Click into each project for goals, outputs, and related lab activities.' },
+    projects: { h1:'Projects', lead:'Game & Interactive AI, Olfactory AI, and Applied AI projects.' },
     people: {
       h1:'People',
-      lead:'Graduate researchers, undergraduate interns, and collaborators work as project teams across the lab pillars.',
+      lead:'Principal investigator, Ph.D. and Master candidates, and research interns.',
       alumni:'Alumni',
       alumniLead:'Former members who have graduated or moved on from the lab.',
       categories: { pi:'Principal Investigator', phd:'Ph.D. Candidates', ms:'Master Candidates', intern:'Research Interns' }
@@ -64,7 +64,7 @@ const TR = {
       research:'Research', resources:'Resources', contact:'Contact', address:'Myongji University, Seoul, Republic of Korea',
       links: { gameAI:'Game & Interactive AI', olfactoryAI:'Olfactory AI', appliedAI:'Applied AI', publications:'Publications', gallery:'Gallery', join:'Prospective Students', contact:'Contact' }
     },
-    cards: { viewProject:'View project', exploreArea:'Explore area', profile:'Profile', details:'Details', backPub:'Back to publications', backGallery:'Back to gallery', contactUs:'Contact us', viewGallery:'View gallery', overview:'Overview', projectsInArea:'Projects in this area', researchGoals:'Research goals', expectedOutputs:'Expected outputs', activityNote:'Activity note', activityNoteText:"This gallery page is a lab activity log. Replace placeholder images with real photos and add date, participants, location, and notes.", focus:'Research Focus', bio:'Bio', role:'Role', contactVia:'Contact via PI', related:'Related', area:'Area', type:'Type', status:'Status', summary:'Summary', researchContext:'Research context', researchContextText:"This item is part of the lab's applied AI portfolio. Details can be expanded with abstract, links, code, dataset, and publication status.", researchArea:'Research Area', allProjects:'All projects', collaborate:'Collaborate', notFound:'Page not found', notFoundLead:'The page you requested does not exist.', goHome:'Go home' }
+    cards: { viewProject:'View project', exploreArea:'Explore area', profile:'Profile', details:'Details', backPub:'Back to publications', backGallery:'Back to gallery', contactUs:'Contact us', viewGallery:'View gallery', overview:'Overview', projectsInArea:'Projects in this area', researchGoals:'Research goals', expectedOutputs:'Expected outputs', activityNote:'Activity note', activityNoteText:"This gallery page is a lab activity log. Replace placeholder images with real photos and add date, participants, location, and notes.", focus:'Research Focus', bio:'Bio', role:'Role', contactVia:'Contact via PI', related:'Related', area:'Area', type:'Type', status:'Status', summary:'Summary', researchContext:'Research context', researchContextText:"This item is part of the lab's applied AI portfolio. Details can be expanded with abstract, links, code, dataset, and publication status.", researchArea:'Research Area', allProjects:'All projects', collaborate:'Collaborate', notFound:'Page not found', notFoundLead:'The page you requested does not exist.', goHome:'Go home', education:'Education', experience:'Professional Experience', selectedPubs:'Selected Publications', books:'Books', invitedTalks:'Invited Talks', honors:'Honors & Awards' }
   },
   ko: {
     labName: 'AI & Applications Lab',
@@ -79,10 +79,10 @@ const TR = {
       statPillars:'수행 중 프로젝트', statPubs:'논문 & 특허', statPeople:'연구원'
     },
     research: { h1:'연구 분야', lead:'게임 & 인터랙티브 AI, 후각 AI, 응용 AI — 세 축의 연구를 수행하고 있습니다.' },
-    projects: { h1:'프로젝트', lead:'각 프로젝트의 목표, 산출물, 관련 활동을 확인하세요.' },
+    projects: { h1:'프로젝트', lead:'게임 & 인터랙티브 AI, 후각 AI, 응용 AI 프로젝트.' },
     people: {
       h1:'구성원',
-      lead:'대학원생, 학부 인턴, 협력 연구자들이 프로젝트 팀을 구성합니다.',
+      lead:'연구책임자, 박사·석사 과정, 연구 인턴.',
       alumni:'졸업생',
       alumniLead:'졸업하거나 이직한 전 구성원들입니다.',
       categories: { pi:'연구책임자', phd:'박사 과정', ms:'석사 과정', intern:'연구 인턴' }
@@ -127,7 +127,7 @@ const TR = {
       research:'연구', resources:'자료', contact:'연락처', address:'명지대학교, 서울, 대한민국',
       links: { gameAI:'게임 & 인터랙티브 AI', olfactoryAI:'후각 AI', appliedAI:'응용 AI', publications:'논문', gallery:'갤러리', join:'지원 안내', contact:'연락처' }
     },
-    cards: { viewProject:'프로젝트 보기', exploreArea:'분야 탐색', profile:'프로필', details:'자세히 보기', backPub:'논문 목록으로', backGallery:'갤러리로', contactUs:'연락하기', viewGallery:'갤러리 보기', overview:'개요', projectsInArea:'이 분야의 프로젝트', researchGoals:'연구 목표', expectedOutputs:'예상 산출물', activityNote:'활동 노트', activityNoteText:'이 갤러리 페이지는 연구실 활동 로그입니다. 실제 사진으로 교체하고 날짜, 참여자, 장소, 노트를 추가하세요.', focus:'연구 관심사', bio:'소개', role:'역할', contactVia:'PI를 통해 연락', related:'관련', area:'분야', type:'유형', status:'상태', summary:'요약', researchContext:'연구 맥락', researchContextText:'이 항목은 연구실 응용 AI 포트폴리오의 일부입니다.', researchArea:'연구 분야', allProjects:'전체 프로젝트', collaborate:'협력하기', notFound:'페이지를 찾을 수 없습니다', notFoundLead:'요청하신 페이지가 존재하지 않습니다.', goHome:'홈으로' }
+    cards: { viewProject:'프로젝트 보기', exploreArea:'분야 탐색', profile:'프로필', details:'자세히 보기', backPub:'논문 목록으로', backGallery:'갤러리로', contactUs:'연락하기', viewGallery:'갤러리 보기', overview:'개요', projectsInArea:'이 분야의 프로젝트', researchGoals:'연구 목표', expectedOutputs:'예상 산출물', activityNote:'활동 노트', activityNoteText:'이 갤러리 페이지는 연구실 활동 로그입니다. 실제 사진으로 교체하고 날짜, 참여자, 장소, 노트를 추가하세요.', focus:'연구 관심사', bio:'소개', role:'역할', contactVia:'PI를 통해 연락', related:'관련', area:'분야', type:'유형', status:'상태', summary:'요약', researchContext:'연구 맥락', researchContextText:'이 항목은 연구실 응용 AI 포트폴리오의 일부입니다.', researchArea:'연구 분야', allProjects:'전체 프로젝트', collaborate:'협력하기', notFound:'페이지를 찾을 수 없습니다', notFoundLead:'요청하신 페이지가 존재하지 않습니다.', goHome:'홈으로', education:'학력', experience:'경력', selectedPubs:'주요 논문', books:'저서', invitedTalks:'초청 강연', honors:'수상 경력' }
   }
 };
 
@@ -157,8 +157,8 @@ const data = {
         "ko": "게임 & 인터랙티브 AI"
       },
       "short": {
-        "en": "Agents that play, inspect, and evaluate interactive content.",
-        "ko": "인터랙티브 콘텐츠를 플레이하고 검사하고 평가하는 AI 에이전트."
+        "en": "Agents that play, inspect, and evaluate interactive content, plus game data analysis.",
+        "ko": "인터랙티브 콘텐츠를 플레이·검사·평가하는 AI 에이전트와 게임 데이터 분석."
       },
       "status": {
         "en": "Large-scale funded project",
@@ -287,7 +287,7 @@ const data = {
         "en": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발",
         "ko": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발"
       },
-      "image": "assets/placeholder.jpg"
+      "image": "assets/img-1783069876938-ykjgz1x3.jpg"
     },
     {
       "slug": "text-to-scent-perception",
@@ -379,7 +379,7 @@ const data = {
         "en": "손바닥 정맥 인식 알고리즘 개발",
         "ko": "손바닥 정맥 인식 알고리즘 개발"
       },
-      "image": "assets/img-1782259025052-1ivionkt.jpg"
+      "image": "assets/img-1783069869804-339k7y1x.jpg"
     }
   ],
   "people": [
@@ -402,7 +402,38 @@ const data = {
         "en": "Jooyoung Kim is an Assistant Professor in the Department of Convergence Software at Myongji University, South Korea. He received his B.S. and Ph.D. degrees in Electrical and Electronic Engineering from Yonsei University, South Korea. After graduation, he worked as a Manager in the Data Science Team, G.AI Group at SK Inc C&C. Additionally, he co-founded PS Analytics, an e-sport data analysis company. His research interests encompass the application and development of state-of-the-art pattern recognition and machine learning methods across multidisciplinary fields.",
         "ko": "Jooyoung Kim is an Assistant Professor in the Department of Convergence Software at Myongji University, South Korea. He received his B.S. and Ph.D. degrees in Electrical and Electronic Engineering from Yonsei University, South Korea. After graduation, he worked as a Manager in the Data Science Team, G.AI Group at SK Inc C&C. Additionally, he co-founded PS Analytics, an e-sport data analysis company. His research interests encompass the application and development of state-of-the-art pattern recognition and machine learning methods across multidisciplinary fields."
       },
-      "image": "assets/profile.jpg"
+      "image": "assets/profile.jpg",
+      "cv": {
+        "education": [
+          "B.S. in Electrical and Electronic Engineering, Yonsei University, South Korea",
+          "Ph.D. in Electrical and Electronic Engineering, Yonsei University, South Korea<br><span class=\"cv-sub\">Thesis: \"Line Features Projection for Face Photo-Sketch and Finger-Knuckle-Print Recognition\" · Advisor: Kar-Ann Toh</span>"
+        ],
+        "experience": [
+          "Assistant Professor, Department of Convergence Software, Myongji University (Present)",
+          "Manager, Data Science Team, SK Inc C&C"
+        ],
+        "selectedPubs": [
+          "Kim, J., Lee, W., & Park, J. (2025). Structured Summarization of League of Legends Match Data Optimized for Large Language Model Input. Applied Sciences.",
+          "Kim, J., Oh, K., & Oh, B. S. (2024). An NLP-Based Perfume Note Estimation Based on Descriptive Sentences. Applied Sciences.",
+          "Kim J., Lin Z., Kim D., & Toh K. A. (2023). Face Photo-sketch Recognition based on Multi-Directional Line Features Projection. Neural Computing and Applications.",
+          "Kim J., Lee H., Im S., Lee S. A., Kim D., & Toh K. A. (2021). Machine learning-based leaky momentum prediction of plasmonic random nanosubstrate. Optics Express.",
+          "Jung J., Kim J., & Toh K. A. (2019). Transfer learning of Wi-Fi handwritten signature signals for identity verification based on the kernel and the range space projection. In IEEE International Conference on Image Processing."
+        ],
+        "books": [
+          "Kim J. (2025). 아는 만큼 보이는 생성형 AI. 길벗, Seoul, Korea. ISBN: 979‑11‑407‑1507‑7."
+        ],
+        "invitedTalks": [
+          "2026.07.24  \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\", Holodecks Conference, University of Southern California (USC)"
+        ],
+        "honors": [
+          "1st Prize Winner, LCL Open Learning Lounge, with the project 'Research on Data-flywheel-centered MLOps Pipeline for operating generative AI-based services', SK Inc C&C (2023)",
+          "Quantum Excellence, Qiskit Global Summer School 2023, IBM (2023)",
+          "1st Prize Winner, AI Competition on Classification of Consultation Types in the Customer Center, mySUNI (2023)",
+          "4th Prize Winner, Dacon AI Competition on Machine Fault Diagnosis, Dacon Inc. (2023)",
+          "Best Paper Award, International Conference on Electronics Information and Communication, IEEE (2023)",
+          "Best Paper Award, 3rd International Conference on Advances in Image Processing, ACM (2019)"
+        ]
+      }
     },
     {
       "slug": "seungju-lee",
@@ -1230,13 +1261,13 @@ function collabLogoStrip() {
 /* ── Pages ───────────────────────────────────────────────── */
 function home() {
   return `
-    <section class="hero parchment">
+    <section class="hero parchment hero-home">
+      <canvas id="heroCanvas" class="hero-bg-canvas" aria-hidden="true"></canvas>
       <div class="hero-inner">
         <p class="eyebrow">${t('home.eyebrow')}</p>
         <h1>${t('home.h1')}</h1>
         <p class="lead">${t('home.lead')}</p>
         <div class="cta-row">${cta('projects', t('home.cta1'))}${ghost('join', t('home.cta2'))}</div>
-        <img class="hero-art" src="assets/myongji-home.png" alt="AI & Applications Lab">
       </div>
     </section>
     ${(() => {
@@ -1378,6 +1409,17 @@ function personDetail(slug) {
     ? `<img src="${p.image}" alt="${L(p.name)}" style="width:112px;height:112px;border-radius:50%;object-fit:cover;margin-bottom:24px">`
     : `<div class="person-avatar" style="width:112px;height:112px;font-size:30px;margin-bottom:24px"><span>${(L(p.name)||'G').charAt(0)}</span></div>`;
   const focusText = L(p.focus), bioText = L(p.bio);
+  const cvSection = (key, items) => (items && items.length)
+    ? `<h2>${t('cards.'+key)}</h2><ul class="cv-list">${items.map(i => `<li>${i}</li>`).join('')}</ul>`
+    : '';
+  const cv = p.cv ? [
+    cvSection('education', p.cv.education),
+    cvSection('experience', p.cv.experience),
+    cvSection('selectedPubs', p.cv.selectedPubs),
+    cvSection('books', p.cv.books),
+    cvSection('invitedTalks', p.cv.invitedTalks),
+    cvSection('honors', p.cv.honors)
+  ].join('') : '';
   return `
     <section class="detail-hero"><div class="wrap">
       <div class="breadcrumb"><a href="#/people">${t('nav.people')}</a> / ${L(p.name)}</div>
@@ -1388,6 +1430,7 @@ function personDetail(slug) {
         ${avatar}
         ${focusText ? `<h2>${t('cards.focus')}</h2><p>${focusText}</p>` : ''}
         ${bioText ? `<h2>${t('cards.bio')}</h2><p>${bioText}</p>` : ''}
+        ${cv}
       </article>
       <aside class="side-panel"><div class="spec-list">
         <div class="spec"><strong>${t('cards.role')}</strong><span>${L(p.role)}</span></div>
@@ -1544,6 +1587,7 @@ function render() {
   app.innerHTML = `<div class="view">${html}</div>`;
   attachInteractions();
   requestAnimationFrame(initMarquees);
+  requestAnimationFrame(initHeroCanvas);
   app.focus({ preventScroll: true });
   window.scrollTo(0, 0);
 }
@@ -1589,6 +1633,147 @@ function initMarquees() {
     };
     requestAnimationFrame(start);
   });
+}
+
+/* ── Hero canvas: full-bleed flowing background ──────────────
+   Two styles, toggled by double-clicking the hero:
+     'constellation' — drifting neural dots + links (default)
+     'aurora'        — soft flowing watercolor gradients
+   Choice persists in localStorage('heroMode').               */
+let _heroRAF = null, _heroResize = null;
+function initHeroCanvas() {
+  // Tear down any previous instance (SPA re-renders reuse this)
+  if (_heroRAF) { cancelAnimationFrame(_heroRAF); _heroRAF = null; }
+  if (_heroResize) { window.removeEventListener('resize', _heroResize); _heroResize = null; }
+
+  const canvas = document.getElementById('heroCanvas');
+  if (!canvas) return;
+  const wrap = canvas.parentElement; // the .hero-home section
+  const ctx = canvas.getContext('2d');
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const LINK = 128, MOUSE_R = 160;
+  let mode = localStorage.getItem('heroMode') || 'constellation';
+  let W = 0, H = 0, particles = [], blobs = [];
+  const mouse = { x: -9999, y: -9999, active: false };
+
+  const AURORA = ['41,151,255', '138,124,255', '96,205,180', '255,176,130', '120,170,255'];
+
+  function build() {
+    const r = wrap.getBoundingClientRect();
+    W = r.width; H = r.height;
+    if (!W || !H) return;
+    canvas.width = W * DPR; canvas.height = H * DPR;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    if (mode === 'aurora') {
+      blobs = AURORA.map(c => ({
+        c, ox: Math.random() * W, oy: Math.random() * H,
+        ax: 0.16 + Math.random() * 0.14, ay: 0.13 + Math.random() * 0.13,
+        sx: 0.10 + Math.random() * 0.10, sy: 0.09 + Math.random() * 0.10,
+        px: Math.random() * Math.PI * 2, py: Math.random() * Math.PI * 2,
+        r: Math.min(W, H) * (0.5 + Math.random() * 0.28)
+      }));
+    } else {
+      const count = Math.max(30, Math.min(104, Math.round((W * H) / 12500)));
+      particles = [];
+      for (let i = 0; i < count; i++) particles.push({
+        x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - .5) * 0.22, vy: (Math.random() - .5) * 0.22,
+        r: Math.random() * 1.5 + 1.1, phase: Math.random() * Math.PI * 2
+      });
+    }
+  }
+  build();
+  _heroResize = () => build();
+  window.addEventListener('resize', _heroResize);
+
+  // Pointer listeners live on the freshly-rendered section, so they die with it (no leak)
+  wrap.addEventListener('pointermove', e => {
+    const r = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.active = true;
+  });
+  wrap.addEventListener('pointerleave', () => { mouse.active = false; mouse.x = mouse.y = -9999; });
+  // Double-click empty background to switch styles
+  canvas.addEventListener('dblclick', () => {
+    mode = mode === 'aurora' ? 'constellation' : 'aurora';
+    localStorage.setItem('heroMode', mode);
+    build(); if (reduce) draw(0);
+  });
+
+  function drawConstellation(t) {
+    const s = t * 0.001;
+    for (const p of particles) {
+      p.x += p.vx + Math.cos(s * 0.3 + p.phase) * 0.12;
+      p.y += p.vy + Math.sin(s * 0.25 + p.phase) * 0.12;
+      if (mouse.active) {
+        const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
+        if (d2 < MOUSE_R * MOUSE_R && d2 > 0.01) {
+          const d = Math.sqrt(d2), f = (MOUSE_R - d) / MOUSE_R * 0.9;
+          p.x += dx / d * f; p.y += dy / d * f;
+        }
+      }
+      if (p.x < -24) p.x = W + 24; else if (p.x > W + 24) p.x = -24;
+      if (p.y < -24) p.y = H + 24; else if (p.y > H + 24) p.y = -24;
+    }
+    for (let i = 0; i < particles.length; i++) {
+      const a = particles[i];
+      for (let j = i + 1; j < particles.length; j++) {
+        const b = particles[j], dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
+        if (d2 < LINK * LINK) {
+          const o = (1 - Math.sqrt(d2) / LINK) * 0.4;
+          ctx.strokeStyle = `rgba(0,102,204,${o})`; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+        }
+      }
+    }
+    if (mouse.active) {
+      for (const p of particles) {
+        const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
+        if (d2 < MOUSE_R * MOUSE_R) {
+          const o = (1 - Math.sqrt(d2) / MOUSE_R) * 0.5;
+          ctx.strokeStyle = `rgba(0,113,227,${o})`; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+        }
+      }
+    }
+    for (const p of particles) {
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(29,29,31,0.5)'; ctx.fill();
+    }
+  }
+
+  function drawAurora(t) {
+    const s = t * 0.001;
+    for (const b of blobs) {
+      const x = b.ox + Math.cos(s * b.sx + b.px) * W * b.ax;
+      const y = b.oy + Math.sin(s * b.sy + b.py) * H * b.ay;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, b.r);
+      g.addColorStop(0, `rgba(${b.c},0.28)`);
+      g.addColorStop(1, `rgba(${b.c},0)`);
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(x, y, b.r, 0, Math.PI * 2); ctx.fill();
+    }
+    if (mouse.active) {
+      const rr = Math.min(W, H) * 0.34;
+      const g = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, rr);
+      g.addColorStop(0, 'rgba(41,151,255,0.22)');
+      g.addColorStop(1, 'rgba(41,151,255,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(mouse.x, mouse.y, rr, 0, Math.PI * 2); ctx.fill();
+    }
+  }
+
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
+    if (mode === 'aurora') drawAurora(t); else drawConstellation(t);
+  }
+
+  if (reduce) {
+    draw(0); // single static frame, no animation
+  } else {
+    const loop = t => { draw(t); _heroRAF = requestAnimationFrame(loop); };
+    _heroRAF = requestAnimationFrame(loop);
+  }
 }
 
 /* ── i18n ────────────────────────────────────────────────── */

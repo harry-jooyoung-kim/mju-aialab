@@ -57,6 +57,10 @@
 .button-dark{background:var(--ink);color:#fff;border-radius:var(--radius-sm);font-size:14px;padding:8px 15px}
 .button-primary:active,.button-secondary:active,.button-dark:active{transform:scale(.95)}
 .hero-art{width:min(920px,90vw);margin:42px auto 0;border-radius:var(--radius-lg);object-fit:cover;aspect-ratio:16/9;filter:drop-shadow(var(--shadow-product))}
+.hero-home{position:relative;overflow:hidden}
+.hero-home .hero-inner{position:relative;z-index:1;pointer-events:none}
+.hero-home .hero-inner a,.hero-home .hero-inner button{pointer-events:auto}
+.hero-bg-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0}
 
 /* ── Tiles ───────────────────────────────────────────────── */
 .tile{padding:80px 24px;text-align:center}
@@ -122,6 +126,10 @@
 .prose{font-size:17px;line-height:1.6}
 .prose h2{font-size:34px;line-height:1.15;letter-spacing:-.04em;margin:42px 0 12px}
 .prose p{color:#333}
+.cv-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.cv-list li{color:#333;padding-left:16px;position:relative;line-height:1.55}
+.cv-list li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--ink,#111)}
+.cv-list .cv-sub{display:block;margin-top:4px;font-size:14px;color:var(--muted,#777)}
 
 /* ── Spec List ───────────────────────────────────────────── */
 .spec-list{display:grid;gap:12px}
