@@ -865,21 +865,25 @@ const data = {
       "slug": "chi-smell-story",
       "cat": "intl-conference",
       "area": "olfactory-ai",
-      "url": "",
+      "year": "2027",
       "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
       "authors": "Kim, J. et al.",
-      "venue": "Manuscript in preparation for CHI 2027",
-      "year": "2027"
+      "venue": "-",
+      "url": "",
+      "note": "",
+      "patentNumber": ""
     },
     {
       "slug": "chi-perception",
       "cat": "intl-conference",
       "area": "olfactory-ai",
-      "url": "",
+      "year": "2027",
       "title": "From Recipe to Cartridge: Designing Compact Olfactory Displays for Text-Generated Scents",
       "authors": "Kim, J. et al.",
-      "venue": "Manuscript in preparation for CHI 2027",
-      "year": "2027"
+      "venue": "-",
+      "url": "",
+      "note": "",
+      "patentNumber": ""
     },
     {
       "slug": "entcom-text-to-scent",
@@ -897,12 +901,13 @@ const data = {
       "slug": "scentbias-paper",
       "cat": "intl-conference",
       "area": "olfactory-ai",
-      "url": "",
+      "year": "2026",
       "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
       "authors": "Kim, J.",
-      "venue": "NeurIPS 2026",
-      "year": "2026",
-      "note": "under review"
+      "venue": "-",
+      "url": "",
+      "note": "under review",
+      "patentNumber": ""
     },
     {
       "slug": "bbq-paper",
@@ -911,9 +916,10 @@ const data = {
       "year": "2026",
       "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
       "authors": "Kim, Jeemin & Kim, J.",
-      "venue": "EMNLP 2026",
+      "venue": "-",
       "url": "",
-      "note": "under review"
+      "note": "under review",
+      "patentNumber": ""
     },
     {
       "slug": "face-sketch-xai",
