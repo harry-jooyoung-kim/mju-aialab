@@ -426,7 +426,7 @@ const data = {
         "invitedTalks": [
           "\"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\", Holodecks Conference, University of Southern California (USC) (2026)",
           "\"향기를 이해하고 만드는 인공지능 기술 (AI Technologies for Understanding and Generating Scent)\", Seoul National University of Science and Technology (2026)",
-          "\"아는 만큼 보이는 생성형 AI (Generative AI)\", 카카오모빌리티 (2025)",
+          "\"아는 만큼 보이는 생성형 AI (Generative AI)\", Kakao Mobility (2025)",
           "\"AI 창작 워크숍 (AI Creativity Workshop)\", K-ICT Big Data Center (2025)",
           "\"AI를 활용한 영입구성원의 SK 적응 방안 (AI-driven Onboarding for SK's New Employees)\", SK Academy for Experienced Hires, SK Inc. (2025)",
           "\"다양한 생성형 AI 도구 활용 (Leveraging Generative AI Tools)\", SK Academy for New Hires, SK Inc. (2025)",
@@ -434,9 +434,9 @@ const data = {
           "\"AI 리터러시 특강 (AI-Literacy)\", SK Academy for New Hires, SK (2025)",
           "\"데이터 분석 특강 (Special Lecture on Data Analysis)\", Sunchon National University (2025)",
           "\"클라우드 기반의 가상화 시스템 (Cloud-based Virtualization Systems)\", Samsung Display (2025)",
-          "\"공학 연구자를 위한 인공지능과 머신러닝 이해 (Understanding Artificial Intelligence and Machine Learning for Engineering Researchers)\", 한국화학공학회 (2025)",
-          "\"제조 혁신을 위한 생성형 AI 기술의 개요와 활용 사례 (Overview and Applications of Generative AI Technologies for Manufacturing Innovation)\", 한국화학공학회 (2025)",
-          "\"우리의 생활을 바꾸는 생성형 인공지능 이야기 (The Era of Generative AI)\", 시흥시노인종합복지관 (2025)",
+          "\"공학 연구자를 위한 인공지능과 머신러닝 이해 (Understanding Artificial Intelligence and Machine Learning for Engineering Researchers)\", The Korean Institute of Chemical Engineers (KIChE) (2025)",
+          "\"제조 혁신을 위한 생성형 AI 기술의 개요와 활용 사례 (Overview and Applications of Generative AI Technologies for Manufacturing Innovation)\", The Korean Institute of Chemical Engineers (KIChE) (2025)",
+          "\"우리의 생활을 바꾸는 생성형 인공지능 이야기 (The Era of Generative AI)\", Siheung Senior Welfare Center (2025)",
           "\"멀티모달 생성형 AI 기술의 동향 (Trends in Multimodal Generative AI Technologies)\", K-ICT Big Data Center (2024)"
         ],
         "honors": [
