@@ -338,7 +338,7 @@ const data = {
     {
       "slug": "battery-image-processing",
       "area": "applied-ai",
-      "period": "2026.04.01-2026.06.30",
+      "period": "2026.04.01-2028.12.31",
       "stageColor": "green",
       "title": {
         "en": "비파괴 센서 기반 배터리 외관·내부 통합 이기종 데이터 레이크 솔루션 개발 및 K-NPU Edge AI 검사장비 개발",
@@ -764,6 +764,27 @@ const data = {
         "ko": ""
       },
       "image": "assets/img-1782952534990-g3u98er8.jpg"
+    },
+    {
+      "slug": "ian-ha",
+      "category": "intern",
+      "name": {
+        "en": "IAN HA",
+        "ko": "하이안"
+      },
+      "role": {
+        "en": "Research Intern (2026.07 ~)",
+        "ko": "학부연구생 (2026.07 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/img-1785645537693-xqck0qcz.jpg"
     }
   ],
   "alumni": [
@@ -938,12 +959,13 @@ const data = {
       "slug": "face-sketch-xai",
       "cat": "intl-journal",
       "area": "applied-ai",
-      "url": "",
+      "year": "2026",
       "title": "Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion",
       "authors": "Kim, G. & Kim, J.",
       "venue": "Scientific Reports",
-      "year": "2026",
-      "note": "under revision"
+      "url": "",
+      "note": "SCIE, 2025 IF: 4.9",
+      "patentNumber": ""
     },
     {
       "slug": "perfume-note-prediction",
@@ -1144,12 +1166,12 @@ const data = {
     {
       "slug": "website-renewal",
       "cat": "team",
-      "date": "2026.06.23",
+      "date": "2026.08.02",
       "title": {
         "en": "Lab Website Renewal",
         "ko": "연구실 홈페이지 개편"
       },
-      "image": "assets/img-1782178399474-uekqcyu3.jpg",
+      "image": "assets/img-1785645122226-mj01xdad.jpg",
       "text": {
         "en": "Lab Website Renewal!",
         "ko": "연구실 홈페이지를 개편하였습니다!"
@@ -1167,6 +1189,34 @@ const data = {
       "text": {
         "en": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)",
         "ko": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)"
+      }
+    },
+    {
+      "slug": "paper-accept",
+      "cat": "team",
+      "date": "2026.07.20",
+      "title": {
+        "en": "Nature Scientific Reports Accepted in July 2026",
+        "ko": ""
+      },
+      "image": "assets/img-1785645013054-0uj2irsa.jpg",
+      "text": {
+        "en": "김규리 학부연구생(현재 이화여자대학교 석사과정)의 1저자의 논문 “Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion” 가 Scientific Reports (SCIE Journal, 2025 IF: 4.9) 에 Accept 되었습니다.",
+        "ko": "김규리 학부연구생(현재 이화여자대학교 석사과정)의 1저자의 논문 “Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion” 가 Scientific Reports (SCIE Journal, 2025 IF: 4.9) 에 Accept 되었습니다."
+      }
+    },
+    {
+      "slug": "invited-talk",
+      "cat": "conference",
+      "date": "2026.07.24",
+      "title": {
+        "en": "Invited Talk at Holodecks Conference 2026",
+        "ko": "Holodecks Conference 2026 초청 발표 (Invited Speaker)"
+      },
+      "image": "assets/img-1785645310063-dj9a0ilz.jpg",
+      "text": {
+        "en": "Prof. Jooyoung Kim was invited to speak at The 3rd International Conference on Holodecks, hosted at the University of Southern California (USC).\n\nHis talk, titled \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks,\" introduced recent research on AI-driven text-to-scent generation, which combines large language models with a rule-based formulation engine to translate natural language into physically manufacturable scent recipes. The presentation also discussed the potential of olfactory interfaces as a key component of future multisensory holodeck environments.",
+        "ko": "명지대학교 융합소프트웨어학부 김주영 교수가 The 3rd International Conference on Holodecks (USC) 에 초청 연사로 참여하여, \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\"를 주제로 발표를 진행했습니다.\n\n이번 발표에서는 대규모 언어모델(LLM)과 규칙 기반 시스템을 결합하여 자연어를 실제 제조 가능한 향 레시피로 변환하는 Text-to-Scent Generation 연구를 소개하였으며, 향 인터페이스가 미래의 멀티모달 및 홀로덱(Holodeck) 환경에서 수행할 수 있는 역할과 가능성을 공유했습니다."
       }
     }
   ]
