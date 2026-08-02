@@ -769,7 +769,7 @@ const data = {
       "slug": "ian-ha",
       "category": "intern",
       "name": {
-        "en": "IAN HA",
+        "en": "Ian Ha",
         "ko": "하이안"
       },
       "role": {
