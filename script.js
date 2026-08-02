@@ -769,7 +769,7 @@ const data = {
       "slug": "ian-ha",
       "category": "intern",
       "name": {
-        "en": "Ian Ha",
+        "en": "IAN HA",
         "ko": "하이안"
       },
       "role": {
@@ -1215,8 +1215,8 @@ const data = {
       },
       "image": "assets/img-1785645310063-dj9a0ilz.jpg",
       "text": {
-        "en": "Prof. Jooyoung Kim was invited to speak at The 3rd International Conference on Holodecks, hosted at the University of Southern California (USC).\n\nHis talk, titled \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks,\" introduced recent research on AI-driven text-to-scent generation, which combines large language models with a rule-based formulation engine to translate natural language into physically manufacturable scent recipes. The presentation also discussed the potential of olfactory interfaces as a key component of future multisensory holodeck environments.",
-        "ko": "명지대학교 융합소프트웨어학부 김주영 교수가 The 3rd International Conference on Holodecks (USC) 에 초청 연사로 참여하여, \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\"를 주제로 발표를 진행했습니다.\n\n이번 발표에서는 대규모 언어모델(LLM)과 규칙 기반 시스템을 결합하여 자연어를 실제 제조 가능한 향 레시피로 변환하는 Text-to-Scent Generation 연구를 소개하였으며, 향 인터페이스가 미래의 멀티모달 및 홀로덱(Holodeck) 환경에서 수행할 수 있는 역할과 가능성을 공유했습니다."
+        "en": "Prof. Jooyoung Kim was invited to speak at The 3rd International Conference on Holodecks, hosted at the University of Southern California (USC).",
+        "ko": "명지대학교 융합소프트웨어학부 김주영 교수가 The 3rd International Conference on Holodecks (USC) 에 초청 연사로 참여하여, \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\"를 주제로 발표를 진행했습니다."
       }
     }
   ]
