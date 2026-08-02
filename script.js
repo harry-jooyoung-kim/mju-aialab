@@ -1154,12 +1154,12 @@ const data = {
       "cat": "conference",
       "date": "2026.06.18",
       "title": {
-        "en": "한국방송미디어공학회 하계학술대회 참석",
+        "en": "Participation in the KIBME 2026 Summer Conference",
         "ko": "한국방송미디어공학회 하계학술대회 참석"
       },
       "image": "assets/img-1782178539348-bgiye2kj.jpg",
       "text": {
-        "en": "연구실 이승주, 이상훈, 조민선 학생이 한국방송미디어공학회 하계학술대회에 참석하여 연구 내용을 발표했습니다.",
+        "en": "Lab members Seungju Lee, Sanghoon Lee, and Minseon Cho participated in the KIBME (Korean Institute of Broadcast and Media Engineers) 2026 Summer Conference, where they presented their latest research.",
         "ko": "연구실 이승주, 이상훈, 조민선 학생이 한국방송미디어공학회 하계학술대회에 참석하여 연구 내용을 발표했습니다."
       }
     },
