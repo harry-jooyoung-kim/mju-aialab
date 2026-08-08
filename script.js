@@ -769,7 +769,7 @@ const data = {
       "slug": "ian-ha",
       "category": "intern",
       "name": {
-        "en": "IAN HA",
+        "en": "Ian Ha",
         "ko": "하이안"
       },
       "role": {
@@ -785,6 +785,27 @@ const data = {
         "ko": ""
       },
       "image": "assets/img-1785645537693-xqck0qcz.jpg"
+    },
+    {
+      "slug": "mingi-yun",
+      "category": "intern",
+      "name": {
+        "en": "Mingi Yun",
+        "ko": "윤민기"
+      },
+      "role": {
+        "en": "Research Intern (2026.07 ~)",
+        "ko": "학부연구생 (2026.07 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/img-1786186002780-abpg578h.jpg"
     }
   ],
   "alumni": [
@@ -1183,12 +1204,12 @@ const data = {
       "date": "2026.06.23",
       "title": {
         "en": "IEEE Sensors Journal Accepted in June 2026",
-        "ko": "IEEE Sensors Journal Accepted in June 2026"
+        "ko": "IEEE Sensors Journal 논문 게재 승인"
       },
       "image": "assets/img-1782179187605-ui55m5y2.jpg",
       "text": {
         "en": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)",
-        "ko": "Manuscript entitled \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\" has been accepted to IEEE Sensors Journal (SCIE Journal, 2024 IF: 4.3)"
+        "ko": "논문 \"Signal Synthesis for IR-UWB Radar in Angle-Representation Fields based NeRF Architectures\"가 IEEE Sensors Journal (SCIE 저널, 2024 Impact Factor: 4.3)에 게재 승인되었습니다."
       }
     },
     {
@@ -1197,11 +1218,11 @@ const data = {
       "date": "2026.07.20",
       "title": {
         "en": "Nature Scientific Reports Accepted in July 2026",
-        "ko": ""
+        "ko": "Nature Scientific Reports 저널 게재 승인"
       },
       "image": "assets/img-1785645013054-0uj2irsa.jpg",
       "text": {
-        "en": "김규리 학부연구생(현재 이화여자대학교 석사과정)의 1저자의 논문 “Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion” 가 Scientific Reports (SCIE Journal, 2025 IF: 4.9) 에 Accept 되었습니다.",
+        "en": "The paper “Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion,” first-authored by undergraduate researcher Gyuri Kim (currently a master’s student at Ewha Womans University), has been accepted for publication in Scientific Reports (SCIE Journal, 2025 Impact Factor: 4.9).",
         "ko": "김규리 학부연구생(현재 이화여자대학교 석사과정)의 1저자의 논문 “Explainable Cross-Modal Face Photo-Sketch Similarity with Region-Wise Attribution and Multi-Extractor Fusion” 가 Scientific Reports (SCIE Journal, 2025 IF: 4.9) 에 Accept 되었습니다."
       }
     },
