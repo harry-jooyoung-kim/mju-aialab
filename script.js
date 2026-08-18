@@ -949,7 +949,7 @@ const data = {
       "authors": "Kim, J.",
       "venue": "Entertainment Computing",
       "url": "",
-      "note": "under revision",
+      "note": "under review",
       "patentNumber": ""
     },
     {
@@ -992,12 +992,13 @@ const data = {
       "slug": "perfume-note-prediction",
       "cat": "intl-journal",
       "area": "olfactory-ai",
-      "url": "",
+      "year": "2026",
       "title": "Multi-context Perfume Note Prediction with Review-scaled Labels and Note–Accord Co-occurrence Gating",
       "authors": "Kim, J., Oh, K., & Oh, B. S.",
-      "venue": "Engineering Applications of Artificial Intelligence",
-      "year": "2026",
-      "note": "under revision"
+      "venue": "Expert Systems with Applications",
+      "url": "",
+      "note": "under review",
+      "patentNumber": ""
     },
     {
       "slug": "j7-lol",
