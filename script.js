@@ -921,11 +921,11 @@ const data = {
       "cat": "intl-conference",
       "area": "olfactory-ai",
       "year": "2027",
-      "title": "Can You Smell the Story? Which Textual Meanings Are Perceptible Through Computationally Generated Scent",
+      "title": "Can You Smell the Story? Which Textual Meanings Survive Translation into Scent",
       "authors": "Kim, J. et al.",
       "venue": "-",
       "url": "",
-      "note": "",
+      "note": "under review",
       "patentNumber": ""
     },
     {
@@ -933,11 +933,11 @@ const data = {
       "cat": "intl-conference",
       "area": "olfactory-ai",
       "year": "2027",
-      "title": "From Recipe to Cartridge: Designing Compact Olfactory Displays for Text-Generated Scents",
-      "authors": "Kim, J. et al.",
+      "title": "From Recipe to Cartridge: A Compact Blend Basis for Text-to-Scent Rendering",
+      "authors": "Kim, S., Kim, J.",
       "venue": "-",
       "url": "",
-      "note": "",
+      "note": "under review",
       "patentNumber": ""
     },
     {
@@ -958,7 +958,7 @@ const data = {
       "area": "olfactory-ai",
       "year": "2026",
       "title": "Smells Like Bias: Evaluating Demographic Differentiation and Stereotype-Related Failures in LLM-Based Text-to-Scent Generation",
-      "authors": "Kim, J.",
+      "authors": "Lee, S., Kim, J.",
       "venue": "-",
       "url": "",
       "note": "under review",
@@ -1167,6 +1167,30 @@ const data = {
       "authors": "Kim, J., Oh, K., Teoh, A. B. J., & Toh, K. A.",
       "venue": "IEEE ICIEA 2016",
       "year": "2016"
+    },
+    {
+      "slug": "game-api",
+      "cat": "intl-conference",
+      "area": "game-ai",
+      "year": "2026",
+      "title": "When Grounding Helps (and When It Doesn't): A Recommendation Guide for LLM Endpoint Selection in Game APIs",
+      "authors": "Kim. M., Kim, J.",
+      "venue": "-",
+      "url": "",
+      "note": "under review",
+      "patentNumber": ""
+    },
+    {
+      "slug": "gamble-score",
+      "cat": "intl-conference",
+      "area": "game-ai",
+      "year": "2026",
+      "title": "Mining Behavioral Risk Orientation from Longitudinal Game Telemetry: Predicting Next-Match Risk-Oriented Behavior in Competitive Online Games",
+      "authors": "Lee. S., Kim, J.",
+      "venue": "-",
+      "url": "",
+      "note": "under review",
+      "patentNumber": ""
     }
   ],
   "gallery": [
