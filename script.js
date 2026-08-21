@@ -971,9 +971,9 @@ const data = {
       "year": "2026",
       "title": "When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ",
       "authors": "Kim, Jeemin & Kim, J.",
-      "venue": "-",
+      "venue": "EMNLP 2026 Findings",
       "url": "",
-      "note": "under review",
+      "note": "한국정보과학회 우수학술대회",
       "patentNumber": ""
     },
     {
@@ -1263,6 +1263,20 @@ const data = {
       "text": {
         "en": "Prof. Jooyoung Kim was invited to speak at The 3rd International Conference on Holodecks, hosted at the University of Southern California (USC).",
         "ko": "명지대학교 융합소프트웨어학부 김주영 교수가 The 3rd International Conference on Holodecks (USC) 에 초청 연사로 참여하여, \"Expanding Multimedia to Smell: Manufacturable Text-to-Scent Generation for Multisensory Holodecks\"를 주제로 발표를 진행했습니다."
+      }
+    },
+    {
+      "slug": "emnlp-2026-findings-accepted",
+      "cat": "conference",
+      "date": "2026.08.21",
+      "title": {
+        "en": "One Paper Accepted to EMNLP 2026 Findings",
+        "ko": "EMNLP 2026 Findings 논문 1편 게재 확정"
+      },
+      "image": "assets/img-1787311522087-4kle2vgh.jpg",
+      "text": {
+        "en": "Our paper, “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ,” has been accepted to EMNLP 2026 Findings (KIISE High-Rank Conference).",
+        "ko": "우리 연구실의 논문 “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ”이 EMNLP 2026 Findings (한국정보과학회 우수학술대회) 에 게재 확정되었습니다."
       }
     }
   ]
