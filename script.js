@@ -1273,7 +1273,7 @@ const data = {
         "en": "One Paper Accepted to EMNLP 2026 Findings",
         "ko": "EMNLP 2026 Findings 논문 1편 게재 확정"
       },
-      "image": "assets/img-1787311522087-4kle2vgh.jpg",
+      "image": "assets/img-1787311662469-qh60f3vv.jpg",
       "text": {
         "en": "Our paper, “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ,” has been accepted to EMNLP 2026 Findings (KIISE High-Rank Conference).",
         "ko": "우리 연구실의 논문 “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ”이 EMNLP 2026 Findings (한국정보과학회 우수학술대회) 에 게재 확정되었습니다."
