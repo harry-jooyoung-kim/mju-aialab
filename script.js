@@ -1422,7 +1422,11 @@ function home() {
       <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0 0 8px">${t('gallery.recentEvents')}</p>
       <div class="content" style="padding-top:16px;padding-bottom:0">
         <div style="text-align:right;margin-bottom:16px"><a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a></div>
-        <div class="grid">${[...data.gallery].sort((a,b)=>{if(!a.date&&!b.date)return 0;if(!a.date)return 1;if(!b.date)return -1;return b.date.replace(/\./g,'-')>a.date.replace(/\./g,'-')?1:-1;}).slice(0,3).map(galleryCard).join('')}</div>
+        <div class="events-slider">
+          <button class="events-nav events-prev" aria-label="Previous" data-events-dir="-1">‹</button>
+          <div class="events-track">${[...data.gallery].sort((a,b)=>{if(!a.date&&!b.date)return 0;if(!a.date)return 1;if(!b.date)return -1;return b.date.replace(/\./g,'-')>a.date.replace(/\./g,'-')?1:-1;}).map(galleryCard).join('')}</div>
+          <button class="events-nav events-next" aria-label="Next" data-events-dir="1">›</button>
+        </div>
       </div>
     </section>
     <section class="tile dark">
@@ -1762,6 +1766,27 @@ function attachInteractions() {
     app.innerHTML = `<div class="view">${gallery(v==='all'?null:v)}</div>`;
     attachInteractions();
   }));
+  document.querySelectorAll('.events-slider').forEach(slider => {
+    const track = slider.querySelector('.events-track');
+    if (!track) return;
+    const step = () => {
+      const card = track.querySelector('.gallery-card');
+      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || '24') || 24;
+      return card ? card.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+    };
+    const update = () => {
+      const max = track.scrollWidth - track.clientWidth - 1;
+      const prev = slider.querySelector('.events-prev');
+      const next = slider.querySelector('.events-next');
+      if (prev) prev.classList.toggle('is-hidden', track.scrollLeft <= 1);
+      if (next) next.classList.toggle('is-hidden', track.scrollLeft >= max);
+    };
+    slider.querySelectorAll('[data-events-dir]').forEach(btn => btn.addEventListener('click', () => {
+      track.scrollBy({ left: Number(btn.dataset.eventsDir) * step(), behavior: 'smooth' });
+    }));
+    track.addEventListener('scroll', update, { passive: true });
+    requestAnimationFrame(update);
+  });
 }
 
 /* ── Marquee Init ────────────────────────────────────────── */
