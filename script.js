@@ -884,6 +884,7 @@ const data = {
       "authors": "Park, J., Kim, J., & Kim, T.",
       "venue": "IEEE Sensors Journal",
       "year": "2026",
+      "date": "2026.06",
       "note": "SCIE, 2024 IF: 4.3"
     },
     {
@@ -894,7 +895,8 @@ const data = {
       "title": "생성형 AI 기반 컬러화와 4채널 ResNet18 앙상블을 이용한 열화상 객체 인식 성능 향상",
       "authors": "조민선, 김주영",
       "venue": "한국방송·미디어공학회 하계학술대회",
-      "year": "2026"
+      "year": "2026",
+      "date": "2026.06.18"
     },
     {
       "slug": "koba2026-rescue",
@@ -904,7 +906,8 @@ const data = {
       "title": "Pose-Visibility 계층 구조와 Poincaré Prototype 정규화를 이용한 산림 위급 조난자 탐지",
       "authors": "이상훈, 김주영",
       "venue": "한국방송·미디어공학회 하계학술대회",
-      "year": "2026"
+      "year": "2026",
+      "date": "2026.06.18"
     },
     {
       "slug": "koba2026-inverted",
@@ -914,7 +917,8 @@ const data = {
       "title": "픽셀 반전 기반 Inverted Grid를 이용한 비전-언어모델의 공간 위치 추정 개선",
       "authors": "이승주, 김주영",
       "venue": "한국방송·미디어공학회 하계학술대회",
-      "year": "2026"
+      "year": "2026",
+      "date": "2026.06.18"
     },
     {
       "slug": "chi-smell-story",
@@ -973,6 +977,7 @@ const data = {
       "authors": "Kim, Jeemin & Kim, J.",
       "venue": "EMNLP 2026 Findings",
       "url": "",
+      "date": "2026.08",
       "note": "한국정보과학회 우수학술대회",
       "patentNumber": ""
     },
@@ -985,6 +990,7 @@ const data = {
       "authors": "Kim, G. & Kim, J.",
       "venue": "Scientific Reports",
       "url": "",
+      "date": "2026.07",
       "note": "SCIE, 2025 IF: 4.9",
       "patentNumber": ""
     },
@@ -1412,6 +1418,13 @@ function home() {
       <div class="stat-item"><span class="stat-num">${data.people.length}</span><span class="stat-cap">${t('home.statPeople')}</span></div>
     </section>`;
     })()}
+    <section class="tile parchment" style="padding:40px 24px 60px">
+      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0 0 8px">${t('gallery.recentEvents')}</p>
+      <div class="content" style="padding-top:16px;padding-bottom:0">
+        <div style="text-align:right;margin-bottom:16px"><a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a></div>
+        <div class="grid">${[...data.gallery].sort((a,b)=>{if(!a.date&&!b.date)return 0;if(!a.date)return 1;if(!b.date)return -1;return b.date.replace(/\./g,'-')>a.date.replace(/\./g,'-')?1:-1;}).slice(0,3).map(galleryCard).join('')}</div>
+      </div>
+    </section>
     <section class="tile dark">
       <h2>${L(data.research[0].title)}</h2>
       <p class="tile-lead">${L(data.research[0].short)}</p>
@@ -1429,13 +1442,6 @@ function home() {
       <p class="tile-lead">${L(data.research[2].short)}</p>
       <div class="cta-row">${cta('projects/applied-ai', t('subNav.appliedAI'))}${ghost('publications', t('nav.publications'))}</div>
       <img class="tile-media" src="${data.research[2].image}" alt="">
-    </section>
-    <section class="tile parchment" style="padding:40px 24px 60px">
-      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0 0 8px">${t('gallery.recentEvents')}</p>
-      <div class="content" style="padding-top:16px;padding-bottom:0">
-        <div style="text-align:right;margin-bottom:16px"><a href="#/gallery" style="font-size:14px;color:var(--primary)">${t('gallery.viewAll')} ↗</a></div>
-        <div class="grid">${[...data.gallery].sort((a,b)=>{if(!a.date&&!b.date)return 0;if(!a.date)return 1;if(!b.date)return -1;return b.date.replace(/\./g,'-')>a.date.replace(/\./g,'-')?1:-1;}).slice(0,3).map(galleryCard).join('')}</div>
-      </div>
     </section>
     <section class="tile dark" style="padding:32px 24px 60px">
       <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:#fff;letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
@@ -1575,10 +1581,20 @@ function publications(cat, area) {
   const catTabs = ['all','intl-journal','intl-conference','domestic-journal','domestic-conference','patent'];
   const areaTabs = ['all','game-ai','olfactory-ai','applied-ai'];
   const isPending = p => /under\s*(review|revision|preparation)|in\s*preparation/i.test((p.note||'') + (p.venue||''));
+  // Sort key for "most recently published on top" within a year.
+  // Uses an optional `date` field (YYYY.MM or YYYY.MM.DD); falls back to year-only.
+  const dateKey = p => {
+    const raw = (p.date || p.year || '').toString().replace(/[^\d]/g, '');
+    return parseInt((raw + '00000000').slice(0, 8)) || 0;
+  };
   let items = [...data.publications].sort((a, b) => {
     const dy = (parseInt(b.year)||0) - (parseInt(a.year)||0);
     if (dy !== 0) return dy;
-    return isPending(b) - isPending(a);
+    // Within the same year: published/accepted above under-review.
+    const pa = isPending(a), pb = isPending(b);
+    if (pa !== pb) return pa ? 1 : -1;
+    // Then most recently published/accepted first.
+    return dateKey(b) - dateKey(a);
   });
   if (cat && cat !== 'all') items = items.filter(p => p.cat === cat);
   if (area && area !== 'all') items = items.filter(p => p.area === area);
