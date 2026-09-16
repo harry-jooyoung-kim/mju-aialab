@@ -270,7 +270,7 @@ const data = {
       "slug": "description-to-recipe",
       "area": "olfactory-ai",
       "period": "2026.03.01-2026.08.31",
-      "stageColor": "green",
+      "stageColor": "red",
       "title": {
         "en": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발",
         "ko": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발"
@@ -280,8 +280,8 @@ const data = {
         "ko": "기업 연구과제"
       },
       "stage": {
-        "en": "진행 중 (연구책임자)",
-        "ko": "진행 중 (연구책임자)"
+        "en": "종료 (연구책임자)",
+        "ko": "종료 (연구책임자)"
       },
       "desc": {
         "en": "제약 환경에서 식향 및 향수 향에 안정적으로 동작하는 D2R(Description to Recipe) API 엔진 개발",
@@ -293,7 +293,7 @@ const data = {
       "slug": "text-to-scent-perception",
       "area": "olfactory-ai",
       "period": "2025.09.01-2026.08.31",
-      "stageColor": "green",
+      "stageColor": "red",
       "title": {
         "en": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구",
         "ko": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구"
@@ -303,8 +303,8 @@ const data = {
         "ko": "우수신진연구과제 (씨앗)"
       },
       "stage": {
-        "en": "진행 중 (연구책임자)",
-        "ko": "진행 중 (연구책임자)"
+        "en": "종료 (연구책임자)",
+        "ko": "종료 (연구책임자)"
       },
       "desc": {
         "en": "텍스트 기반 향기 생성 기술 개발을 위한 향수 노트 예측 연구",
