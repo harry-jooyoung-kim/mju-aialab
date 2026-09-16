@@ -745,27 +745,6 @@ const data = {
       "image": "assets/img-1782178286631-bxcf7m3o.jpg"
     },
     {
-      "slug": "Yuchul-Lee",
-      "category": "ms",
-      "name": {
-        "en": "Yuchul Lee",
-        "ko": "이유철"
-      },
-      "role": {
-        "en": "MS Candidate (2025.03~ / Co-supervision)",
-        "ko": "MS Candidate (2025.03~ / Co-supervision)"
-      },
-      "focus": {
-        "en": "",
-        "ko": ""
-      },
-      "bio": {
-        "en": "",
-        "ko": ""
-      },
-      "image": "assets/img-1782952534990-g3u98er8.jpg"
-    },
-    {
       "slug": "ian-ha",
       "category": "intern",
       "name": {
@@ -806,6 +785,27 @@ const data = {
         "ko": ""
       },
       "image": "assets/img-1786186002780-abpg578h.jpg"
+    },
+    {
+      "slug": "seungwan-jang",
+      "category": "intern",
+      "name": {
+        "en": "Seungwan Jang",
+        "ko": "장승완"
+      },
+      "role": {
+        "en": "Research Intern (2026.09 ~)",
+        "ko": "학부연구생 (2026.09 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/img-1789524521331-binhxv6v.jpg"
     }
   ],
   "alumni": [
