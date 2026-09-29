@@ -273,3 +273,6 @@
   .nav-icon{display:none}
   /* alumni stays 2col at smallest — matches grid-interns */
 }
+
+/* ── In the News (home): reuses .gallery-card / .events-slider ── */
+.news-card img{object-position:center 25%}

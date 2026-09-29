@@ -33,6 +33,7 @@ const TR = {
       viewLink:'View ↗'
     },
     gallery: { h1:'Gallery', lead:'Research seminars, prototypes, experiments, and student activities.', recentEvents:'Recent Events', viewAll:'View all' },
+    news: { h1:'In the News', readArticle:'Read article ↗' },
     contact: {
       h1:'Contact',
       lead:'We welcome motivated students and collaborators interested in applied AI systems.',
@@ -96,6 +97,7 @@ const TR = {
       viewLink:'보기 ↗'
     },
     gallery: { h1:'갤러리', lead:'연구 세미나, 프로토타입, 실험, 학생 활동.', recentEvents:'최근 활동', viewAll:'전체 보기' },
+    news: { h1:'언론 보도', readArticle:'기사 보기 ↗' },
     contact: {
       h1:'연락처',
       lead:'응용 AI 시스템에 관심 있는 학생 및 협력 연구자를 환영합니다.',
@@ -1285,6 +1287,26 @@ const data = {
         "ko": "우리 연구실의 논문 “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ”이 EMNLP 2026 Findings (한국정보과학회 우수학술대회) 에 게재 확정되었습니다."
       }
     }
+  ],
+  "news": [
+    {
+      "slug": "asiatoday-2026-09-22-research-grant",
+      "date": "2026.09.22",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260922001628012",
+      "outlet": "아시아투데이",
+      "title": "명지대 대학원생 11명 이공분야 연구장려금 대거 선정… 이승주 연구원 등 역량 입증",
+      "summary": "명지대학교(총장 임연수) 대학원생 11명이 교육부와 한국연구재단이 지원하는 ‘2026년도 이공분야 학술연구지원사업(석사·박사과…",
+      "image": "assets/news-asiatoday-20260922001628012.jpg"
+    },
+    {
+      "slug": "joongang-2026-04-28-game-rating-ai",
+      "date": "2026.04.28",
+      "url": "https://www.joongang.co.kr/article/25424096",
+      "outlet": "중앙일보",
+      "title": "명지대, ‘AI 기반 게임 등급분류 기술’ 개발 과제 선정",
+      "summary": "명지대학교(총장 임연수)는 2026 문화체육관광부 CT R&D 사업인 ‘게임물 등급분류 및 사후관리 효율화를 위한 인공지능(A…",
+      "image": "assets/news-joongang-25424096.jpg"
+    }
   ]
 };
 
@@ -1388,6 +1410,30 @@ function galleryCard(g) {
     <h3>${L(g.title)}</h3><p>${L(g.text)}</p></a>`;
 }
 
+function newsItem(n) {
+  const meta = [L(n.outlet), n.date].filter(Boolean).join(' · ');
+  return `<a class="gallery-card news-card" href="${n.url}" target="_blank" rel="noopener noreferrer">
+    ${n.image ? `<img src="${n.image}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}
+    ${meta ? `<p class="gallery-date">${meta}</p>` : ''}
+    <h3>${L(n.title)}</h3><p>${L(n.summary) || ''}</p></a>`;
+}
+
+function newsSection() {
+  const items = (data.news || []).filter(n => n.url);
+  if (!items.length) return '';
+  const sorted = [...items].sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  return `<section class="tile light" style="padding:40px 24px 60px">
+      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:var(--ink);letter-spacing:.196px;margin:0 0 8px">${t('news.h1')}</p>
+      <div class="content" style="padding-top:16px;padding-bottom:0">
+        <div class="events-slider">
+          <button class="events-nav events-prev" aria-label="Previous" data-events-dir="-1">‹</button>
+          <div class="events-track">${sorted.map(newsItem).join('')}</div>
+          <button class="events-nav events-next" aria-label="Next" data-events-dir="1">›</button>
+        </div>
+      </div>
+    </section>`;
+}
+
 function collabLogoStrip() {
   const logo = `<img src="assets/embl_white.png" alt="EMBL" class="collab-logo">`;
   const logos = logo.repeat(12);
@@ -1429,6 +1475,7 @@ function home() {
         </div>
       </div>
     </section>
+    ${newsSection()}
     <section class="tile dark">
       <h2>${L(data.research[0].title)}</h2>
       <p class="tile-lead">${L(data.research[0].short)}</p>
