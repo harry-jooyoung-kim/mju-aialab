@@ -808,6 +808,27 @@ const data = {
         "ko": ""
       },
       "image": "assets/img-1789524521331-binhxv6v.jpg"
+    },
+    {
+      "slug": "junhyuck-lim",
+      "category": "intern",
+      "name": {
+        "en": "Junhyuck Lim",
+        "ko": "임준혁"
+      },
+      "role": {
+        "en": "Research Intern (2026.09 ~)",
+        "ko": "학부연구생 (2026.10 ~)"
+      },
+      "focus": {
+        "en": "",
+        "ko": ""
+      },
+      "bio": {
+        "en": "",
+        "ko": ""
+      },
+      "image": "assets/img-1792407874694-0rxgglg9.jpg"
     }
   ],
   "alumni": [
@@ -838,8 +859,8 @@ const data = {
       },
       "year": "2025.01 ~ 2026.02",
       "affiliation": {
-        "en": "SCSPRO",
-        "ko": "SCSPRO"
+        "en": "",
+        "ko": ""
       },
       "image": "assets/img-1782172091226-jpcnjh1k.jpg"
     },
@@ -870,8 +891,8 @@ const data = {
       },
       "year": "2025.01 ~ 2026.08",
       "affiliation": {
-        "en": "SCSPRO",
-        "ko": "SCSPRO"
+        "en": "",
+        "ko": ""
       },
       "image": "assets/img-1782172071911-x5hczav4.jpg"
     }
