@@ -1455,12 +1455,6 @@ function newsSection() {
     </section>`;
 }
 
-function collabLogoStrip() {
-  const logo = `<img src="assets/embl_white.png" alt="EMBL" class="collab-logo">`;
-  const logos = logo.repeat(12);
-  return `<div class="collab-logos-strip"><div class="collab-marquee">${logos}${logos}</div></div>`;
-}
-
 /* ── Pages ───────────────────────────────────────────────── */
 function home() {
   return `
@@ -1514,10 +1508,6 @@ function home() {
       <p class="tile-lead">${L(data.research[2].short)}</p>
       <div class="cta-row">${cta('projects/applied-ai', t('subNav.appliedAI'))}${ghost('publications', t('nav.publications'))}</div>
       <img class="tile-media" src="${data.research[2].image}" alt="">
-    </section>
-    <section class="tile dark" style="padding:32px 24px 60px">
-      <p style="font-family:'SF Pro Display',system-ui,-apple-system,sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;color:#fff;letter-spacing:.196px;margin-bottom:28px;margin-top:0">${t('contact.collaborators')}</p>
-      ${collabLogoStrip()}
     </section>`;
 }
 
@@ -1750,16 +1740,6 @@ function contact() {
             <div class="spec"><strong>${t('contact.prospective')}</strong><span>${t('contact.prospectiveVal')}</span></div>
             <div class="spec"><strong>${t('contact.primaryLang')}</strong><span>${t('contact.primaryLangVal')}</span></div>
             <div class="spec"><strong>${t('contact.location')}</strong><span>${t('contact.locationVal')}</span></div>
-          </div>
-        </div>
-        <div class="collab-aside-box">
-          <p class="collab-section-title">${t('contact.collaborators')}</p>
-          <p style="font-size:13px;color:var(--muted);margin:0 0 12px">${t('contact.collabSubtext')}</p>
-          <div class="collab-logos-strip inset">
-            <div class="collab-marquee">
-              ${'<img src="assets/embl.png" alt="EMBL" class="collab-logo">'.repeat(6)}
-              ${'<img src="assets/embl.png" alt="EMBL" class="collab-logo">'.repeat(6)}
-            </div>
           </div>
         </div>
       </aside>
