@@ -1307,6 +1307,20 @@ const data = {
         "en": "Our paper, “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ,” has been accepted to EMNLP 2026 Findings (KIISE High-Rank Conference).",
         "ko": "우리 연구실의 논문 “When Bias Scores Reflect Abstention Failure: Disentangling Stereotype Direction from Refusal to Abstain in BBQ”이 EMNLP 2026 Findings (한국정보과학회 우수학술대회) 에 게재 확정되었습니다."
       }
+    },
+    {
+      "slug": "dmc-innovation-camp-2026-grand-prize",
+      "cat": "team",
+      "date": "2026.11.03",
+      "title": {
+        "en": "Excellence Award at the 2026 DMC Innovation Camp Startup Competition",
+        "ko": "2026 DMC이노베이션캠프 창업경진대회 최우수상 수상"
+      },
+      "image": "assets/event-dmc-innovation-camp-2026.jpg",
+      "text": {
+        "en": "Our lab won the Excellence Award at the 2026 DMC Innovation Camp Startup Competition, hosted by the DMC Industry-Academia Foundation and DMC Conet at the DMC High-Tech Industry Center.",
+        "ko": "DMC산학진흥재단과 디엠씨코넷이 DMC첨단산업센터에서 개최한 '2026 DMC이노베이션캠프' 창업경진대회에서 우리 연구실이 최우수상을 수상했습니다."
+      }
     }
   ],
   "news": [
