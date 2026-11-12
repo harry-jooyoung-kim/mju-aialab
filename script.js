@@ -30,6 +30,7 @@ const TR = {
       tabs: { all:'All', 'intl-journal':'International Journal', 'intl-conference':'International Conference', 'domestic-journal':'Domestic Journal', 'domestic-conference':'Domestic Conference', patent:'Patent' },
       authors:'Authors',
       patentNo:'Patent No.',
+      applicationNo:'Application No.',
       viewLink:'View ↗'
     },
     gallery: { h1:'Gallery', lead:'Research seminars, prototypes, experiments, and student activities.', recentEvents:'Recent Events', viewAll:'View all' },
@@ -94,6 +95,7 @@ const TR = {
       tabs: { all:'전체', 'intl-journal':'국제 저널', 'intl-conference':'국제 학술대회', 'domestic-journal':'국내 저널', 'domestic-conference':'국내 학술대회', patent:'특허' },
       authors:'저자',
       patentNo:'특허번호',
+      applicationNo:'출원번호',
       viewLink:'보기 ↗'
     },
     gallery: { h1:'갤러리', lead:'연구 세미나, 프로토타입, 실험, 학생 활동.', recentEvents:'최근 활동', viewAll:'전체 보기' },
@@ -911,6 +913,31 @@ const data = {
       "note": "SCIE, 2024 IF: 4.3"
     },
     {
+      "slug": "jbe2026-thermal",
+      "cat": "domestic-journal",
+      "area": "applied-ai",
+      "url": "",
+      "title": "Thermal Object Classification Using a 4-Channel Ensemble with Generative AI Colorization",
+      "authors": "조민선, 김주영",
+      "venue": "방송공학회논문지 (JBE), Vol.31, No.6",
+      "year": "2026",
+      "date": "2026.11",
+      "note": "KCI"
+    },
+    {
+      "slug": "p3-scent-rendering",
+      "cat": "patent",
+      "area": "olfactory-ai",
+      "url": "",
+      "title": "블렌드 카트리지 세트의 조성 결정방법, 블렌드 카트리지 기반 향 렌더링 장치 및 그 제어 방법",
+      "authors": "Kim, J.",
+      "venue": "Republic of Korea",
+      "year": "2026",
+      "date": "2026.11.09",
+      "applicationNumber": "10-2026-0221725",
+      "patentNumber": ""
+    },
+    {
       "slug": "koba2026-thermal",
       "cat": "domestic-conference",
       "area": "applied-ai",
@@ -945,12 +972,12 @@ const data = {
     },
     {
       "slug": "chi-smell-story",
-      "cat": "intl-conference",
+      "cat": "intl-journal",
       "area": "olfactory-ai",
-      "year": "2027",
-      "title": "Can You Smell the Story? Which Textual Meanings Survive Translation into Scent",
-      "authors": "Kim, J. et al.",
-      "venue": "-",
+      "year": "2026",
+      "title": "Can You Smell the Story? Perceived Correspondence Between Text Prompts and Computationally Generated Scents",
+      "authors": "Kim, Y., Jung, S., Kim, M., Han, S., & Kim, J.",
+      "venue": "International Journal of Human-Computer Studies",
       "url": "",
       "note": "under review",
       "patentNumber": ""
@@ -972,11 +999,12 @@ const data = {
       "cat": "intl-journal",
       "area": "olfactory-ai",
       "year": "2026",
-      "title": "Manufacturable Text-to-Scent Generation for Olfactory Entertainment Media",
+      "title": "Structurally Valid Text-to-Scent Generation for Olfactory Entertainment Media",
       "authors": "Kim, J.",
       "venue": "Entertainment Computing",
       "url": "",
-      "note": "under review",
+      "date": "2026.11",
+      "note": "SCIE, 2025 IF: 2.4",
       "patentNumber": ""
     },
     {
@@ -1018,15 +1046,27 @@ const data = {
       "patentNumber": ""
     },
     {
+      "slug": "neurocomputing-palm-cross-roi",
+      "cat": "intl-journal",
+      "area": "applied-ai",
+      "year": "2026",
+      "title": "Cross-ROI Ensemble for Robust Contactless Palm Recognition with Landmark-Free ROI Extraction",
+      "authors": "Kim, K. & Kim, J.",
+      "venue": "Neurocomputing",
+      "url": "",
+      "note": "under review",
+      "patentNumber": ""
+    },
+    {
       "slug": "perfume-note-prediction",
       "cat": "intl-journal",
       "area": "olfactory-ai",
       "year": "2026",
       "title": "Multi-context Perfume Note Prediction with Review-scaled Labels and Note–Accord Co-occurrence Gating",
       "authors": "Kim, J., Oh, K., & Oh, B. S.",
-      "venue": "Expert Systems with Applications",
+      "venue": "IEEE Access",
       "url": "",
-      "note": "under review",
+      "note": "under revision",
       "patentNumber": ""
     },
     {
@@ -1321,6 +1361,20 @@ const data = {
         "en": "Our lab won the Excellence Award at the 2026 DMC Innovation Camp Startup Competition, hosted by the DMC Industry-Academia Foundation and DMC Conet at the DMC High-Tech Industry Center.",
         "ko": "DMC산학진흥재단과 디엠씨코넷이 DMC첨단산업센터에서 개최한 '2026 DMC이노베이션캠프' 창업경진대회에서 우리 연구실이 최우수상을 수상했습니다."
       }
+    },
+    {
+      "slug": "entcom-accepted",
+      "cat": "team",
+      "date": "2026.11.12",
+      "title": {
+        "en": "Entertainment Computing Paper Accepted in November 2026",
+        "ko": "Entertainment Computing 저널 논문 게재 승인"
+      },
+      "image": "assets/entcom-accepted-pipeline.jpg",
+      "text": {
+        "en": "Our paper, \"Structurally Valid Text-to-Scent Generation for Olfactory Entertainment Media,\" has been accepted for publication in Entertainment Computing (SCIE Journal, 2025 IF: 2.4).",
+        "ko": "우리 연구실의 논문 \"Structurally Valid Text-to-Scent Generation for Olfactory Entertainment Media\"가 Entertainment Computing (SCIE Journal, 2025 IF: 2.4) 에 게재 승인되었습니다."
+      }
     }
   ],
   "news": [
@@ -1441,7 +1495,8 @@ function pubRow(p) {
       ${p.authors ? `<p style="font-size:14px;color:var(--muted);margin:5px 0 3px"><strong style="color:var(--ink);font-weight:600">${t('publications.authors')}:</strong> ${p.authors.replace(/Kim,\s*J\./g, '<strong style="color:var(--ink);font-weight:700">Kim, J.</strong>').replace(/김주영/g, '<strong style="color:var(--ink);font-weight:700">김주영</strong>')}</p>` : ''}
       <p style="font-size:14px;color:var(--muted)">${p.venue}</p>
       ${p.patentNumber ? `<p style="font-size:13px;color:var(--muted);margin:3px 0">${t('publications.patentNo')}: <strong>${p.patentNumber}</strong></p>` : ''}
-      ${p.note ? `<p style="font-size:12px;color:var(--primary);font-weight:600;margin:4px 0">${p.note}</p>` : ''}
+      ${p.applicationNumber ? `<p style="font-size:13px;color:var(--muted);margin:3px 0">${t('publications.applicationNo')}: <strong>${p.applicationNumber}</strong></p>` : ''}
+      ${p.note ? `<p style="font-size:12px;color:${/SCIE|우수학술대회/.test(p.note) ? 'var(--primary)' : 'var(--muted)'};font-weight:600;margin:4px 0">${p.note}</p>` : ''}
     </div>
     ${linkBtn}
   </article>`;
@@ -1678,6 +1733,11 @@ function publications(cat, area) {
     // Within the same year: published/accepted above under-review.
     const pa = isPending(a), pb = isPending(b);
     if (pa !== pb) return pa ? 1 : -1;
+    // Among pending items: journals above conferences, then patents.
+    if (pa) {
+      const dc = catTabs.indexOf(a.cat) - catTabs.indexOf(b.cat);
+      if (dc !== 0) return dc;
+    }
     // Then most recently published/accepted first.
     return dateKey(b) - dateKey(a);
   });
